@@ -1,0 +1,91 @@
+﻿@using RauSach.Core.Models;
+@using Rausach.Web.Extensions;
+@using RauSach.Web.Helpers
+@model Contact
+
+<section class="page_banner shop_banner" style="background-image: url(/assets/images/bg/b3.jpg); margin-top: 120px;">
+    <div class="container largeContainer">
+        <div class="row">
+            <div class="col-lg-12 text-left">
+                <p class="breadcrumbs">
+                    <a href="/"><i class="twi-home"></i>Trang chủ</a><i class="twi-angle-right"></i>Liên hệ
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contactInfoSec">
+    <div class="container largeContainer">
+        <div class="row">
+            <div class="col-lg-7 mb85">
+                <div class="abThumb move_anim">
+                    <img class="abbg" src="~/assets/images/bg/c2.png" alt="">
+                    <img src="~/assets/images/bg/c1.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <p>Liên hệ với NTA Farm.</p>
+                <div class="contactbox">
+                    <i class="twi-envelope"></i>
+                    <h5><a href="mailto:nguyentuananh30082002@gmail.com">nguyentuananh30082002@gmail.com</a></h5>
+                </div>
+                <div class="contactbox">
+                    <i class="twi-phone"></i>
+                    <h5><a href="tel:0775122681">0775 122 681</a></h5>
+                    <h5><a href="tel:0987533553">0987 533 553</a></h5>
+                </div>
+                <div class="contactbox last">
+                    <i class="twi-map-marker-alt"></i>
+                    <h5><a href="https://www.google.com/maps">218 Lạc Long Quân, Tây Hồ, Hà Nội</a></h5>
+                </div>
+                <div class="conSocial">
+                    <a href="#" title="Xem chúng tôi trên Tiktok"><img src="/images/tiktok.png" alt="tiktok" style="width: 20px;height: 20px;margin-top: -4px;" /></a>
+                    <a href="#" title="Xem chúng tôi trên Facebook"><i class="twi-facebook-f"></i></a>
+                    <a href="#" title="Xem chúng tôi trên Youtube"><i class="twi-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="contact_form">
+                    <h2>Gửi tin nhắn cho chúng tôi</h2>
+                    @using (Html.BeginForm("SaveContact", "Home", FormMethod.Post, new { @class = "row", id = "contact_form" }))
+                    {
+                        <div class="col-md-12" style="text-align: left">
+                            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                        </div>
+                        @Html.AntiForgeryToken()
+                        <div class="col-md-5">
+                            @Html.TextBoxFor(x => x.Name, new {@class = "required", placeholder = "Tên *"})
+                            @Html.TextBoxFor(x => x.Phone, new {@class = "required", placeholder = "Điện thoại *"})
+                            @Html.TextBoxFor(x => x.Email, new {placeholder = "Email"})
+                            @Html.TextBoxFor(x => x.Title, new {@class = "required", placeholder = "Chủ đề *"})
+                        </div>
+                        <div class="col-md-7">
+                            @Html.TextAreaFor(x => x.Content, new {@class = "required", placeholder = "Nội dung *"})
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="organ_btn">Gửi</button>
+                            <div class="con_message"></div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.js"></script>
+    @if (TempData["success"] != null && (bool)TempData["success"] == true)
+    {
+        <script>
+            $(document).ready(function () {
+                toastr.success("Gửi tin nhắn thành công!");
+                $("#contact_form").reset();
+            });
+        </script>
+    }
+}

@@ -1,0 +1,181 @@
+﻿@using RauSach.Core.Models
+@using RauSach.Core.ValueObjects
+@model Order
+@using Microsoft.AspNetCore.Http.Extensions
+@using Rausach.Common.Extensions
+@inject RauSach.Application.Repositories.IGeneralItemRepository _generalItemRepo;
+@inject RauSach.Core.Services.IUserGroupManager _roleManager
+@{
+    var canApprove = _roleManager.HasPermission(User.Identity.Name, RauSach.Core.FrameworkModels.RoleList.Account);
+    var items = _generalItemRepo.GetAll();
+    var farmers = items.Where(m => !m.Deleted && m.Type == null).Select(m => new SelectListItem
+            {
+                Value = m.Id.ToString(),
+                Text = m.Title
+            }).ToList();
+    var sales = items.Where(m => !m.Deleted && m.Type == "Sale").Select(m => new SelectListItem
+            {
+                Value = m.Id.ToString(),
+                Text = m.Title
+            }).ToList();
+    var i = 0;
+}
+@section Button {
+    <div class="btn-group" role="group" aria-label="Basic example">
+        @if (Model.Status == OrderStatus.Paid || Model.Status == OrderStatus.Expired)
+        {
+            <a href="@Url.Action("UpdateStatus", new { Model.Id, status = OrderStatus.Active, returnUrl = Context.Request.GetEncodedUrl()})" onclick="return confirm('Bạn có chắc?')" class="btn btn-success pd-x-25">Kích hoạt</a>
+        }
+        @if (Model.Status == OrderStatus.Pendding && canApprove)
+        {
+            <a href="@Url.Action("UpdateStatus", new { Model.Id, status = OrderStatus.Paid, returnUrl = Context.Request.GetEncodedUrl()})" onclick="return confirm('Bạn có chắc?')" class="btn btn-success pd-x-25">Duyệt đơn</a>
+        }
+        @if (Model.Status == OrderStatus.Active || Model.Status == OrderStatus.Paid || Model.Status == OrderStatus.Pendding)
+        {
+            <a href="@Url.Action("UpdateStatus", new { Model.Id, status = OrderStatus.Canceled, returnUrl = Context.Request.GetEncodedUrl()})" onclick="return confirm('Bạn có chắc?')" class="btn btn-secondary pd-x-25">Hủy đơn</a>
+        }
+    </div>
+}
+    <partial name="_TopMessage" model="(ViewBag.Success, ViewBag.Error)" />
+    <div class="card mt-2 mb-2 shadow-base">
+        <div class="card-body pb-0">
+            <form method="post" id="form-order" enctype="multipart/form-data" asp-controller="Order" asp-action="Edit" asp-route-returnUrl="@Context.Request.GetEncodedUrl()">
+                @Html.HiddenFor(m => m.Id)
+                <div class="row">
+                    <div class="col-md-6 mg-t-20 mg-md-t-0-force">
+                        <ul class="list-group list-group-striped">
+                            <li class="list-group-item">
+                                <p class="mg-b-0"><strong class="tx-inverse tx-medium">THÔNG TIN ĐƠN HÀNG</strong> </p>
+                            </li>
+                            <li class="list-group-item rounded-top-0">
+                                <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i> <span class="text-muted">Mã đơn hàng: </span> <strong class="tx-inverse tx-medium">@Model.Code</strong></p>
+                            </li>
+                            <li class="list-group-item rounded-top-0">
+                                <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i> <span class="text-muted">Trạng thái đơn: </span> <strong class="tx-inverse tx-medium">@Model.Status.GetEnumDescription()</strong></p>
+                            </li>
+                            <li class="list-group-item rounded-top-0">
+                                <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i> <span class="text-muted">Loại thanh toán: </span> <strong class="tx-inverse tx-medium">@Model.PaymentType.GetEnumDescription()</strong></p>
+                            </li>
+                            @if (Model.Voucher?.Code != null)
+                        {
+                            <li class="list-group-item rounded-top-0">
+                                <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i> <span class="text-muted">Voucher: </span> <strong class="tx-inverse tx-medium">@Model.Voucher.Code </strong><span class="text-muted"> giảm @Model.Voucher.DiscountAmount đ hoặc @Model.Voucher.DiscountRate % </span></p>
+                            </li>
+                        }
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Giá trị: </span> <strong class="tx-inverse tx-medium">@Model.Price.ToString("N0")</strong> <span class="text-muted">vnđ</span></p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Tên khách hàng: </span> <strong class="tx-inverse tx-medium">@Model.CustomerName</strong> </p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">SĐT khách hàng: </span> <strong class="tx-inverse tx-medium">@Model.CustomerPhone</strong> </p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Địa chỉ: </span> @Html.TextBoxFor(m => m.CustomerAddress, new { Class = "form-control form-control-smy" })</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Loại vườn: </span> <strong class="tx-inverse tx-medium">@Model.Garden.Name</strong> <span class="text-muted">@(Model.Garden.CanCustomize ? " Vườn VIP" : " Vườn thường")</span></p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Diện tích vườn: </span> <strong class="tx-inverse tx-medium">@Model.Garden.Area m2</strong> </p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Ghi chú của khách hàng: </span> @Html.TextAreaFor(m => m.CustomerNote, new { Class = "form-control form-control-smy" }) </p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0">
+                                <i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Mã vườn: </span>
+                                @Html.DropDownListFor(
+                                x => x.GardenCode,
+                                new SelectList(ViewBag.GardenItems), "Chọn mã vườn", new { Class = "form-control form-control-smy" })
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0">
+                                <i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Nông dân trồng: </span>
+                                @Html.DropDownListFor(
+                                x => x.FarmerId,
+                                new SelectList(farmers, "Value", "Text"), "Chọn nông dân", new { Class = "form-control form-control-smy" })
+                            </p>
+                        </li>
+                        @* <li class="list-group-item">
+                            <p class="mg-b-0">
+                                <i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Sale phụ trách: </span>
+                                @Html.DropDownListFor(
+                                x => x.SaleId,
+                                new SelectList(sales, "Value", "Text"), "Chọn sale", new { Class = "form-control form-control-smy" })
+                            </p>
+                        </li> *@
+                        <li class="list-group-item">
+                            <button class="btn btn-success" type="submit">Cập nhật đơn hàng</button>
+                            <a href="@Context.Request.Query["returnUrl"]" class="btn btn-outline-secondary">Quay lại</a>
+                        </li>
+                    </ul>
+                </div><!-- col-4 -->
+                <div class="col-md-6 mg-t-20 mg-md-t-0-force">
+                    <ul class="list-group list-group-striped">
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><strong class="tx-inverse tx-medium">DANH SÁCH RAU</strong> </p>
+                        </li>
+                        @foreach (var item in Model.Combo.Vegetables)
+                        {
+                            <li class="list-group-item">
+                                <p class="mg-b-0"><i class="fa fa-minus tx-success mg-r-8"></i> <strong class="tx-inverse tx-medium"> @item.Name</strong><span class="text-muted"> - Diện tích: @item.Area m2, năng suất: @item.GramPerM2.ToString("N0") g/m2, thu hoạt lần đầu: @item.LifeDay@(item.LifeDayRecycle > 0 ? (", thu hoạch lần sau " + item.LifeDayRecycle) : null) (ngày)</span>  </p>
+                                <input type="hidden" name="Combo.Vegetables[@i].Id" id="Combo.Vegetables[@i].Id" value="@item.Id">
+                                Diện tích trồng <input type="number" class="vegetable-area" value="@item.Area" min="0" name="Combo.Vegetables[@i].Area" style="border-color: greenyellow;" />
+                                <span class="text-muted">m2, dự kiến thu hoạch @(item.Area * item.GramPerM2) g</span>
+                            </li>
+                            i++;
+                        }
+                        <li class="list-group-item">
+                            <p class="text-success" id="vegetable-area-sum">Tổng diện tích trồng: @Model.Combo.Vegetables.Sum(m=>m.Area) m2</p>
+                            <p class="hidden text-danger" id="vegetable-area-error">Tổng diện tích trồng rau không được lớn hơn diện tích vườn</p>
+                            <button class="btn btn-success" type="submit">Lưu lại diện tích trồng</button>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><strong class="tx-inverse tx-medium">LỊCH SỬ TRẠNG THÁI</strong> </p>
+                        </li>
+                        @foreach (var item in Model.StatusHistories)
+                        {
+                            <li class="list-group-item">
+                                <p class="mg-b-0"><i class="fa fa-minus tx-success mg-r-8"></i><span class="text-muted">@item.ActionTime.ToString("dd/MM/yyyy hh:mm") </span> <strong class="tx-inverse tx-medium"> @item.Status.GetEnumDescription()</strong> <span class="text-muted"> bởi @item.Author </span></p>
+                            </li>
+                        }
+                    </ul>
+
+                    @if (Model.ImageUrl != null)
+                    {
+                        <img id="img-origin" src="/images/orders/@Model.ImageUrl" style="width: 70%" />
+                    }
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        jQuery(function($) {
+            $('.vegetable-area').on('input', function() {
+                var sumVege = 0;
+                $(".vegetable-area").each(function() {
+                    sumVege += parseInt($(this).val());
+                });
+                console.log(sumVege);
+                $("#vegetable-area-sum").text("Tổng diện tích trồng: " + sumVege + " m2");
+            });
+            $("#form-order").submit(function() {
+                var sum = 0;
+                var area = @Model.Garden.Area;
+                $(".vegetable-area").each(function() {
+                    sum += parseInt($(this).val());
+                });
+                if (sum > area) {
+                    $("#vegetable-area-error").removeClass("hidden");
+                    return false;
+                }
+            })
+        });
+    </script>
+}

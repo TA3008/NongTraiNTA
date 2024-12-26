@@ -1,0 +1,72 @@
+﻿@using RauSach.Core.Models
+@model Vegetable
+@using Microsoft.AspNetCore.Http.Extensions
+@{
+    ViewData["Title"] = "Thiết lập rau";
+}
+
+<div class="card mt-2 mb-2 shadow-base">
+    <div class="card-body pb-0">
+        <form method="post" enctype="multipart/form-data" asp-controller="Garden" asp-action="EditVegetable" asp-route-returnUrl="@Context.Request.Query["returnUrl"]">
+            @Html.HiddenFor(m => m.Id)
+            @Html.HiddenFor(m => m.Created)
+            @Html.HiddenFor(m => m.CreatedBy)
+            @Html.HiddenFor(m => m.ImageUrl)
+            @Html.HiddenFor(m => m.Thumbnail)
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.Name)
+                        @Html.TextBoxFor(m => m.Name, new { Class = "form-control form-control-smy", required = "required" })
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.LifeDay)
+                        <input name="@(nameof(Model.LifeDay))" type="number" min="0" value="@Model.LifeDay" class="form-control form-control-smy" />
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.CanHarvestManyTimes)
+                        @{
+                            var hidden = Model.CanHarvestManyTimes ? "" : "hidden";
+                        }
+                        
+                        @Html.CheckBoxFor(x => x.CanHarvestManyTimes, new {@class = "ml-3"})
+                    </div>
+                    <div class="col-sm-12 mb-3 @hidden" id="divLifeDayRecycle">
+                        @Html.LabelFor(m => m.LifeDayRecycle)
+                        <input name="@(nameof(Model.LifeDayRecycle))" type="number" min="0" value="@Model.LifeDayRecycle" class="form-control form-control-smy" />
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.GramPerM2)
+                        <input name="@(nameof(Model.GramPerM2))" type="number" min="0" value="@Model.GramPerM2" class="form-control form-control-smy" />
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <partial name="_EditImage" model="@Model.ImageUrl" />
+                </div>
+                @* <div class="col-sm-6">
+                        <img src="~/images/vetgetables/@Model.ImageUrl" class="img64x64" />
+                </div> *@
+                
+            </div>
+            <hr />
+            <div class="mb-2">
+                <button class="btn btn-success" type="submit">Lưu lại</button>
+                <a href="@Context.Request.Query["returnUrl"]" class="btn btn-outline-secondary">Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section scripts {
+    <script>
+        $(document).ready(function(){
+            $("input[name=CanHarvestManyTimes]").change(function(){
+                if (this.checked) {
+                    $("#divLifeDayRecycle").removeClass("hidden");
+                }else{
+                    $("#divLifeDayRecycle").addClass("hidden");
+                }
+            });
+        });
+    </script>
+}

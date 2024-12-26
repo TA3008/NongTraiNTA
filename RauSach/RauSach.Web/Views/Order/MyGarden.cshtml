@@ -1,0 +1,234 @@
+﻿@using RauSach.Core.Models;
+@using RauSach.Web.Models;
+@using RauSach.Web.Helpers;
+@using EnumsNET;
+@model Order
+
+@{
+    List<HarvestedVegetableViewModel> lsHarvested = ViewData["Harvested"] == null ?
+    new List<HarvestedVegetableViewModel>() : (List<HarvestedVegetableViewModel>)ViewData["Harvested"];
+}
+
+<!-- Begin:: Banner Section -->
+<section class="page_banner shop_banner" style="background-image: url(/assets/images/bg/b3.jpg); margin-top: 120px;">
+    <div class="container largeContainer">
+        <div class="row">
+            <div class="col-lg-12 text-left">
+                <p class="breadcrumbs">
+                    <a href="/"><i class="twi-home"></i>Trang chủ</a><i class="twi-angle-right"></i>Vườn của tôi
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="singleProduct pd-t-0">
+    <div class="container largeContainer containerTable">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="related_area">
+                    <div class="subTitle sbsm">Hoàn toàn tự nhiên</div>
+                    <h2 class="secTitle">Vườn của tôi</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 colTable">
+                @if (Model != null)
+                {
+                    @Html.HiddenFor(x => x.Id)
+                    @Html.Hidden("GapDays", ViewData["GapDays"])
+                    <div class="row mb-20 ml-0">
+                        <div class="col-lg-2">
+                            <span class="span_bold">Vườn</span>
+                        </div>
+                        <div class="col-lg-10">
+                            <p>@Model.Garden.Name</p>
+                            <p>Diện tích vườn: @Model.Garden.Area m2</p>
+                        </div>
+                    </div>
+                    <div class="row mb-20">
+                        <div class="col-lg-12">
+                            <a href="javascript:void(0)" class="organ_btn" style="float: right" id="getVegetablesDelivery">Chọn ngày vận chuyển</a>
+                        </div>
+                    </div>
+                    <div class="row mb-20">
+                        <div class="col-lg-12">
+                            <div class="woocommerce pd-0">
+                                <table class="shop_table">
+                                    <thead>
+                                        <tr>
+                                            <th class="product-remove">&nbsp;</th>
+                                            <th class="product-name">Rau</th>
+                                            <th class="product-name">Chi tiết</th>
+                                            <th class="product-name">Ngày trồng</th>
+                                            <th class="product-quantity">Dự kiến đến ngày thu hoạch</th>
+                                            <th class="product-quantity">Đã thu hoạch</th>
+                                            <th class="product-quantity">Ngày vận chuyển</th>
+                                            <th class="product-quantity">Khối lượng vận chuyển</th>
+                                            <th class="product-name">Trạng thái</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @for (int i = 0; i < Model.Combo.Vegetables.Count; i++)
+                                        {
+                                            var veg = Model.Combo.Vegetables[i];
+                                            var harvestedModel = lsHarvested.FirstOrDefault(x => x.Id == veg.Id);
+                                            var harvestedGr = harvestedModel != null ? harvestedModel.HarvestedGr : 0;
+                                            <tr class="cart_item">
+                                                <td class="product-remove">
+                                                    @(i + 1)
+                                                </td>
+                                                <td class="garden">
+                                                    <p class="mobile">Rau: </p>
+                                                    <p>@veg.Name</p>
+                                                </td>
+                                                <td class="garden">
+                                                    <p class="mobile">Chi tiết: </p>
+                                                    <p>Diện tích trồng: @veg.Area (m2)</p><br />
+                                                    <p>Thu hoạch @(veg.CanHarvestManyTimes ? "lần đầu " : "")sau: @veg.LifeDay (ngày)</p><br />
+                                                    @if (veg.CanHarvestManyTimes)
+                                                    {
+                                                        <p>Thu hoạch lần tiếp theo sau: @veg.LifeDayRecycle (ngày)</p>
+                                                        <br />
+                                                    }
+                                                </td>
+                                                <td class="garden">
+                                                    <p class="mobile">Ngày trồng: </p>
+                                                    @if (veg.Delivery.StartDate != DateTime.MinValue)
+                                                    {
+                                                        <p><span class="green">@veg.Delivery.StartDate.ToString("dd/MM/yyyy")</span></p>
+                                                    }
+                                                    else
+                                                    {
+                                                        <p><span class="red">Chưa trồng</span></p>
+                                                    }
+                                                </td>
+                                                <td class="garden product-subtotal">
+                                                    <p class="mobile">Dự kiến đến ngày thu hoạch: </p>
+                                                    <p class="mb-10">@veg.HarvestProceedLifeStr</p>
+                                                    <div class="progress">
+                                                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: @veg.HarvestProceedLife%;" aria-valuenow="@veg.HarvestProceedLife" aria-valuemin="0" aria-valuemax="100">@veg.HarvestProceedLife%</div>
+                                                    </div>
+                                                </td>
+                                                <td class="garden">
+                                                    <p class="mobile">Đã thu hoạch: </p>
+                                                    <p>@harvestedGr/@(veg.GramPerM2 * veg.Area) (g)</p>
+                                                </td>
+                                                <td class="garden product-subtotal">
+                                                    <p class="mobile">Ngày vận chuyển: </p>
+                                                    <p><span id="spDeliveryDate-@veg.Id" class="green">@(veg.Delivery.DeliveryDate != DateTime.MinValue ? veg.Delivery.DeliveryDate.ToString("dd/MM/yyyy") : "")</span></p>
+                                                </td>
+                                                <td class="garden">
+                                                    <p class="mobile">Khối lượng vận chuyển: </p>
+                                                    <p>@veg.Delivery.Weight (g)</p>
+                                                </td>
+                                                <td class="garden">
+                                                    <p class="mobile">Trạng thái: </p>
+                                                    <p>@(veg.Delivery.StartDate == DateTime.MinValue ? "Chưa trồng" : veg.Delivery.Status.VegetableDeliveryState.AsString(EnumFormat.Description))</p>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="myModalLabel">Chọn ngày vận chuyển</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="$('#deliveryForm')[0].reset();">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="deliveryForm">
+                                        <div id="deliveryDiv">
+                                        </div>
+                                        <div class="form-group pmd-textfield pmd-textfield-floating-label">
+                                            <label class="control-label" for="datepicker">Ngày vận chuyển</label>
+                                            <input type="text" class="form-control" id="datepicker">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="$('#deliveryForm')[0].reset();">Huỷ</button>
+                                    <button type="button" class="btn btn-primary bkg-theme" id="saveDelivery">Lưu</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+@section scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.vi.min.js" integrity="sha512-o+RlJQ7OEtgCdvdgOJfjEASLgiLB9mA8bfWF4JnyA0cWHy7wtb4S4GRxgPor4iqKKLx0CoIFRcMecGnKSTTY1g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        $(document).ready(function () {
+            $("#getVegetablesDelivery").click(function () {
+                var result = ajaxHelper.excuteAjax_ReturnDataHtml("/Order/MyVegetablesCanDelivery", { orderId: $("#Id").val() });
+                if (result) {
+                    $("#deliveryDiv").html(result);
+                    $('#myModal').modal();
+                } else {
+                    toastr.error("Có lỗi xảy ra khi chọn ngày vận chuyển!");
+                }
+            });
+
+            $('#datepicker').datepicker({
+                format: 'dd/mm/yyyy',
+                startDate: '+' + $('#GapDays').val() + 'd',
+                autoclose: true,
+                language: 'vi'
+            });
+
+            $('#deliveryForm').on('reset', function () {
+                $("input[type='hidden']", $(this)).val('');
+            });
+
+            $("#saveDelivery").click(function () {
+                var date = $('#datepicker').data('datepicker').dates[0];
+                if (!date) {
+                    toastr.error("Chưa chọn ngày vận chuyển.");
+                    return;
+                }
+                var vegetables = [];
+                $(".selectVegetableDelivery:checked").each(function (index) {
+                    vegetables.push({
+                        'Weight': $(".selectVegetableDeliveryWeight[data-vegId=" + $(this).attr("data-vegid") + "]").val(),
+                        'Id': $(this).attr("data-vegid")
+                    });
+                });
+                var result = ajaxHelper.excutePostAjax_ReturnDataJson("/Order/SaveDeliveryTime",
+                    {
+                        orderId: $("#Id").val(),
+                        date: date.getUTCDate(),
+                        month: date.getUTCMonth() + 1,
+                        year: date.getUTCFullYear(),
+                        vegetables: vegetables
+                    });
+                if (result && result.success) {
+                    toastr.success("Lưu ngày vận chuyển thành công!");
+                    $("#myModal .close").click();
+                    setTimeout(function () { window.location.reload(); }, 2000);
+                } else {
+                    toastr.error(result.message);
+                }
+            });
+
+            $(".progress-bar").each(function (index) {
+                var percent = $(this).attr("aria-valuenow");
+                if (percent && percent < 10) {
+                    $(this).css("min-width", "10%");
+                }
+            });
+        });
+    </script>
+}

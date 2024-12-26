@@ -1,0 +1,76 @@
+﻿@using RauSach.Core.Models
+@model List<Vegetable>
+
+@if (Model?.Any() == true)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col" class="tblCounter">#</th>
+                <th scope="col">Chọn</th>
+                <th scope="col">Rau</th>
+                <th scope="col">Khối lượng</th>
+                <th scope="col">Năng suất dự kiến</th>
+                <th scope="col">Ngày vận chuyển trước</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                var i = 0;
+            }
+            @foreach (var veg in Model)
+            {
+                i++;
+                <tr>
+                    <th scope="row" class="tblCounter">@i</th>
+                    <td><input type="checkbox" class="selectVegetableDelivery" data-vegId="@veg.Id" /></td>
+                    <td>@veg.Name</td>
+                    <td><input type="number" class="selectVegetableDeliveryWeight form-control" data-vegId="@veg.Id" value="@veg.Delivery.Weight" />(g)</td>
+                    <td>@(veg.GramPerM2 * veg.Area) (g)</td>
+                    <td>@(veg.Delivery.DeliveryDate != DateTime.MinValue ? veg.Delivery.DeliveryDate.ToString("dd/MM/yyyy") : "")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else if (ViewData["Error"] != null)
+{
+    var err = (string)ViewData["Error"];
+    <p style="color:red;">@err</p>
+    if (ViewData["Delivery"] != null)
+    {
+        var delivery = (Delivery)ViewData["Delivery"];
+        if (delivery?.Vegetables?.Any() == true)
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Rau</th>
+                        <th scope="col">Khối lượng</th>
+                        <th scope="col">Ngày vận chuyển</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        var j = 0;
+                    }
+                    @foreach (var dv in delivery.Vegetables)
+                    {
+                        j++;
+                        <tr>
+                            <th scope="row">@j</th>
+                            <td>@dv.Name</td>
+                            <td>@dv.Weight (g)</td>
+                            <td>@(delivery.Created != DateTime.MinValue ? delivery.Created.ToString("dd/MM/yyyy") : "")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    }
+}
+else
+{
+    <p style="color:red;">Không có rau nào đến ngày vận chuyển hoặc quá thời gian cho phép đổi ngày vận chuyển hoặc đang có đơn hàng đang vận chuyển.</p>
+}

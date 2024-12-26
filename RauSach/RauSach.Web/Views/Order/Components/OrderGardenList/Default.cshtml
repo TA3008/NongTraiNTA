@@ -1,0 +1,76 @@
+﻿@using RauSach.Web.Models;
+
+@model OrderGardenListViewModel
+
+@if (Model != null && Model.Gardens?.Any() == true)
+{
+    <div class="row">
+        @foreach (var item in Model.Gardens)
+        {
+            <div class="col-xl-6 col-md-12">
+                <div class="productItemlist">
+                    <div class="listproThumb">
+                        @HtmlHelperExtension.Img(item.Thumbnail, item.Name)
+                    </div>
+                    <div class="list_pro_content">
+                        <div class="lptop">
+                            <div class="pitem">NTA Farm</div>
+                            <div class="ratings">
+                                <i class="twi-star"></i>
+                                <i class="twi-star"></i>
+                                <i class="twi-star"></i>
+                                <i class="twi-star"></i>
+                                <i class="twi-star"></i>
+                            </div>
+                        </div>
+                        <h3><a href="#">@item.Name</a></h3>
+                        <div class="pi01Price">
+                            <span class="price">
+                                @if (item.FakePrice > 0)
+                                {
+                                    <del>@item.FakePrice.ToString("#,##0")</del>
+                                }
+                                <ins>@item.Price.ToString("#,##0") / tháng / m2</ins>
+                            </span>
+                        </div>
+                        <ul>
+                            <li><i class="twi-check-circle1"></i>Số lượng còn: @item.Quantity (vườn)</li>
+                            <li><i class="twi-check-circle1"></i>Số rau tối đa: @item.MaximumVegetable (loại)</li>
+                            <li><i class="twi-check-circle1"></i>Diện tích vườn: @item.MinArea - @item.MaxArea (m2)</li>
+                        </ul>
+                        <div style="display: none" id="gardenItems-@item.Id" class="divGardenArea">
+                            <select class="form-control gardenArea">
+                                <option value="0" data-area="0">Chọn diện tích vườn</option>
+                                @if (item.GetDistinctGardenItems().Any())
+                                {
+                                    foreach (var gi in item.GetDistinctGardenItems())
+                                    {
+                                        <option value="@gi.Code" data-area="@gi.Area">@gi.Area (m2)</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                        <div class="listActionBtns mt-10">
+                            <a class="cart" href="javascript:void(0)" data-gardenId="@item.Id" data-area="@item.Area" data-price="@item.Price">
+                                @if (item.Id == Model.SelectedId)
+                                {
+                                    <i class="twi-check mr-5"></i>
+                                    <span>Đã chọn</span>
+                                }
+                                else
+                                {
+                                    <i class="twi-check mr-5 hidden"></i>
+                                    <span>Chọn vườn này</span>
+                                }
+                            </a>
+                            <a class="acontinue" href="javascript:void(0)" style="display: none">
+                                <i class="twi-arrow-right mr-5"></i>
+                                <span>Tiếp tục</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

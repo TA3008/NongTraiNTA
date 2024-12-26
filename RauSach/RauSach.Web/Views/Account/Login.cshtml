@@ -1,0 +1,53 @@
+﻿@using RauSach.Web.Helpers
+@model LoginViewModel
+
+@{
+    ViewBag.Title = "Đăng nhập";
+    var externalLoginClasses = new Dictionary<string, string>() { { "Google", "twi-google" }, { "Facebook", "twi-facebook-f" } };
+}
+
+<section class="contactInfoSec">
+    <div class="container largeContainer">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="row">
+                    <div class="contact_form col-md-6 margin-auto">
+                        <h2>Đăng nhập</h2>
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl ?? "/" }, FormMethod.Post))
+                        {
+                            <div class="col-md-12">
+                                <input type="text" class="required" name="username" placeholder="Tên đăng nhập *">
+                                <input type="password" class="required" data-type="password" name="password" placeholder="Mật khẩu *">
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="organ_btn">Đăng nhập</button>
+                                <div class="con_message"></div>
+                            </div>
+                        }
+                        <hr />
+                        <form id="external-account" asp-action="ExternalLogin" asp-controller="Account" asp-route-returnUrl="@Context.Request.Query["returnUrl"]" method="post" class="form-horizontal">
+                            <div>
+                                @foreach (var provider in Model.ExternalLogins)
+                                {
+                                    externalLoginClasses.TryGetValue(provider.Name, out var className);
+
+                                    <div class="row mb-10">
+                                        <div class="col-md-12">
+                                            <button type="submit" name="provider" value="@provider.Name" title="Đăng nhập với @provider.DisplayName account" class="organ_btn"><i class="@className"></i>&nbsp;&nbsp;Đăng nhập với @provider.Name</button>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </form>
+                        <div class="row mb-10">
+                            <div class="col-md-12">
+                                <button type="button" name="provider" title="Đăng ký bằng số điện thoại" class="organ_btn" onclick="window.location.href='/account/phoneregister'"><i class="twi-phone"></i>&nbsp;&nbsp;Đăng ký bằng số điện thoại</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

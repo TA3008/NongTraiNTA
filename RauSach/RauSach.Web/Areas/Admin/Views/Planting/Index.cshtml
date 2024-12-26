@@ -1,0 +1,48 @@
+﻿@using RauSach.Core.Models
+@model List<PlantingModel>
+@using Microsoft.AspNetCore.Http.Extensions
+@using RauSach.Web.Models
+@using Rausach.Common.Extensions
+@{
+    ViewData["Title"] = "Quản lý gieo trồng";
+    var searchModel = ViewBag.SearchModel as RauSach.Application.Models.OrderFilter;
+}
+
+<div class="card mt-2 mb-2 shadow-base" id="searchBox">
+    <div class="card-body pb-0">
+        <partial name="_SearchOrders" model="@searchModel" />
+    </div>
+</div>
+
+<div class="card mt-2 mb-2 shadow-base">
+    <div class="card-body pb-0">
+        @for (int i = 0; i < Model.Count; i += 3)
+        {
+            <div class="row mb-2">
+                @for (int j = i; j < i + 3 && j < Model.Count; j++)
+                {
+                    var item = Model[j];
+                    <div class="col-md mb-2">
+                        <ul class="list-group list-group-striped">
+                            <li class="list-group-item rounded-top-0">
+                                <p class="mg-b-0"><strong class="tx-inverse tx-medium">Đơn hàng: @item.Order.Code - @item.Order.CustomerName @item.Order.CustomerPhone</strong></p>
+                            </li>
+                            <li class="list-group-item rounded-top-0">
+                                <p class="mg-b-0"><strong class="tx-inverse tx-medium">Vườn: @item.Order.GardenCode - @item.Order.Garden.Area m2,</strong><span class="text-muted"> Nông dân trồng: </span><strong class="tx-inverse tx-medium"> @item.Order.FarmerName</strong></p>
+                            </li>
+                            @foreach (var vege in item.Order.Combo.Vegetables)
+                            {
+                                <li class="list-group-item">
+                                    <p class="mg-b-0">
+                                        <strong class="tx-inverse tx-medium"><a href="@Url.Action("Edit", new { orderId = item.Order.Id, vegetableId = vege.Id , returnUrl = Context.Request.GetEncodedUrl()})">@vege.Name</a></strong>
+                                        <span class="text-muted">@(vege.CanHarvestManyTimes ? "Rau thu nhiều lần" : "Rau thu 1 lần"), Ngày trồng: @(vege.Delivery != null ? vege.Delivery.StartDate.ToString("dd/MM/yyyy") : "Chưa có ngày trồng")</span>, <span class="text-warning">@(vege.Delivery != null ? vege.Delivery.Status.VegetableDeliveryState.GetEnumDescription() : "Không xác định")</span>
+                                    </p>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>

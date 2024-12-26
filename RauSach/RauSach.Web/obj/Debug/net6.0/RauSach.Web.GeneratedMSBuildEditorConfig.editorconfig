@@ -1,0 +1,347 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RauSach.Web
+build_property.RootNamespace = RauSach.Web
+build_property.ProjectDir = C:\Code\nongtraintc-main\RauSach\RauSach.Web\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Code\nongtraintc-main\RauSach\RauSach.Web
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Account/AddEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxBZGRFbXBsb3llZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Account/AssignRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxBc3NpZ25Sb2xlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Account/Employees.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxFbXBsb3llZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Account/Groups.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxHcm91cHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Account/UserDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxVc2VyRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Account/_SearchUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWNjb3VudFxfU2VhcmNoVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Admin/EditSystemParameter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cRWRpdFN5c3RlbVBhcmFtZXRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Admin/SchedulerJobs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cU2NoZWR1bGVySm9icy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Admin/SystemParameters.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cU3lzdGVtUGFyYW1ldGVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Article/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXJ0aWNsZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Article/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQXJ0aWNsZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Delivery/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGVsaXZlcnlcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Delivery/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGVsaXZlcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Delivery/_Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGVsaXZlcnlcX1NlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Garden/EditGarden.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2FyZGVuXEVkaXRHYXJkZW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Garden/EditVegetable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2FyZGVuXEVkaXRWZWdldGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Garden/Gardens.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2FyZGVuXEdhcmRlbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Garden/UpdateVegetableCombo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2FyZGVuXFVwZGF0ZVZlZ2V0YWJsZUNvbWJvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Garden/VegetableCombos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2FyZGVuXFZlZ2V0YWJsZUNvbWJvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Garden/Vegetables.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2FyZGVuXFZlZ2V0YWJsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Garden/_VegetableComboItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2FyZGVuXF9WZWdldGFibGVDb21ib0l0ZW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Garden/_VegetableItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2FyZGVuXF9WZWdldGFibGVJdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/GeneralItem/EditFarmer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2VuZXJhbEl0ZW1cRWRpdEZhcm1lci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/GeneralItem/EditSale.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2VuZXJhbEl0ZW1cRWRpdFNhbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/GeneralItem/Farmers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2VuZXJhbEl0ZW1cRmFybWVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/GeneralItem/Sales.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcR2VuZXJhbEl0ZW1cU2FsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Order/NotExist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcT3JkZXJcTm90RXhpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Planting/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGxhbnRpbmdcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Planting/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGxhbnRpbmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Shared/_AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Shared/_AddButton.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9BZGRCdXR0b24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Shared/_EditImage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9FZGl0SW1hZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Shared/_MenuLeft.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9NZW51TGVmdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Shared/_PagerInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9QYWdlckluZm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Shared/_PagerPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9QYWdlclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Shared/_SaveButton.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9TYXZlQnV0dG9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Shared/_SearchOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9TZWFyY2hPcmRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Shared/_TopMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9Ub3BNZXNzYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Voucher/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVm91Y2hlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Voucher/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVm91Y2hlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Account/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDaGFuZ2VQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Account/PhoneRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQaG9uZVJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Account/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Account/Unauthorize.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVbmF1dGhvcml6ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Article/Components/OtherArticles/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZVxDb21wb25lbnRzXE90aGVyQXJ0aWNsZXNcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Article/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZVxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Article/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZVxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Garden/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FyZGVuXERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Garden/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FyZGVuXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Home/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Home/Components/LatestArticles/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb21wb25lbnRzXExhdGVzdEFydGljbGVzXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Home/Contact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Home/_CustomerOpinion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfQ3VzdG9tZXJPcGluaW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Order/Components/OrderComboList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ29tcG9uZW50c1xPcmRlckNvbWJvTGlzdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Order/Components/OrderGardenList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ29tcG9uZW50c1xPcmRlckdhcmRlbkxpc3RcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Order/MyGarden.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcTXlHYXJkZW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Order/MyGardens.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcTXlHYXJkZW5zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Order/MyOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcTXlPcmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Order/_OrderCombo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcX09yZGVyQ29tYm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Order/_VegetablesCanDelivery.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcX1ZlZ2V0YWJsZXNDYW5EZWxpdmVyeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Shared/Components/AccountMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQWNjb3VudE1lbnVcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Shared/Components/GardenListMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcR2FyZGVuTGlzdE1lbnVcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Shared/Components/GardenList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcR2FyZGVuTGlzdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Shared/_ArticleLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BcnRpY2xlTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/Shared/_Menu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Code/nongtraintc-main/RauSach/RauSach.Web/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3dp5vc74kc

@@ -1,0 +1,25 @@
+﻿@using RauSach.Core.FrameworkModels
+@model FilterModel
+@using (Html.BeginForm(null, null, FormMethod.Get, new { role = "form", id = "frmSearch" }))
+{
+    <div class="row mb-2">
+        <div class="col-md-3 col-sm-9 col-xs-12 search-item">
+            <label for="query">Username, email, phone, name</label>
+            @Html.TextBoxFor(x => x.query, new { Class = "form-control form-control-sm" })
+
+        </div>
+        @if (Model.isAdmin)
+        {
+
+            <div class="col-md-2 search-item">
+                <label for="query">Loại người dùng</label>
+                @Html.DropDownListFor(
+        x => x.custom,
+        new SelectList(new List<string> { "Nhân viên", "Khách hàng" }), "Tất cả", new { Class = "form-control form-control-smy" })
+            </div>
+        }
+    </div>
+    <div class="col mb-2 search-item" style="padding-left:0">
+        <button id="btnSearch" class="btn btn-sm bd bg-success tx-white pointer" type="submit"><i class="fa fa-search"></i> Tìm kiếm</button>
+    </div>
+}

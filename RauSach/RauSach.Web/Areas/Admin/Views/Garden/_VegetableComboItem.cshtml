@@ -1,0 +1,22 @@
+﻿@using RauSach.Core.Models
+@model (VegetableCombo combo, Garden garden, bool dark)
+@using Microsoft.AspNetCore.Http.Extensions
+@{
+    var vegetables = string.Join(", ", Model.combo.Vegetables.Select(m => m.Name));
+}
+
+<div class="col-md-4 mb-3">
+    <div class="card bg-@(Model.dark ? "dark": "teal") tx-white bd-0">
+        <div class="card-body">
+            <h5 class="card-title tx-white tx-medium mg-b-10"><a href="@Url.Action("UpdateVegetableCombo", new { Model.combo.Id, returnUrl = Context.Request.GetEncodedUrl()})" style="color:whitesmoke">@Model.combo.Name</a></h5>
+            <p class="card-subtitle tx-normal mg-b-15 tx-white-8">Thuộc vườn: <i>@(Model.garden == null ? "Vườn không tồn tại" : Model.garden.Name)</i></p>
+            <p class="card-text">@vegetables</p>
+            @*<p class="card-text">Tổng diện tích trồng: @Model.combo.Vegetables.Sum(m=>m.Area) (m2)</p>*@
+            @if (Model.combo.Vegetables.Sum(m => m.Area) != Model.garden.Area)
+            {
+                @*<p class="card-text text-warning">Tổng diện tích trồng khác diện tích vườn (@Model.garden.Area m2) </p>*@
+            }
+            <a href="@Url.Action("DeleteVegetableCombo", new { Model.combo.Id, returnUrl = Context.Request.GetEncodedUrl()})" class="card-link tx-white-7 hover-white text-warning" onclick="return confirm('Bạn có chắc muốn xóa?')"><i class="fa fa-trash"></i> Xóa</a>
+        </div>
+    </div><!-- card -->
+</div>

@@ -1,0 +1,78 @@
+﻿@using RauSach.Core.Models
+@model List<Voucher>
+@using Microsoft.AspNetCore.Http.Extensions
+@{
+    ViewData["Title"] = "Danh sách Voucher";
+    var searchModel = ViewBag.SearchModel as RauSach.Application.Models.OrderFilter;
+}
+@section Button {
+    <a href="@Url.Action("Edit", new { returnUrl = Context.Request.GetEncodedUrl()})" class="btn btn-success btn-sm pull-right">Thêm mới</a>
+}
+<div class="card mt-2 mb-2 shadow-base pd-b-10">
+    <div class="card-body pb-0">
+        <table class="table mg-b-0" cellspacing="0">
+            <tr>
+                <th>STT</th>
+                <th>
+                    Mã Voucher
+                </th>
+                <th>
+                    Ngày tạo
+                </th>
+                <th>
+                    Số lượng ban đầu
+                </th>
+                <th>
+                    Số lượng đã dùng
+                </th>
+                <th>
+                    Giảm giá %
+                </th>
+                <th>
+                    Giảm giá vnđ
+                </th>
+                <th>
+                    Ngày hết hạn
+                </th>
+                <th>
+                </th>
+            </tr>
+
+            @{
+                var stt = 1;
+                foreach (var item in Model.OrderByDescending(m => m.Created))
+                {
+                    <tr class="stat even">
+                        <td class="ac">
+                            @(stt++)
+                        </td>
+                        <td>
+                            <a href="@Url.Action("Edit", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})">@item.Code</a>
+                        </td>
+                        <td>
+                            @item.Created.ToString("dd/MM/yyyy")
+                        </td>
+                         <td>
+                            @item.Quantity
+                        </td>
+                         <td>
+                            @item.UsedOrderIds.Count
+                        </td>
+                        <td>
+                            @item.DiscountRate
+                        </td>
+                        <td>
+                            @item.DiscountAmount.ToString("N0")
+                        </td>
+                        <td>
+                            @item.Expired.ToString("dd/MM/yyyy")
+                        </td>
+                        <td>
+                            <a href="@Url.Action("Delete", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})" class="DeleteItem text-danger" onclick="return confirm('Bạn có chắc muốn xóa?')">Xóa</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+</div>

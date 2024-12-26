@@ -1,0 +1,39 @@
+﻿@using Microsoft.AspNetCore.Http.Extensions
+@{
+    ViewData["Title"] = "Chạy jobs";
+    var message = ViewBag.Success + "" + ViewBag.Error;
+    var className = ViewBag.Error == null ? "success" : "danger";
+}
+@if (!string.IsNullOrEmpty(message))
+{
+    <p class="text-@className">@message</p>
+}
+<div class="card mt-2 mb-2 shadow-base">
+    <div class="card-body pb-0">
+        <form method="post" enctype="multipart/form-data" asp-controller="Admin" asp-action="ExecuteJobs">
+            <div class="mb-2">
+                <button class="btn btn-success" type="submit">Chạy tất cả Scheduler Jobs</button>
+            </div>
+        </form>
+
+        <form method="post" enctype="multipart/form-data" asp-controller="Admin" asp-action="SendTestMail" class="mt-5">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col-sm-12 mb-3">
+                        <label>Địa chỉ email nhận</label>
+                        <input name="ToAddress" type="text" required class="form-control form-control-smy" />
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        <label>Tiêu đề</label>
+                        <input name="Subject" type="text" required value="Test" class="form-control form-control-smy" />
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        <label>Nội dung</label>
+                        <input name="Body" type="text" required value="Test body" class="form-control form-control-smy" />
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-success" type="submit">Test Mail configuration</button>
+        </form>
+    </div>
+</div>

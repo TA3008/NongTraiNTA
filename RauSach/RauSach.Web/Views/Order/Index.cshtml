@@ -1,0 +1,533 @@
+﻿@using RauSach.Core.Models;
+@using RauSach.Core.ValueObjects;
+@using RauSach.Web.Models
+@using Rausach.Web.Extensions;
+@using RauSach.Web.Helpers
+@model OrderViewModel
+
+<!-- Begin:: Banner Section -->
+<section class="page_banner shop_banner" style="background-image: url(/assets/images/bg/b3.jpg); margin-top: 120px;">
+    <div class="container largeContainer">
+        <div class="row">
+            <div class="col-lg-12 text-left">
+                <p class="breadcrumbs">
+                    <a href="/"><i class="twi-home"></i>Trang chủ</a><i class="twi-angle-right"></i>Đặt vườn
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End:: Banner Section -->
+<form id="frmOrder" onsubmit="return false;">
+
+    <section class="singleProduct pd-t-0">
+        <div class="container largeContainer">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="related_area">
+                        <div class="subTitle sbsm">Hoàn toàn tự nhiên</div>
+                        <h2 class="secTitle">Đặt vườn</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="product_tabarea">
+                        <ul class="nav nav-tabs productTabs" id="productTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="active" id="garden-tab" data-toggle="tab" href="#garden" role="tab" aria-controls="garden" aria-selected="true">Chọn vườn</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a id="combo-tab" data-toggle="tab" href="#combo" role="tab" aria-controls="combo" aria-selected="false">Chọn combo</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a id="payment-tab" data-toggle="tab" href="#payment" role="tab" aria-controls="payment" aria-selected="false">Thanh toán</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="garden" role="tabpanel" aria-labelledby="garden-tab">
+                                @await Component.InvokeAsync("OrderGardenList", new {selectedGardenId = Model.GardenId})
+                                <div class="">
+                                    <button class="organ_btn continue" style="float:right" id="btContinueGarden"><i class="twi-arrow-right mr-5"></i>Tiếp tục</button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="combo" role="tabpanel" aria-labelledby="combo-tab">
+                                <div id="comboDiv"></div>
+                            </div>
+                            <div class="tab-pane fade" id="payment" role="tabpanel" aria-labelledby="payment-tab">
+                                @{
+                                    var style = User.Identity?.IsAuthenticated != true ? "display:none" : "";
+                                }
+                                @if (User.Identity?.IsAuthenticated != true)
+                                {
+                                    <div>
+                                        <div class="row mb-20">
+                                            <div class="col-lg-12">
+                                                <span class="span_bold">Đăng nhập hoặc đăng ký để thanh toán.</span><br />
+                                                <input type="button" class="organ_btn" value="Đăng nhập - Đăng ký" onclick="window.location.href = '/account/login'" style="float:right"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                                <div id="paymentInfo" style="@style">
+                                    <div class="row mb-20">
+                                        <div class="col-lg-2">
+                                            <span class="span_bold">Vườn</span>
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <p><span id="paymentGardenName"></span></p>
+                                            <div>Diện tích vườn: <span id="spGardenArea"></span> (m2)<div id="paymentGardenArea" style="display: none"></div></div>
+                                            <p>Giá thuê: <span id="paymentGardenPrice" class="green"></span> vnd/tháng/m2</p>
+                                            <p>Đặt cọc trước 3 tháng. Tổng tiền cọc: <span id="paymentGardenTotalPrice" class="green"></span>vnd</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-20">
+                                        <div class="col-lg-2">
+                                            <span class="span_bold">Hình thức thanh toán</span>
+                                        </div>
+                                        <div class="col-lg-10">
+                                            @Html.DropDownListFor(x => x.PaymentType, Model.PaymentTypes, "Chọn hình thức thanh toán", new {@class="form-control"})
+                                            <p>Số tiền: <del><span id="paymentTypePrice" class="red"></span> vnd</del></p>
+                                            <p>Số tiền sau khi giảm: <span id="paymentTypeDiscountPrice" class="green"></span> vnd</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-20">
+                                        <div class="col-lg-2">
+                                            <span class="span_bold">Mã giảm giá</span>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            @Html.TextBoxFor(x => x.VoucherCode, new { @class = "form-control" })
+                                            <span id="spVoucher" class="green"></span><br/>
+                                            <span id="paymentVoucherPrice" class="green" data-price="-1"></span>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <button class="form-control" id="btVoucher">Áp dụng</button>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-20">
+                                        <div class="col-lg-2">
+                                            <span class="span_bold">Tổng số tiền phải thanh toán</span>
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <p>Bao gồm tiền cọc và tiền thuê vườn (sau khi giảm giá và áp dụng mã giảm giá nếu có)</p>
+                                            <span id="paymentTotalPrice" class="green"></span> vnd
+                                        </div>
+                                    </div>
+                                    <div class="row mb-20">
+                                        <div class="col-lg-2">
+                                            <span class="span_bold">Combo</span>
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <p><span id="paymentComboName"></span></p>
+                                            <div id="paymentComboVegetables">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-20">
+                                        <div class="col-lg-2">
+                                            <span class="span_bold">Tên</span> @Html.RequireLabel()
+                                        </div>
+                                        <div class="col-lg-10">
+                                            @Html.TextBoxFor(x => x.CustomerName, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                    <div class="row mb-20">
+                                        <div class="col-lg-2">
+                                            <span class="span_bold">Điện thoại</span> @Html.RequireLabel()
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <input type="tel" name="CustomerPhone" id="CustomerPhone" data-val-required="Số điện thoại không được để trống" data-val="true" class="form-control" value="@Model.CustomerPhone" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-20">
+                                        <div class="col-lg-2">
+                                            <span class="span_bold">Địa chỉ</span> @Html.RequireLabel()
+                                        </div>
+                                        <div class="col-lg-10">
+                                            @Html.TextBoxFor(x => x.CustomerAddress, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                    <div class="row mb-20">
+                                        <div class="col-lg-2">
+                                            <span class="span_bold">Chuyển khoản đến</span>
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <p>@Html.Raw(ViewData["BankInfo"])</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-20">
+                                        <div class="col-lg-2">
+                                            <span class="span_bold">Ảnh chụp thanh toán</span> @Html.RequireLabel()
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <p>* Lưu ý: Vui lòng chụp lại ảnh chuyển khoản thành công để tải lên.</p>
+                                            @Html.HiddenFor(m => m.ImageUrl)
+                                            <partial name="~/Areas/Admin/Views/Shared/_EditImage.cshtml" model="@Model.ImageUrl" />
+                                        </div>
+                                    </div>
+                                    <div class="row mb-20">
+                                        <div class="col-lg-2">
+                                            <span class="span_bold">Ghi chú</span>
+                                        </div>
+                                        <div class="col-lg-10">
+                                            @Html.TextAreaFor(x => x.CustomerNote, new { @class = "form-control" })
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <button class="organ_btn continue back" style="float:left" id="btBackPayment"><i class="twi-arrow-left mr-5"></i>Trở lại</button>
+                                        <button class="organ_btn continue" style="float:right" id="btContinuePayment"><i class="twi-arrow-right mr-5"></i>Hoàn thành</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="loadingModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        @*<span>Đặt hàng...  </span>*@
+                        <div class="spinner-border text-success" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @Html.HiddenFor(x => x.GardenId)
+    @Html.HiddenFor(x => x.GardenArea)
+    @Html.HiddenFor(x => x.ComboId)
+
+</form>
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            var gardenId;
+            var gardenPrice;
+
+            $(document).on("click", "#comboList li", function () {
+                var val = $(this).attr("data-value");
+                if (val == undefined || val == '') {
+                    $("#vegetableDiv").html('');
+                } else {
+                    var html = ajaxHelper.excuteAjax_ReturnDataHtml("/Order/GetCombo", { comboId: val });
+                    $("#vegetableDiv").html(html);
+                }
+                $("#ComboId").val($(this).attr("data-value"));
+                $("#paymentComboName").html($("#comboList li.selected").attr("data-name"));
+            });
+
+            $("a.cart").click(function () {
+                $("a.cart").removeClass("active");
+                $("a.cart i").addClass("hidden");
+                $("a.cart span").text("Chọn vườn này");
+                $(".divGardenArea").css("display", "none");
+                $("a.acontinue").css("display", "none");
+                $(".divGardenArea select").val('0');
+                $("#GardenArea").val('0');
+
+                $(this).children("i").removeClass("hidden");
+                $(this).children("span").text("Đã chọn");
+                $(this).addClass("active");
+
+                $(this).siblings("a.acontinue").css("display", "block");
+                
+                gardenId = $(this).attr("data-gardenId");
+                gardenPrice = $(this).attr("data-price") * 1;
+
+                $("#gardenItems-" + gardenId).css("display", "block");
+
+                $("#GardenId").val(gardenId);
+                $("#paymentGardenArea").html($("#gardenItems-" + gardenId).html());
+                $("#paymentGardenArea select").val($("#GardenArea").val()).change();
+
+                $("#paymentGardenPrice").html(gardenPrice.toLocaleString());
+                $("#paymentGardenPrice").attr("data-price", gardenPrice);
+
+                $("#paymentComboName").html($("#comboList li.selected").attr("data-name"));
+
+                var html = ajaxHelper.excuteAjax_ReturnDataHtml("/Order/GetCombos", { gardenId: gardenId });
+                $("#comboDiv").html(html);
+            });
+
+            $(".divGardenArea select").change(function(){
+                if ($(this).parent().attr("id") == "gardenItems-" + gardenId) 
+                {
+                    $("#paymentGardenArea select").val($(this).val());
+                    $("#paymentGardenArea select").change();
+                }
+            });
+
+            $(document).on('change', "#paymentGardenArea select", function() {
+                var area = $("#paymentGardenArea select option:selected").attr("data-area") * 1;
+                $("#GardenArea").val(area);
+                $("#spGardenArea").html(area);
+
+                $("#paymentGardenTotalPrice").html((gardenPrice * area * 3).toLocaleString());
+                $("#paymentGardenTotalPrice").attr("data-price", gardenPrice * area * 3);
+
+                $('#PaymentType').change();
+            });
+
+            $(".product_tabarea li.nav-item a").click(function (event) {
+                var gardenId = $("#GardenId").val();
+                var gardenArea = $("#GardenArea").val();
+                if (gardenId == null || gardenId == undefined || gardenId == '' || gardenId == "00000000-0000-0000-0000-000000000000") {
+                    event.preventDefault();
+                    event.stopImmediatePropagation();
+                    toastr.error("Bạn chưa chọn vườn!");
+                } else if (gardenArea == null || gardenArea == undefined || gardenArea == '' || gardenArea == "0") {
+                    event.preventDefault();
+                    event.stopImmediatePropagation();
+                    toastr.error("Bạn chưa chọn diện tích vườn!");
+                }
+                else if($(this).attr("id") == "payment-tab" && $("#comboList li.selected").attr("data-value") == '') {
+                    event.preventDefault();
+                    event.stopImmediatePropagation();
+                    toastr.error("Bạn chưa chọn combo!");
+                } 
+                else {
+                    if($(this).attr("id") == "combo-tab" && $("#comboDiv").html() == ''){
+                        var html = ajaxHelper.excuteAjax_ReturnDataHtml("/Order/GetCombos", { gardenId: gardenId });
+                        $("#comboDiv").html(html);
+                    }
+                    $(".product_tabarea li a").removeClass("active").removeAttr("aria-selected");
+                    var a = $(this).parent("li").next().children("a");
+                    a.addClass("active");
+                    a.attr("aria-selected", true);
+                    $("div.tab-content .tab-pane").removeClass("show active");
+                    $("div.tab-content .tab-pane#" + a.attr("aria-controls")).addClass("show active");
+                }
+            });
+
+            $(document).on("click", "a.acontinueCombo", function () {
+                $("#btContinueCombo").click();
+            });
+
+            $("a.acontinue").click(function() {
+                var gardenArea = $("#GardenArea").val();
+                if(gardenArea == null || gardenArea == undefined || gardenArea == '' || gardenArea == '0'){
+                    toastr.error("Bạn chưa chọn diện tích vườn!");
+                    return;
+                }
+                $("#btContinueGarden").click();
+            });
+
+            $("#btContinueGarden").click(function () {
+                var gardenId = $("#GardenId").val();
+                var gardenArea = $("#GardenArea").val();
+                if (gardenId == null || gardenId == undefined || gardenId == '' || gardenId == "00000000-0000-0000-0000-000000000000") {
+                    toastr.error("Bạn chưa chọn vườn!");
+                } else if(gardenArea == null || gardenArea == undefined || gardenArea == '' || gardenArea == '0'){
+                    toastr.error("Bạn chưa chọn diện tích vườn!");
+                }
+                else {
+                    $("#combo-tab").click();
+                    if ($("#comboDiv").html() == '') {
+                        var html = ajaxHelper.excuteAjax_ReturnDataHtml("/Order/GetCombos", { gardenId: gardenId });
+                        $("#comboDiv").html(html);
+                    }
+                }
+            });
+            $(document).on("click", "#btContinueCombo", function () {
+                var gardenId = $("#ComboId").val();
+                if (gardenId == null || gardenId == undefined || gardenId == ''
+                    || ($("#comboList li.selected")[0] != undefined && $("#comboList li.selected").attr("data-value") == '')) {
+                    toastr.error("Bạn chưa chọn combo!");
+                } else {
+                    $("#payment-tab").click();
+                }
+            });
+
+            $(document).on("click", "#btBackCombo", function () {
+                $("#garden-tab").click();
+            });
+
+            $(document).on("click", "#btBackPayment", function () {
+                $("#combo-tab").click();
+            });
+
+            $(document).on("click", "#btContinuePayment", function () {
+                CreateOrder();
+            });
+
+            $(document).on("click", "button.organ_btn.continue", function () {
+                const element = document.getElementById("garden-tab");
+                element.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
+            });
+
+            function voucher(code) {
+                var result = ajaxHelper.excutePostAjax_ReturnDataJson("/Order/Voucher", { code: code });
+                if (result && result.success) {
+                    var price = $("#paymentTypeDiscountPrice").attr("data-price") * 1;
+                    if (result.message.includes('%')) {
+                        $("#spVoucher").html("Giảm giá: " + result.message);
+                        price = price * (100 - result.message.replace('%', '')) / 100;
+                    } else if (result.message.includes('vnd')) {
+                        $("#spVoucher").html("Giảm giá: " + (result.message.replace('vnd', '') * 1).toLocaleString() + " vnd");
+                        price = price - result.message.replace('vnd', '');
+                    }
+                    $("#paymentVoucherPrice").attr("data-price", price);
+                    $("#paymentVoucherPrice").html("Số tiền sau khi áp dụng voucher: " + price.toLocaleString() + " vnd");
+                }
+                else {
+                    toastr.error(result.message);
+                }
+            }
+
+            function totalPrice(){
+                var cocPrice = $("#paymentGardenTotalPrice").attr('data-price');
+                var paymentTypeDiscountPrice = $("#paymentTypeDiscountPrice").attr('data-price');
+                var paymentVoucherPrice = $("#paymentVoucherPrice").attr('data-price');
+                if(!cocPrice){
+                    toastr.error("Có lỗi xảy ra, vui lòng refresh lại trình duyệt.");
+                    return;
+                }
+                if (paymentVoucherPrice && paymentVoucherPrice !== '-1') {
+                    $("#paymentTotalPrice").html(((cocPrice * 1) + (paymentVoucherPrice * 1)).toLocaleString());
+                } else if (paymentTypeDiscountPrice) {
+                    $("#paymentTotalPrice").html(((cocPrice * 1) + (paymentTypeDiscountPrice * 1)).toLocaleString());
+                }else{
+                    toastr.error("Có lỗi xảy ra, vui lòng refresh lại trình duyệt.");
+                    return;
+                }
+            }
+
+            $("#btVoucher").click(function(){
+                $("#spVoucher").html("");
+                $("#paymentVoucherPrice").attr("data-price", 0);
+                $("#paymentVoucherPrice").html("");
+                var val = $("#VoucherCode").val();
+                if(!val){
+                    toastr.error("Vui lòng nhập mã giảm giá.");
+                    return;
+                }
+                if ($("#PaymentType").val() === undefined || $("#PaymentType").val() === '') {
+                    toastr.error("Chưa chọn hình thức thanh toán.");
+                    return;
+                }
+                if ($("#PaymentType").val() === '3') {
+                    toastr.warning("Không áp dụng voucher cho hình thức thanh toán theo tháng.");
+                    return;
+                }
+                voucher(val);
+                totalPrice();
+            });
+
+            $('#PaymentType').on('change', function () {
+                var val = $(this).val();
+                var price = 0;
+                var area = $("#GardenArea").val();
+                if(val == ''){
+                    //toastr.error("Vui lòng chọn hình thức thanh toán.");
+                    $("#paymentTypePrice").html("0");
+                    $("#paymentTypeDiscountPrice").attr("data-price", 0);
+                    $("#paymentTypeDiscountPrice").html("0");
+                    //return;
+                } else if(val == '@PaymentType.SixMonths.GetHashCode()') {
+                    price = gardenPrice * area * 6;
+                    $("#paymentTypePrice").html(price.toLocaleString());
+                    price = price * 90 / 100;
+                    $("#paymentTypeDiscountPrice").attr("data-price", price);
+                    $("#paymentTypeDiscountPrice").html(price.toLocaleString());
+                }
+                else if (val == '@PaymentType.TwelveMonths.GetHashCode()') {
+                    price = gardenPrice * area * 12;
+                    $("#paymentTypePrice").html(price.toLocaleString());
+                    price = price * 80 / 100;
+                    $("#paymentTypeDiscountPrice").attr("data-price", price);
+                    $("#paymentTypeDiscountPrice").html(price.toLocaleString());
+                }
+                else if (val == '@PaymentType.Month.GetHashCode()') {
+                    price = 0;
+                    $("#paymentTypePrice").html(price.toLocaleString());
+                    $("#paymentTypeDiscountPrice").attr("data-price", price);
+                    $("#paymentTypeDiscountPrice").html(price.toLocaleString());
+                }
+                $("#spVoucher").html("");
+                $("#paymentVoucherPrice").attr("data-price", 0);
+                $("#paymentVoucherPrice").html("");
+                var val = $("#VoucherCode").val();
+                if(val){
+                    voucher(val);
+                }
+                totalPrice();
+            });
+
+            $('#fileInput').on('change', function () {
+                if (this.files && this.files[0]) {
+                    if (this.files[0].type.match(/^image\//)) {
+                        Upload(this.files[0]);
+                    }
+                }
+            });
+
+            function CreateOrder() {
+                var paymentType = $("#PaymentType").val();
+                if(paymentType != '1' && paymentType != '2' && paymentType != '3')
+                {
+                    toastr.error("Chưa chọn loại thanh toán!");
+                    return;
+                }
+
+                if ($("#GardenArea").val() == '0') {
+                    toastr.error("Chưa chọn diện tích vườn!");
+                    return;
+                }
+                $('#loadingModal').modal();
+                setTimeout(function(){
+                    var model = $("#frmOrder").serializeObject();
+                    var vegetables = [];
+                    $(".combo .productInfo .vegetable:checked").each(function (index) {
+                        vegetables.push({
+                            'Id': $(this).attr("data-vegid")
+                        });
+                    });
+                    var result = ajaxHelper.excutePostAjax_ReturnDataJson("/Order/Order", { model: model, vegetables: vegetables });
+                    if (result && result.success) {
+                        $('#loadingModal').modal('hide');
+                        toastr.success("Đặt hàng thành công!");
+                        setTimeout(function () {
+                            window.location = "/don-hang-cua-toi";
+                        }, 1000);
+                    } else {
+                        $('#loadingModal').modal('hide');
+                        toastr.error(result.message);
+                    }
+                }, 300);
+                
+            }
+
+            function Upload(file) {
+                    var fd = new FormData();
+                    fd.append('file', file);
+
+                    $.ajax({
+                        url: '/order/upload',
+                        data: fd,
+                        processData: false,
+                        contentType: false,
+                        type: 'POST',
+                        beforeSend: function() {
+                            $('#loadingModal').modal();
+                        },
+                        success: function (data) {
+                            if (data.success){
+                                $("#ImageUrl").val(data.message);
+                            }else{
+                                toastr.error("Có lỗi xảy ra khi tải ảnh lên.");
+                            }
+                        },
+                        complete: function(){
+                            $('#loadingModal').modal('hide');
+                        }
+                    });
+            }
+        });
+    </script>
+}

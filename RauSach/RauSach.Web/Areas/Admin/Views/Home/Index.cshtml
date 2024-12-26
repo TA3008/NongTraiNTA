@@ -1,0 +1,21 @@
+﻿@using RauSach.Web.Models
+@model ReportModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+<div class="card mt-2 mb-2 shadow-base">
+    <div class="card-body pb-0">
+        <div class="row">
+            <div class="col-md-6">
+                <canvas id="chartOrderStatus"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts {
+    <script>
+        $(document).ready(function() {
+            DrawChartOrderStatus(@Json.Serialize(Model.OrderStatusLabels), @Json.Serialize(Model.OrderStatusCounts));
+        });
+    </script>
+}

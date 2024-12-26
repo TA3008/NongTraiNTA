@@ -1,0 +1,62 @@
+﻿@using RauSach.Core.Models;
+@model List<VegetableCombo>
+
+@if (Model?.Any() == true)
+{
+    <div class="row mb-20">
+        <div class="col-lg-2">
+            <span class="span_bold">Chọn combo</span>
+        </div>
+        <div class="col-lg-10">
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-xs-7">
+                    <div class="sorting select-area">
+                        <select name="orderby" class="orderby" style="display: none;">
+                            <option value="" selected="selected">Chọn combo</option>
+                            @foreach (var item in Model)
+                            {
+                                <option value="@item.Id">@item.Name</option>
+                            }
+                        </select>
+                        <div class="nice-select orderby" tabindex="0">
+                            <span class="current">Chọn loại combo</span>
+                            <ul class="list" id="comboList">
+                                <li data-value="" class="option selected">Chọn loại combo</li>
+                                @foreach (var item in Model)
+                                {
+                                    <li data-value="@item.Id" class="option" data-name="@item.Name">@item.Name</li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-5">
+                    <a class="acontinueCombo" href="javascript:void(0)" style="display: block;">
+                        <i class="twi-arrow-right mr-5"></i>
+                        <span>Tiếp tục</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tab-content mt-20"></div>
+            <div id="vegetableDiv">
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <button class="organ_btn continue back" style="float:left" id="btBackCombo"><i class="twi-arrow-left mr-5"></i>Trở lại</button>
+        <button class="organ_btn continue" style="float:right" id="btContinueCombo"><i class="twi-arrow-right mr-5"></i>Tiếp tục</button>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            var select = $('.search-category select, .sorting select, .filterBy select, .weight_quantity select');
+            select.niceSelect();
+            select.parent().addClass('select-area');
+        });
+    </script>
+}
+else
+{
+    <p>Hiện tại không có combo nào</p>
+}

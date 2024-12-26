@@ -1,0 +1,76 @@
+﻿@using RauSach.Core.Models
+@using RauSach.Core.ValueObjects
+@model PlantingModel
+@using Microsoft.AspNetCore.Http.Extensions
+@using RauSach.Web.Models
+@using Rausach.Common.Extensions
+@{
+    ViewData["Title"] = "Thiết lập gieo trồng";
+}
+
+<div class="card mt-2 mb-2 shadow-base">
+    <div class="card-body pb-0">
+        <form method="post" enctype="multipart/form-data" asp-controller="Planting" asp-action="Edit" asp-route-returnUrl="@Context.Request.Query["returnUrl"]">
+            @Html.HiddenFor(m => m.Order.Id)
+            @Html.HiddenFor(m => m.Vegetable.Id)
+            <div class="row">
+                <div class="col-md-6 mg-t-20 mg-md-t-0-force">
+                    <ul class="list-group list-group-striped">
+                        <li class="list-group-item rounded-top-0">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i> <span class="text-muted">Mã đơn hàng: </span> <strong class="tx-inverse tx-medium">@Model.Order.Code</strong></p>
+                        </li>
+                        <li class="list-group-item rounded-top-0">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i> <span class="text-muted">Mã vườn: </span> <strong class="tx-inverse tx-medium">@Model.Order.GardenCode - @Model.Order.Garden.Area m2</strong></p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Tên khách hàng: </span> <strong class="tx-inverse tx-medium">@Model.Order.CustomerName</strong> </p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Sđt khách hàng: </span> <strong class="tx-inverse tx-medium">@Model.Order.CustomerPhone</strong> </p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Nông dân trồng: </span> <strong class="tx-inverse tx-medium">@Model.Order.FarmerName</strong> </p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Thời gian thu hoạch lần đầu: </span> <strong class="tx-inverse tx-medium">@Model.Vegetable.LifeDay ngày</strong> 
+                                @if (Model.Vegetable.CanHarvestManyTimes)
+                                {
+                                    <span class="text-muted"> lần sau: </span> <strong class="tx-inverse tx-medium">@Model.Vegetable.LifeDayRecycle ngày</strong> 
+                                }
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Tên rau: </span> <strong class="tx-inverse tx-medium">@Model.Vegetable.Name</strong> </p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Diện tích trồng: </span> <strong class="tx-inverse tx-medium">@Model.Vegetable.Area m2, </strong><span class="text-muted">dự kiến thu hoạch @(Model.Vegetable.Area * Model.Vegetable.GramPerM2) gam</span> </p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Tình trạng vận chuyển: </span> <strong class="tx-inverse tx-medium">@(Model.Vegetable.Delivery != null ? Model.Vegetable.Delivery.Status.VegetableDeliveryState.GetEnumDescription() : "Không xác định")</strong> </p>
+                            @if (Model.Vegetable.Delivery != null && Model.Vegetable.Delivery.Status.VegetableDeliveryState == VegetableDeliveryState.AdminNotified)
+                            {
+                                <a href="@Url.Action("UpdateVegetableStatus", new { orderId = Model.Order.Id, vegetableId = Model.Vegetable.Id, status = VegetableDeliveryState.CustomerNotified, returnUrl = Context.Request.GetEncodedUrl()})" onclick="return confirm('Bạn có chắc?')" class="btn btn-success pd-x-25">Cho phép vận chuyển</a>
+                            }
+                        </li>
+                        <li class="list-group-item">
+                            <div class="col-sm-12 mb-3">
+                                <label class="ckbox">
+                                    @Html.CheckBoxFor(m => m.StartPlanting)<span> Bắt đầu gieo trồng / Gieo trồng lần mới</span>
+                                </label>
+                            </div>
+                            <div class="col-sm-12 mb-3">
+                                @Html.LabelFor(m => m.Vegetable.Delivery.StartDate)
+                                <input name="@(nameof(Vegetable.Delivery.StartDate))" required type="date" value="@Model.Vegetable.Delivery.StartDate.ToString("yyyy-MM-dd")" class="form-control form-control-smy" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr />
+            <div class="mb-2">
+                <button class="btn btn-success" type="submit">Lưu lại</button>
+                <a href="@Context.Request.Query["returnUrl"]" class="btn btn-outline-secondary">Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>

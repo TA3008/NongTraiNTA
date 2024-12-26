@@ -1,0 +1,58 @@
+﻿@using RauSach.Core.Models
+@using Rausach.Web.Extensions;
+@model Article
+
+@{
+    ViewData["Title"] = "Thiết lập bài viết";
+}
+
+<div class="card mt-2 mb-2 shadow-base">
+    <div class="card-body pb-0">
+        <form method="post" enctype="multipart/form-data" asp-controller="Article" asp-action="Edit" id="editForm">
+            @Html.HiddenFor(m => m.Id)
+            @Html.HiddenFor(m => m.Created)
+            @Html.HiddenFor(m => m.CreatedBy)
+            @Html.HiddenFor(m => m.Img)
+            @Html.HiddenFor(m => m.FriendlyUrl)
+            @*@Html.HiddenFor(m => m.Thumbnail)*@
+            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+            <div class="row mb-lg-2">
+                <div class="col-md-4 col-sm-6 search-item">
+                    @Html.LabelFor(m => m.Name) @Html.RequireLabel()
+                    @Html.TextBoxFor(m => m.Name, new { Class = "form-control form-control-smy", required = "required" })
+                </div>
+            </div>
+            <div class="row mb-lg-2">
+                <div class="col-md-4 col-sm-6 search-item">
+                    @Html.LabelFor(m => m.Img) @Html.RequireLabel()
+                    <partial name="_EditImage" model="@Model.Img" />
+                </div>
+            </div>
+            <div class="row mb-lg-2">
+                <div class="col-md-12 col-sm-12 search-item">
+                    @Html.LabelFor(m => m.Content) @Html.RequireLabel()
+                    @Html.TextAreaFor(m => m.Content, new { Class = "form-control form-control-smy h-150", required = "required" })
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 search-item">
+                    @Html.LabelFor(x => x.IsPublished) &nbsp;
+                    @Html.CheckBoxFor(m => m.IsPublished)
+                </div>
+            </div>
+            <hr />
+            <div class="mb-2">
+                <button class="btn btn-success" type="button" onclick="$('#editForm').submit()">Lưu</button>
+                <a href="@Context.Request.Query["returnUrl"]" class="btn btn-outline-secondary">Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section scripts {
+    <script src="https://cdn.tiny.cloud/1/mbx1d96tuje4gp42frlv3fq1gpxrftgpiavfttwwubl2fn70/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        common.initTinyMce('#Content');
+    </script>
+}

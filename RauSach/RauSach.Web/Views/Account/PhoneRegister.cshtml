@@ -1,0 +1,80 @@
+﻿@using RauSach.Core.Models;
+@using Rausach.Web.Extensions;
+@using RauSach.Web.Helpers
+@model PhoneRegisterViewModel
+
+@section Styles{
+    <style>
+        #register_form .col-md-4 {
+            text-align: left;
+        }
+    </style>
+}
+<section class="page_banner shop_banner" style="background-image: url(/assets/images/bg/b3.jpg); margin-top: 120px;">
+    <div class="container largeContainer">
+        <div class="row">
+            <div class="col-lg-12 text-left">
+                <p class="breadcrumbs">
+                    <a href="/"><i class="twi-home"></i>Trang chủ</a><i class="twi-angle-right"></i>Đăng ký bằng số điện thoại
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contactInfoSec">
+    <div class="container largeContainer">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="contact_form">
+                    <h2>Đăng ký bằng số điện thoại</h2>
+                    @using (Html.BeginForm("PhoneRegister", "Account", FormMethod.Post, new { @class = "row", id = "register_form" }))
+                    {
+                        <div class="col-md-12" style="text-align: left">
+                            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+                        </div>
+                        @Html.AntiForgeryToken()
+                        <div class="col-md-4">
+                            @Html.LabelFor(x => x.Phone)
+                        </div>
+                        <div class="col-md-8">
+                            @Html.TextBoxFor(x => x.Phone, new {@class = "required", placeholder = "Điện thoại *"})
+                        </div>
+                        <div class="col-md-4">
+                            @Html.LabelFor(x => x.Password)
+                        </div>
+                        <div class="col-md-8">
+                            @Html.PasswordFor(x => x.Password, new {@class = "required", placeholder = "Mật khẩu *"})
+                        </div>
+                        <div class="col-md-4">
+                            @Html.LabelFor(x => x.PasswordConfirm)
+                        </div>
+                        <div class="col-md-8">
+                            @Html.PasswordFor(x => x.PasswordConfirm, new {@class = "required", placeholder = "Xác nhận mật khẩu *"})
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="organ_btn">Đăng ký</button>
+                            <div class="con_message"></div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.js"></script>
+    @if (TempData["success"] != null && (bool)TempData["success"] == true)
+    {
+        <script>
+            $(document).ready(function () {
+                toastr.success("Gửi tin nhắn thành công!");
+                setTimeout(function(){
+                    window.location.href = "/";
+                }, 2000);
+            });
+        </script>
+    }
+}

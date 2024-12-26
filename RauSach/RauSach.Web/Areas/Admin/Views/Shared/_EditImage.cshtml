@@ -1,0 +1,34 @@
+﻿@model string
+<style>
+    img {
+        max-width: 100%; /* important */
+    }
+
+    input[type=file]::file-selector-button {
+        margin-right: 20px;
+        border: none;
+        background: #1c9a06;
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: #fff;
+        cursor: pointer;
+        transition: background .2s ease-in-out;
+    }
+
+        input[type=file]::file-selector-button:hover {
+            background: #0d45a5;
+        }
+</style>
+<p>
+    <a class="btgreen" onclick="document.getElementById('fileInput').click(); return;">Chọn ảnh</a>
+    <input type="file" id="fileInput" name="fileInput" accept="image/*" style="display:none"/>
+</p>
+@if (Model != null)
+{
+    <img id="img-origin" src="@Model" style="width: 80%" />
+}
+<div>
+    <canvas id="canvas" style="width: 70%" height="0">
+        Your browser does not support the HTML5 canvas element.
+    </canvas>
+</div>

@@ -1,0 +1,62 @@
+﻿@using RauSach.Core.Models
+@model List<Garden>
+@using Microsoft.AspNetCore.Http.Extensions
+@{
+    ViewData["Title"] = "Danh sách vườn";
+}
+@section Button {
+    <a href="@Url.Action("EditGarden", new { returnUrl = Context.Request.GetEncodedUrl()})" class="btn btn-success btn-sm pull-right">Thêm mới</a>
+}
+    <div class="card mt-2 mb-2 shadow-base pd-b-10">
+        <div class="card-body pb-0">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="list-group list-group-striped">
+                        @for (int i = 0; i < Model.Count / 2 + Model.Count % 2; i++)
+                    {
+                        var item = Model[i];
+                        <div class="list-group-item pd-y-15 pd-x-20 d-xs-flex align-items-center justify-content-start">
+                            <a href="@Url.Action("EditGarden", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})">
+                                <img src="@item.Thumbnail" class="wd-48 rounded-circle" alt="">
+                            </a>
+                            <div class="mg-xs-l-15 mg-t-10 mg-xs-t-0 mg-r-auto">
+                                <p class="mg-b-0 tx-inverse tx-medium"><a href="@Url.Action("EditGarden", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})">@item.Name</a></p>
+                                <span class="d-block tx-13">Giá: @item.Price.ToString("N0") vnđ</span>
+                            </div>
+                            <div class="d-flex align-items-center mg-t-10 mg-xs-t-0">
+                                <a href="@Url.Action("DeleteGarden", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})" onclick="return confirm('Bạn có chắc muốn xóa?')" class="btn btn-outline-danger btn-icon mg-l-5">
+                                    <div class="tx-20"><i class="icon ion-android-remove"></i></div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- list-group-item -->
+                    }
+                </div>
+            </div><!-- col-6 -->
+
+            <div class="col-lg-6 mg-t-20 mg-lg-t-0">
+                <div class="list-group list-group-striped">
+                    @for (int i = Model.Count / 2 + Model.Count % 2; i < Model.Count; i++)
+                    {
+                        var item = Model[i];
+                        <div class="list-group-item pd-y-15 pd-x-20 d-xs-flex align-items-center justify-content-start">
+                            <a href="@Url.Action("EditGarden", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})">
+                                <img src="@item.Thumbnail" class="wd-48 rounded-circle" alt="">
+                            </a>
+                            <div class="mg-xs-l-15 mg-t-10 mg-xs-t-0 mg-r-auto">
+                                <p class="mg-b-0 tx-inverse tx-medium"><a href="@Url.Action("EditGarden", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})">@item.Name</a></p>
+                                <span class="d-block tx-13">Giá: @item.Price.ToString("N0") vnđ</span>
+                            </div>
+                            <div class="d-flex align-items-center mg-t-10 mg-xs-t-0">
+                                <a href="@Url.Action("DeleteGarden", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})" onclick="return confirm('Bạn có chắc muốn xóa?')" class="btn btn-outline-danger btn-icon mg-l-5">
+                                    <div class="tx-20"><i class="icon ion-android-remove"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    }
+                </div><!-- list-group -->
+            </div><!-- col-6 -->
+        </div>
+    </div>
+</div>

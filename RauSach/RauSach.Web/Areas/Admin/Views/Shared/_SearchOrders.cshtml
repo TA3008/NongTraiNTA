@@ -1,0 +1,47 @@
+﻿@using RauSach.Application.Models
+@using RauSach.Core.Models
+@using RauSach.Core.ValueObjects
+@model OrderFilter
+@{
+    var statuses = Order.GetPossibleStatuses().Select(m => new SelectListItem
+            {
+                Value = m.value.ToString(),
+                Text = m.text
+            }).ToList();
+
+    var vegatableStatuses = DeliveryStatus.GetVegetableStatuses().Select(m => new SelectListItem
+            {
+                Value = m.value.ToString(),
+                Text = m.text
+            }).ToList();
+}
+@using (Html.BeginForm(null, null, FormMethod.Get, new { role = "form", id = "frmSearch" }))
+{
+    <div class="row mb-2">
+        <div class="col-md-3 col-xs-6 search-item">
+            <label for="Code">Mã đơn hàng</label>
+            @Html.TextBoxFor(x => x.Code, new { Class = "form-control form-control-sm" })
+        </div>
+        <div class="col-md-3 col-xs-6 search-item">
+            <label for="Code">Tên/Sđt khách hàng</label>
+            @Html.TextBoxFor(x => x.query, new { Class = "form-control form-control-sm" })
+        </div>
+        <div class="col-md-3 col-xs-6 search-item">
+            <label for="Code">Loại vườn/ mã vườn</label>
+            @Html.TextBoxFor(x => x.Garden, new { Class = "form-control form-control-sm" })
+        </div>
+        <div class="col-md-3 col-xs-6 search-item">
+            <label for="Code">Trạng thái</label>
+            @Html.DropDownListFor(x => x.OrderStatus, new SelectList(statuses, "Value", "Text"), "Tất cả", new { Class = "form-control form-control-sm" })
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-md-3 col-xs-6 search-item">
+            <label for="Code">Trạng thái rau</label>
+            @Html.DropDownListFor(x => x.VegetableDeliveryState, new SelectList(vegatableStatuses, "Value", "Text"), "Tất cả", new { Class = "form-control form-control-sm" })
+        </div>
+    </div>
+    <div class="col mb-2 search-item" style="padding-left:0">
+        <button id="btnSearch" class="btn btn-sm bd bg-success tx-white pointer" type="submit"><i class="fa fa-search"></i> Tìm kiếm</button>
+    </div>
+}

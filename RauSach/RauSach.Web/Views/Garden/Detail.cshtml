@@ -1,0 +1,95 @@
+﻿@using RauSach.Core.Models;
+@using RauSach.Web.Helpers;
+@using EnumsNET;
+@model Garden
+
+
+<!-- Begin:: Banner Section -->
+<section class="page_banner shop_banner" style="background-image: url(/assets/images/bg/b3.jpg); margin-top: 120px;">
+    <div class="container largeContainer">
+        <div class="row">
+            <div class="col-lg-12 text-left">
+                <p class="breadcrumbs">
+                    <a href="/"><i class="twi-home"></i>Trang chủ</a><i class="twi-angle-right"></i>@(Model != null ? Model.Name : "Vườn")
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+@if (Model != null)
+{
+    <section class="singleProduct">
+        <div class="container largeContainer">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="productSlide">
+                        <div class="sp_img">
+                            @HtmlHelperExtension.Img(Model.ImageUrl, Model.Name)
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product_details">
+                        <div class="stock"><span>Fresh</span></div>
+                        <h3>@Model.Name</h3>
+                        <div class="woocommerce-product-rating">
+                            <div class="ratings">
+                                <i class="twi-star"></i>
+                                <i class="twi-star"></i>
+                                <i class="twi-star"></i>
+                                <i class="twi-star"></i>
+                                <i class="twi-star"></i>
+                            </div>
+                        </div>
+                        <div class="pi01Price clearfix">
+                            <span class="price"><span class="woocommerce-Price-amount amount"><bdi><del class="font-size-inherit">@(Model.FakePrice > 0 ? Model.FakePrice.ToString("#,##0") : "")</del></bdi></span> @(Model.FakePrice > 0 ? "–" : "") <span class="woocommerce-Price-amount amount"><bdi>@Model.Price.ToString("#,##0")</bdi></span></span>
+                        </div>
+                        <div class="pd_excrpt list_pro_content pd-0">
+                            <ul>
+                                <li><i class="twi-check-circle1"></i>Diện tích: @Model.Area (m2)</li>
+                                <li><i class="twi-check-circle1"></i>Số lượng còn: @Model.Quantity (vườn)</li>
+                                <li><i class="twi-check-circle1"></i>Số rau tối đa: @Model.MaximumVegetable (loại)</li>
+                            </ul>
+                        </div>
+                        <div class="colorCart">
+                            <a href="@FriendlyUrl.Shop()" class="organ_btn" style="color: white"><i class="icon-Add-to-cart-icon"></i>Đặt vườn</a>
+                        </div>
+                        <div class="pro_meta clearfix">
+                            <div class="mtItem mtsocial">
+                                <h5>Share:</h5>
+                                <a target="_blank" href="https://www.facebook.com/"><i class="twi-facebook-f"></i></a>
+                                <a target="_blank" href="https://twitter.com/"><i class="twi-twitter"></i></a>
+                                <a target="_blank" href="https://bebo.com/"><i class="twi-pinterest-p"></i></a>
+                                <a target="_blank" href="https://dribbble.com/"><i class="twi-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="product_tabarea">
+                        <ul class="nav nav-tabs productTabs" id="productTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="active" id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Chi tiết vườn</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
+                                <div class="pdtci_content">
+                                    @Html.Raw(Model.Details)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    @await Component.InvokeAsync("GardenList", new {ignoreGardenId = Model.Id})
+                </div>
+            </div>
+        </div>
+    </section>
+}

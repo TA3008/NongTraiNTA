@@ -1,0 +1,10 @@
+﻿@model (dynamic success, dynamic error)
+@{
+    var message = Model.success + "" + Model.error;
+    var className = Model.error == null ? "success" : "danger";
+}
+
+@if (!string.IsNullOrEmpty(message))
+{
+    <p class="text-@className">@message</p>
+}

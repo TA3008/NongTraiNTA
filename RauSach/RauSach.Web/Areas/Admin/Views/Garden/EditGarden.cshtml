@@ -1,0 +1,120 @@
+﻿@using RauSach.Core.Models
+@model Garden
+@using Microsoft.AspNetCore.Http.Extensions
+@inject RauSach.Application.Repositories.IVegetableComboRepository _vegetableComboRepo;
+@{
+    ViewData["Title"] = "Thiết lập vườn";
+    var dark = false;
+}
+
+<div class="card mt-2 mb-2 shadow-base">
+    <div class="card-body pb-0">
+        <form method="post" enctype="multipart/form-data" asp-controller="Garden" asp-action="EditGarden" asp-route-returnUrl="@Context.Request.Query["returnUrl"]">
+            @Html.HiddenFor(m => m.Id)
+            @Html.HiddenFor(m => m.Created)
+            @Html.HiddenFor(m => m.CreatedBy)
+            @Html.HiddenFor(m => m.ImageUrl)
+            @Html.HiddenFor(m => m.Thumbnail)
+            @Html.HiddenFor(m => m.FriendlyUrl)
+            <div class="mb-2">
+                <button class="btn btn-success" type="submit">Lưu lại</button>
+                <a href="@Context.Request.Query["returnUrl"]" class="btn btn-outline-secondary">Quay lại</a>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.Name)
+                        @Html.TextBoxFor(m => m.Name, new { Class = "form-control form-control-smy", required = "required" })
+                    </div>
+                    @* <div class="col-sm-12 mb-3">
+                    @Html.LabelFor(m => m.Area)
+                    <input name="@(nameof(Model.Area))" type="number" min="0" value="@Model.Area" class="form-control form-control-smy" />
+                    </div>*@
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.Quantity)
+                        <input name="@(nameof(Model.Quantity))" type="number" min="0" value="@Model.Quantity" class="form-control form-control-smy" />
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.Price)
+                        <input name="@(nameof(Model.Price))" type="number" min="0" value="@Model.Price" class="form-control form-control-smy" />
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.FakePrice)
+                        <input name="@(nameof(Model.FakePrice))" type="number" min="0" value="@Model.FakePrice" class="form-control form-control-smy" />
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.MaximumVegetable)
+                        <input name="@(nameof(Model.MaximumVegetable))" type="number" min="0" value="@Model.MaximumVegetable" class="form-control form-control-smy" />
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.DeliveryWeight)
+                        <input name="@(nameof(Model.DeliveryWeight))" type="number" min="0" value="@Model.DeliveryWeight" class="form-control form-control-smy" />
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.DeliveryTimePerMonth)
+                        <input name="@(nameof(Model.DeliveryTimePerMonth))" type="number" min="0" value="@Model.DeliveryTimePerMonth" class="form-control form-control-smy" />
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.AdjustWeight)
+                        <input name="@(nameof(Model.AdjustWeight))" type="number" min="0" value="@Model.AdjustWeight" class="form-control form-control-smy" />
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        <label class="ckbox">
+                            @Html.CheckBoxFor(m => m.CanCustomize)<span> Cho phép tùy chọn rau</span>
+                        </label>
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.GardenItems)
+                        @Html.TextAreaFor(x => x.GardenItems, new {@class = "form-control form-control-smy"})
+                        <span>Mỗi mã vườn + diện tích trên một dòng</span>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <partial name="_EditImage" model="@Model.ImageUrl" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 mb-3">
+                    @Html.LabelFor(m => m.Details)
+                    @Html.TextAreaFor(x => x.Details, new {@class = "form-control form-control-smy"})
+                </div>
+            </div>
+            <hr />
+            <div class="mb-2">
+                <button class="btn btn-success" type="submit">Lưu lại</button>
+                <a href="@Context.Request.Query["returnUrl"]" class="btn btn-outline-secondary">Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (Model.Id != Guid.Empty)
+{
+    var combos = _vegetableComboRepo.GetAll().Where(m => !m.Deleted && m.GardenId == Model.Id).ToList();
+    @section Button {
+    <a href="@Url.Action("UpdateVegetableCombo", new { returnUrl = Context.Request.GetEncodedUrl()})" class="btn btn-success btn-sm pull-right">Thêm combo rau</a>
+}
+    <div class="card mt-2 mb-2 shadow-base">
+        <div class="card-body pb-0">
+            @for (int i = 0; i < combos.Count; i += 3)
+            {
+                <div class="row">
+                    @for (int j = i; j < i + 3 && j < combos.Count; j++)
+                    {
+                        var item = combos[j];
+                        var garden = Model;
+
+                        <partial name="_VegetableComboItem" model="(item, garden, dark)" />
+                    }
+                </div>
+            }
+        </div>
+    </div>
+}
+
+@section scripts {
+    <script src="https://cdn.tiny.cloud/1/mbx1d96tuje4gp42frlv3fq1gpxrftgpiavfttwwubl2fn70/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        common.initTinyMce('#Details');
+    </script>
+}

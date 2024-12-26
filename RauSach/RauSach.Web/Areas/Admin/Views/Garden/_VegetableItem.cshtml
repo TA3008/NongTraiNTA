@@ -1,0 +1,20 @@
+﻿@using RauSach.Core.Models
+@model Vegetable
+@using Microsoft.AspNetCore.Http.Extensions
+@{
+    var item = Model;
+}
+<div class="list-group-item pd-y-15 pd-x-20 d-xs-flex align-items-center justify-content-start">
+    <a href="@Url.Action("EditVegetable", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})">
+        <img src="@item.ImageUrl" class="wd-48 rounded-circle" alt="">
+    </a>
+    <div class="mg-xs-l-15 mg-t-10 mg-xs-t-0 mg-r-auto">
+        <p class="mg-b-0 tx-inverse tx-medium"><a href="@Url.Action("EditVegetable", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})">@item.Name</a></p>
+        <span class="d-block tx-13">Thu hoạch sau @item.LifeDay@(item.CanHarvestManyTimes ? "/" + item.LifeDayRecycle : null) ngày, năng suất: @item.GramPerM2 g/m2</span>
+    </div>
+    <div class="d-flex align-items-center mg-t-10 mg-xs-t-0">
+        <a href="@Url.Action("DeleteVegetable", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})" onclick="return confirm('Bạn có chắc muốn xóa?')" class="btn btn-outline-danger btn-icon mg-l-5">
+            <div class="tx-20"><i class="icon ion-android-remove"></i></div>
+        </a>
+    </div>
+</div>

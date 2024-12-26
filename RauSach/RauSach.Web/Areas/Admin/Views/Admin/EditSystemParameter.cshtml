@@ -1,0 +1,35 @@
+﻿@using RauSach.Core.Models
+@model SystemParamData
+@{
+    ViewBag.Title = "Cấu hình tham số hệ thống";
+}
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { role = "form" }))
+{
+    <div class="card mt-2 mb-2 shadow-base">
+        <div class="card-body">
+            @Html.HiddenFor(m=>m.DataName)
+            @Html.HiddenFor(m=>m.Description)
+            @Html.AntiForgeryToken()
+            <div class="row mb10 mt10">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>@Model.Description</label>
+                        @if(Model.Type == typeof(int).Name)
+                        {
+                            <input data-val="true" id="@nameof(Model.DataValue)" name="@nameof(Model.DataValue)" type="number" value="@Model.DataValue" class="form-control" />
+                        }else {
+                        <textarea data-val="true" id="@nameof(Model.DataValue)" name="@nameof(Model.DataValue)" value="@Model.DataValue" class="form-control">@Model.DataValue</textarea>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <button type="submit" class="btn btn-success">Lưu lại</button>
+            <a class="btn bd bg-white" onclick="window.history.back()"><i class="fa fa-arrow-left"></i> Quay lại</a>
+        </div>
+    </div>
+}

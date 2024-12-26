@@ -1,0 +1,56 @@
+﻿@using RauSach.Core.Models;
+@using Rausach.Web.Extensions
+@model VegetableCombo
+
+@if (Model != null)
+{
+    @if (Model.CanCustomize == true)
+    {
+        <div class="row custome combo">
+            <div class="col-lg-12">
+                <p class="red">
+                    Nếu lựa chọn combo tuỳ chọn, vui lòng chọn loại rau muốn trồng.
+                    Bỏ qua những loại rau không muốn trồng.
+                </p>
+            </div>
+        </div>
+    }
+    <div class="row custome combo">
+        @{
+            int i = 0;
+        }
+        @foreach (var veg in Model.Vegetables)
+        {
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="productItem01 ptborder">
+                    <div class="proThumb">
+                        @* @HtmlHelperExtension.Img(veg.Thumbnail, veg.Name, "", "top: 30px") *@
+                        <img src="~/images/vegetables/@veg.Thumbnail" alt="@veg.Name" style="top: 30px" class="lazyload"/>
+                    </div>
+                    <div class="product_content productContent">
+                        <h3><a href="#">@veg.Name</a></h3>
+                        <div class="productInfo">
+                            @*<span class="price"><del>$200.00</del><ins>$280.00</ins></span>*@
+                            <p>Năng suất: @veg.GramPerM2 (g/m2)</p>
+                            <p>
+                                @{
+                                    var id = "Combo_Vegetables_" + veg.Id;
+                                }
+                                
+                                @if (Model.CanCustomize == true)
+                                {
+                                    <label style="color: green">Chọn trồng:</label>
+                                    <input type="checkbox" data-vegid="@veg.Id" name="@id" id="@id" class="vegetable" />
+                                }
+                            </p>
+                        </div>
+                    </div>
+                    <div class="prLabels">
+                        <p class="justin">Fresh</p>
+                    </div>
+                </div>
+            </div>
+            i++;
+        }
+    </div>
+}

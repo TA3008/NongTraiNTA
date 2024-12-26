@@ -1,0 +1,157 @@
+﻿@using RauSach.Core.FrameworkModels
+@inject RauSach.Core.Services.IUserGroupManager _roleManager
+@{
+    var allRoles = _roleManager.GetAllRoles(User.Identity.Name);
+}
+
+<a href="/Admin/Home/Index" data-href="/Admin/Home/Index" class="br-menu-link">
+    <div class="br-menu-item">
+        <i class="menu-item-icon ion-ios-home-outline tx-20"></i>
+        <span class="menu-item-label">Trang chủ</span>
+    </div>
+</a>
+
+@if (allRoles.Contains(RoleList.Account) || allRoles.Contains(RoleList.OrderManager))
+{
+    <a href="/admin/order/index" data-href="/admin/order/edit//admin/order/details" class="br-menu-link">
+        <div class="br-menu-item">
+            <i class="menu-item-icon ion-ios-analytics tx-20"></i>
+            <span class="menu-item-label">Đơn hàng</span>
+        </div>
+    </a>
+}
+
+@if (allRoles.Contains("Quản lý Voucher"))
+{
+    <a href="/admin/voucher/index" data-href="/admin/voucher/edit" class="br-menu-link">
+        <div class="br-menu-item">
+            <i class="menu-item-icon ion-ios-analytics tx-20"></i>
+            <span class="menu-item-label">Quản lý Voucher</span>
+        </div>
+    </a>
+}
+
+@if (allRoles.Contains("Quản lý Nông dân"))
+{
+    <a href="/admin/generalItem/Farmers" data-href="/admin/generalItem/editFarmer" class="br-menu-link">
+        <div class="br-menu-item">
+            <i class="menu-item-icon ion-ios-people tx-20"></i>
+            <span class="menu-item-label">Quản lý Nông dân</span>
+        </div>
+    </a>
+}
+
+@* @if (allRoles.Contains(RoleList.Sale))
+{
+    <a href="/admin/generalItem/Sales" data-href="/admin/generalItem/editSale" class="br-menu-link">
+        <div class="br-menu-item">
+            <i class="menu-item-icon ion-ios-people tx-20"></i>
+            <span class="menu-item-label">Quản lý Sales</span>
+        </div>
+    </a>
+} *@
+
+@if (allRoles.Contains(RoleList.Admin) || allRoles.Contains(RoleList.Customer))
+{
+    <a href="/admin/account/Employees" data-href="/admin/account/AddEmployee//admin/account/AssignRoles//admin/account/UserDetails" class="br-menu-link">
+        <div class="br-menu-item">
+            <i class="menu-item-icon ion-ios-people tx-20"></i>
+            <span class="menu-item-label">Người dùng, Khách hàng</span>
+        </div>
+    </a>
+}
+
+@if (allRoles.Contains(RoleList.Delivery))
+{
+    <a href="/admin/delivery/index" data-href="/admin/delivery/details" class="br-menu-link">
+        <div class="br-menu-item">
+            <i class="menu-item-icon ion-ios-analytics tx-20"></i>
+            <span class="menu-item-label">Vận chuyển</span>
+        </div>
+    </a>
+}
+
+@if (allRoles.Contains(RoleList.Planting))
+{
+    <a href="/admin/planting/index?OrderStatus=Active" data-href="/admin/planting/edit" class="br-menu-link">
+        <div class="br-menu-item">
+            <i class="menu-item-icon ion-ios-analytics tx-20"></i>
+            <span class="menu-item-label">Gieo trồng</span>
+        </div>
+    </a>
+}
+
+@if (allRoles.Contains(RoleList.Product))
+{
+    <a href="/admin/garden/gardens" data-href="/admin/garden/EditGarden" class="br-menu-link">
+        <div class="br-menu-item">
+            <i class="menu-item-icon ion-ios-checkmark tx-20"></i>
+            <span class="menu-item-label">Loại vườn</span>
+        </div>
+    </a>
+    <a href="/admin/garden/Vegetables" data-href="/admin/garden/EditVegetable" class="br-menu-link">
+        <div class="br-menu-item">
+            <i class="menu-item-icon ion-ios-glasses-outline tx-20"></i>
+            <span class="menu-item-label">Loại rau</span>
+        </div>
+    </a>
+    <a href="/admin/garden/VegetableCombos" data-href="/admin/garden/UpdateVegetableCombo" class="br-menu-link">
+        <div class="br-menu-item">
+            <i class="menu-item-icon ion-ios-star-outline tx-20"></i>
+            <span class="menu-item-label">Combo rau</span>
+        </div>
+    </a>
+}
+
+@if (allRoles.Contains(RoleList.Content))
+{
+    <a href="/admin/article/index" data-href="/admin/article/edit" class="br-menu-link">
+        <div class="br-menu-item">
+            <i class="menu-item-icon ion-ios-list-outline tx-20"></i>
+            <span class="menu-item-label">Bài viết</span>
+        </div>
+    </a>
+}
+
+@if (allRoles.Contains(RoleList.Admin))
+{
+    <a href="#" data-href="/admin/admin/SystemParameters/admin/admin/EditSystemParameter//admin/admin/schedulerJobs/" class="br-menu-link">
+        <div class="br-menu-item">
+            <i class="menu-item-icon ion-ios-settings tx-20"></i>
+            <span class="menu-item-label">Quản trị</span>
+            <i class="menu-item-arrow fa fa-angle-down"></i>
+        </div>
+    </a>
+    <ul class="br-menu-sub nav flex-column">
+        @*<li class="nav-item">
+            <a href="/admin/account/Employees" data-href="/admin/account/AddEmployee//admin/account/AssignRoles//admin/account/UserDetails" class="nav-link">
+                <i class="menu-item-icon icon tx-20 mr-1"></i>
+                Người dùng/ phân quyền
+            </a>
+        </li>*@
+        @*<li class="nav-item">
+            <a href="/admin/account/groups" data-href="/admin/account/groups" class="nav-link">
+                <i class="menu-item-icon icon tx-20 mr-1"></i>
+                Nhóm người dùng
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/OracleDieuTra/ReportKinhTe?pattern=3&isHoSo=false" data-href="/OracleDieuTra/ReportKinhTe" class="nav-link">
+                <i class="menu-item-icon icon tx-20 mr-1"></i>
+                Phân quyền
+            </a>
+        </li>*@
+        <li class="nav-item">
+            <a href="/admin/admin/SystemParameters/" data-href="/admin/admin/EditSystemParameter" class="nav-link">
+                <i class="menu-item-icon icon tx-20 mr-1"></i>
+                Cấu hình hệ thống
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="/admin/admin/schedulerJobs/" class="nav-link">
+                <i class="menu-item-icon icon tx-20 mr-1"></i>
+                Scheduler Jobs
+            </a>
+        </li>
+    </ul>
+}

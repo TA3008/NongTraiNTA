@@ -1,0 +1,66 @@
+﻿@using RauSach.Core.Models
+@model List<Article>
+@using Microsoft.AspNetCore.Http.Extensions
+@{
+    ViewData["Title"] = "Danh sách bài viết";
+}
+@section Button {
+    <a href="@Url.Action("Edit", new { returnUrl = Context.Request.GetEncodedUrl()})" class="btn btn-primary btn-sm pull-right">Thêm mới</a>
+}
+<div class="card mt-2 mb-2 shadow-base pd-b-10">
+    <div class="card-body pb-0">
+        <table class="table mg-b-0" cellspacing="0">
+            <tr>
+                <th>STT</th>
+                <th>
+                    Tên bài viết
+                </th>
+                <th>
+                    Hình ảnh
+                </th>
+                <th>
+                    Nội dung
+                </th>
+                <th>
+                    Hiển thị
+                </th>
+                <th></th>
+            </tr>
+
+            @{
+                var stt = 1;
+                foreach (var item in Model.OrderBy(x => x.Created))
+                {
+                    <tr class="stat even">
+                        <td class="ac">
+                            @(stt++)
+                        </td>
+                        <td>
+                            <a href="@Url.Action("Edit", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})">@item.Name</a>
+                        </td>
+                        <td>
+                            <img src="@item.Img" class="img64x64" />
+                        </td>
+                        <td>
+                            <a href="/article/preview?id=@item.Id" target="_blank">Xem nội dung</a>
+                        </td>
+                        <td>
+                            @if (item.IsPublished)
+                            {
+                                <input type="checkbox" value="@item.IsPublished" checked/>
+                            }
+                            else
+                            {
+                                <input type="checkbox" value="@item.IsPublished" />
+                            }
+                            
+                        </td>
+                        <td>
+                            <a href="@Url.Action("Delete", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})" class="DeleteItem text-danger" onclick="return confirm('Bạn có chắc muốn xóa?')">Xóa</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+</div>

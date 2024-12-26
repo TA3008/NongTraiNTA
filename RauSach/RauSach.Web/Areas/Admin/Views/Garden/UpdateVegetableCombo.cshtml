@@ -1,0 +1,76 @@
+﻿@using RauSach.Core.Models
+@model VegetableCombo
+@using Microsoft.AspNetCore.Http.Extensions
+@{
+    ViewData["Title"] = "Thiết lập combo rau";
+    var vegetables = (List<Vegetable>)ViewBag.Vegetables;
+    var lstGarden = (ViewBag.Gardens as List<Garden>);
+    var gd = lstGarden.FirstOrDefault(m => m.Id == Model.GardenId);
+    var gardens = lstGarden.Select(m => new SelectListItem
+            {
+                Value = m.Id.ToString(),
+                Text = m.Name
+            }).ToList();
+    var i = 0;
+}
+
+<div class="card mt-2 mb-2 shadow-base">
+    <div class="card-body pb-0">
+        <form method="post" enctype="multipart/form-data" asp-controller="Garden" asp-action="UpdateVegetableCombo" asp-route-returnUrl="@Context.Request.Query["returnUrl"]">
+            @Html.HiddenFor(m => m.Id)
+            @Html.HiddenFor(m => m.Created)
+            @Html.HiddenFor(m => m.CreatedBy)
+            <div class="mb-2">
+                <button class="btn btn-success" type="submit">Lưu</button>
+                <a href="@Context.Request.Query["returnUrl"]" class="btn btn-outline-secondary">Quay lại</a>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.Name)
+                        @Html.TextBoxFor(m => m.Name, new { Class = "form-control form-control-smy", required = "required" })
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.GardenId)
+                        @Html.DropDownListFor(x => x.GardenId, new SelectList(gardens, "Value", "Text"), new { Class = "form-form-control form-control-sm" })
+                    </div>
+                    @if (gd != null)
+                    {
+                        @*<div class="col-sm-12 mb-3">
+                            <p><span class="text-muted">Diện tích vườn (m2): </span><strong>@gd.Area</strong></p>
+                        </div>*@
+                    }
+                </div>
+                <div class="col-sm-6">
+                    <div class="col-md mg-t-20 mg-md-t-0-force">
+                        <ul class="list-group list-group-striped">
+                            <li class="list-group-item">
+                                <strong>DANH SÁCH RAU</strong>
+                            </li>
+                            @foreach (var item in vegetables)
+                            {
+                                var vegetable = Model.Vegetables.FirstOrDefault(m => m.Id == item.Id);
+                                var area = vegetable == null ? 0 : vegetable.Area;
+                                <li class="list-group-item">
+                                    <p class="mg-b-0">
+                                        <label class="ckbox">
+                                            <input value="@item.Id" type="checkbox" name="Vegetables[@i].Id" @(vegetable == null ? null : "checked")><span><strong> @item.Name</strong> @item.GramPerM2 g/m2</span> 
+                                        </label>
+                                    </p>
+                                    @*Diện tích trồng: <input type="number" value="@area" min="0" name="Vegetables[@i].Area" style="border-color: greenyellow;" />*@
+                                    <input type="hidden" name="Vegetables[@i].Area" value="@area">
+                                </li>
+                                i++;
+                            }
+                        </ul>
+                    </div><!-- col-4 -->
+                </div>
+            </div>
+            <hr />
+            <div class="mb-2">
+                <button class="btn btn-success" type="submit">Lưu</button>
+                <a href="@Context.Request.Query["returnUrl"]" class="btn btn-outline-secondary">Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>

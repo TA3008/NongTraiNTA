@@ -1,0 +1,45 @@
+﻿@using RauSach.Core.Models
+@using RauSach.Web.Models
+@model List<Delivery>
+@using Microsoft.AspNetCore.Http.Extensions
+@using Rausach.Common.Extensions
+@{
+    ViewData["Title"] = "Danh sách vận chuyển";
+    var searchModel = ViewBag.SearchModel as RauSach.Application.Models.DeliveryFilter;
+}
+<div class="card mt-2 mb-2 shadow-base" id="searchBox">
+    <div class="card-body pb-0">
+        <partial name="_Search" model="@searchModel" />
+    </div>
+</div>
+<div class="card mt-2 mb-2 shadow-base">
+    <div class="card-body pb-0">
+        @for (int i = 0; i < Model.Count; i += 3)
+        {
+            <div class="row">
+                @for (int j = i; j < i + 3 && j < Model.Count; j++)
+                {
+                    var item = Model[j];
+                    var vegetables = string.Join(", ", item.Vegetables.Select(m => m.Name));
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <p><a href="@Url.Action("Details", new { id = item.Id, returnUrl = Context.Request.GetEncodedUrl()})" class="card-link">@item.CustomerName</a> <a href="tel:@item.CustomerPhone"><i class="fa fa-phone"></i> @item.CustomerPhone</a></p>
+                                <p class="card-subtitle tx-normal mg-b-15">@item.CustomerAddress</p>
+                                <p class="card-subtitle text-warning mg-b-15">@item.Status.DeliveryState.GetEnumDescription()</p>
+                                <p class="card-subtitle text-success mg-b-15">Ngày giao hàng dự kiến: @item.ScheduleDate.ToString("dd/MM/yyyy")</p>
+                                <p class="card-subtitle text-success mg-b-15">Trọng lượng: @item.Weight.ToString("N0") g</p>
+
+                                <p class="card-text">@vegetables</p>
+                                @if (item.Note != null)
+                                {
+                                    <p class="card-subtitle mg-b-15">Ghi chú: @item.Note</p>
+                                }
+                            </div>
+                        </div><!-- card -->
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,75 @@
+﻿@model RauSach.Core.FrameworkModels.User
+@using Microsoft.AspNetCore.Http.Extensions
+@inject RauSach.Core.Services.IUserGroupManager _roleManager
+@using RauSach.Core.FrameworkModels
+@{
+    ViewData["Title"] = "Cập nhật thông tin người dùng";
+    var isAdmin = _roleManager.HasPermission(User.Identity.Name, RoleList.Admin);
+    var provider = Model.Logins.FirstOrDefault();
+    var providerName = provider == null ? "System" : provider.ProviderDisplayName;
+}
+
+<partial name="_TopMessage" model="(ViewBag.Success, ViewBag.Error)" />
+<div class="card mt-2 mb-2 shadow-base">
+    <div class="card-body pb-0">
+
+        <div class="row">
+            <div class="col-md-6 mg-t-20 mg-md-t-0-force">
+                <form method="post" enctype="multipart/form-data" asp-controller="Account" asp-action="UserDetails" asp-route-returnUrl="@Context.Request.Query["returnUrl"]">
+                    @Html.HiddenFor(m => m.Id)
+                    <ul class="list-group list-group-striped">
+                        <li class="list-group-item rounded-top-0">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i> <span class="text-muted">Tình trạng: </span> <strong class="tx-inverse tx-medium text-info">@(Model.IsLocked ? "Đang khóa" : "Đang hoạt động")</strong></p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Provider: </span> <strong class="tx-inverse tx-medium">@providerName</strong> </p>
+                        </li>
+                        <li class="list-group-item rounded-top-0">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i> <span class="text-muted">Username: </span> <strong class="tx-inverse tx-medium">@Model.UserName</strong></p>
+                        </li>
+                        <li class="list-group-item rounded-top-0">
+                            <p class="mg-b-0">
+                                <i class="fa fa-check tx-success mg-r-8"></i> <span class="text-muted">Họ tên: </span>
+                                @Html.TextBoxFor(m => m.Name, new { Class = "form-control form-control-smy" })
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0">
+                                <i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Email: </span>
+                                @if (provider == null)
+                                {
+                                    @Html.TextBoxFor(m => m.Email, new { Class = "form-control form-control-smy" })
+                                }
+                                else
+                                {
+                                    <strong class="tx-inverse tx-medium">@Model.Email</strong>
+                                }
+                            </p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Phone: </span> @Html.TextBoxFor(m => m.PhoneNumber, new { Class = "form-control form-control-smy" }) </p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Địa chỉ: </span> @Html.TextBoxFor(m => m.Address, new { Class = "form-control form-control-smy" }) </p>
+                        </li>
+                    </ul>
+                    <hr />
+                    <div class="mb-2">
+                        <button class="btn btn-success" type="submit">Lưu lại</button>
+                        <a href="@Context.Request.Query["returnUrl"]" class="btn btn-outline-secondary">Quay lại</a>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 mg-t-20 mg-md-t-0-force">
+                @if (isAdmin && provider == null)
+                {
+                    <form method="post" enctype="multipart/form-data" asp-controller="Account" asp-action="ResetPassword" asp-route-returnUrl="@Context.Request.GetEncodedUrl()">
+                        @Html.HiddenFor(m => m.Id)
+                        <button class="btn btn-warning" type="submit" onclick="return confirm('Bạn có chắc chắn?')"><i class="fa fa-refresh"></i> Reset mật khẩu</button>
+                        <span class="text-info">Mật khẩu sau khi reset là 'nongtraintc'</span>
+                    </form>
+                }
+            </div>
+        </div>
+    </div>
+</div>

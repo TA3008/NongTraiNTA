@@ -1,0 +1,88 @@
+﻿@using RauSach.Web.Helpers
+@model RauSach.Web.Models.AccountMenuViewModel
+
+@if (Model != null)
+{
+    <div class="shoping_cart">
+        @{
+            var href = Model.IsAuthenticated ? "javascript:void(0);" : @FriendlyUrl.Login;
+        }
+        <a class="cartBtn" href="@href" aria-label="Thông tin người dùng">
+            @if (Model.IsAuthenticated)
+            {
+                <i class="twi-user-check1"></i>
+            }
+            else
+            {
+                <i class="twi-user1"></i>
+            }
+        </a>
+        @if (Model.IsAuthenticated)
+        {
+            <div class="show_cart_area">
+                <ul class="woocommerce-mini-cart cart_list product_list_widget">
+                    @if (Model.HasAdminSitePermission)
+                    {
+                        <li class="woocommerce-mini-cart-item mini_cart_item pd-b-0">
+                            <div class="mc_item pd-l-50">
+                                <div class="mc_thumb w-30 h-30 bkg-transparent">
+                                    <img src="~/images/settings.png" alt="cart">
+                                </div>
+                                <h4><a href="@FriendlyUrl.Admin">Đến trang quản trị</a></h4>
+                            </div>
+                        </li>
+                    }
+                    <li class="woocommerce-mini-cart-item mini_cart_item pd-b-0">
+                        <div class="mc_item pd-l-50">
+                            <div class="mc_thumb w-30 h-30 bkg-transparent">
+                                <img src="~/images/garden.png" alt="cart">
+                            </div>
+                            <h4><a href="@FriendlyUrl.MyGardens()">Vườn của tôi</a></h4>
+                        </div>
+                    </li>
+                    <li class="woocommerce-mini-cart-item mini_cart_item pd-b-0">
+                        <div class="mc_item pd-l-50">
+                            <div class="mc_thumb w-30 h-30 bkg-transparent">
+                                <img src="~/images/cart.png" alt="cart">
+                            </div>
+                            <h4><a href="@FriendlyUrl.MyOrder()">Đơn hàng của tôi</a></h4>
+                        </div>
+                    </li>
+                    <li class="woocommerce-mini-cart-item mini_cart_item pd-b-0">
+                        <div class="mc_item pd-l-50">
+                            <div class="mc_thumb w-30 h-30 bkg-transparent">
+                                <img src="~/images/user.png" alt="cart">
+                            </div>
+                            <h4><a href="@FriendlyUrl.Profile()">Thông tin cá nhân</a></h4>
+                        </div>
+                    </li>
+                    @if (!Model.IsExternalLogin)
+                    {
+                        <li class="woocommerce-mini-cart-item mini_cart_item pd-b-0">
+                            <div class="mc_item pd-l-50">
+                                <div class="mc_thumb w-30 h-30 bkg-transparent">
+                                    <img src="~/images/padlock.png" alt="cart">
+                                </div>
+                                <h4><a href="/account/changepassword">Đổi mật khẩu</a></h4>
+                            </div>
+                        </li>
+                    }
+                    <li class="woocommerce-mini-cart-item mini_cart_item pd-b-0">
+                        <div class="mc_item pd-l-50">
+                            <div class="mc_thumb w-30 h-30 bkg-transparent">
+                                <img src="~/images/exit.png" alt="cart">
+                            </div>
+                            <h4><a href="javascript:void(0)" onclick="$('#logoutForm').submit()">Thoát</a></h4>
+                            <form method="post" enctype="multipart/form-data" asp-controller="Account" asp-action="Logout" asp-area="" id="logoutForm" class="hidden"></form>
+                        </div>
+                    </li>
+                    <p class="woocommerce-mini-cart__total total">
+                        <span class="woocommerce-Price-amount amount">
+                            @(Model.Username.Length > 20 ? Model.Username.Substring(0, 20) + "..." : Model.Username)
+                        </span>
+                    </p>
+                </ul>
+            </div>
+        }
+    </div>
+}

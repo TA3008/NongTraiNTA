@@ -1,0 +1,36 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject RauSach.Core.Services.IUserGroupManager _userGroupManager
+@if (User.Identity.IsAuthenticated)
+{
+    <form method="post" enctype="multipart/form-data" asp-controller="Account" asp-action="Logout" asp-area="" id="logoutForm" class="navbar-right  d-none hidden">
+    </form>
+
+    <a href="#@Url.Action("Manage", "Account")" class="nav-link nav-link-profile" data-toggle="dropdown">
+        <span class="logged-name hidden-md-down">@User.Identity.Name</span>
+        <img src="~/admin/images/user.png" class="wd-32 rounded-circle" alt="">
+    </a>
+    <div class="dropdown-menu dropdown-menu-header wd-200">
+        <ul class="list-unstyled user-profile-nav">
+            <li>
+                <a href="javascript:void(0)" onclick="$('#logoutForm').submit()"><i class="icon ion-power"></i> Thoát</a>
+            </li>
+            @if (!_userGroupManager.GetUser(User.Identity.Name).Logins.Any())
+            {
+                <li>
+                    <a href="/Account/ChangePassword"><i class="icon ion-alert-circled"></i> Đổi mật khẩu</a>
+                </li>
+            }
+        </ul>
+    </div>
+
+    <!-- dropdown-menu -->
+}
+else
+{
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link text-dark" href="/Account/Login">Login</a>
+        </li>
+    </ul>
+}
+

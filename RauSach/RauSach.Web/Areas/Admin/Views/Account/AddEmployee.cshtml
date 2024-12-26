@@ -1,0 +1,46 @@
+﻿@model RegisterViewModel
+@{
+    ViewBag.Title = "Thêm mới tài khoản";
+}
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { role = "form" }))
+{
+    <div class="card mt-2 mb-2 shadow-base" id="searchBox">
+        <div class="card-body">
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="row mb10 mt10">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.UserName)
+                        @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", placeholder = "Tên tài khoản" })
+                        @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.IsAdmin)
+                        <select name="IsAdmin" class="form-control">
+                            <option value="False">Nhân viên</option>
+                            <option value="True">Admin</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Password)
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Password" })
+                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.ConfirmPassword)
+                        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", placeholder = "Xác nhận mật khẩu" })
+                        @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <button type="submit" class="btn btn-success">Lưu lại</button>
+            <a class="btn bd bg-white" onclick="window.history.back()"><i class="fa fa-arrow-left"></i> Quay lại</a>
+        </div>
+    </div>
+}

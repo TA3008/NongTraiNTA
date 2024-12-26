@@ -1,0 +1,99 @@
+﻿@model IEnumerable<RauSach.Core.FrameworkModels.User>
+@using Microsoft.AspNetCore.Http.Extensions
+@using RauSach.Core.FrameworkModels
+@inject RauSach.Core.Services.IUserGroupManager _roleManager
+@{
+    ViewBag.Title = "Danh sách tài khoản";
+    var searchModel = ViewBag.SearchModel as RauSach.Core.FrameworkModels.FilterModel;
+    var isAdmin = _roleManager.HasPermission(User.Identity.Name, RoleList.Admin);
+    searchModel.isAdmin = isAdmin;
+}
+@*@section Button {
+    <a href="@Url.Action("AddEmployee")" class="btn btn-success btn-sm pull-right"><i class="fa fa-plus"></i> Thêm user</a>
+}*@
+<div class="card mt-2 mb-2 shadow-base" id="searchBox">
+    <div class="card-body pb-0">
+        <partial name="_SearchUsers" model="@searchModel" />
+    </div>
+</div>
+<div class="card mt-2 mb-2 shadow-base">
+    <div class="card-body pb-0">
+        <table class="table mg-b-0" cellspacing="0">
+            <tr>
+                <th>STT</th>
+                <th>
+                    Username
+                </th>
+                <th>
+                    Email
+                </th>
+                <th>
+                    Phone
+                </th>
+                @if (isAdmin)
+                {
+                    <th>
+                        Quyền
+                    </th>
+                }
+                <th>Tình trạng</th>
+            </tr>
+
+            @{
+                var stt = 1;
+                foreach (var item in Model)
+                {
+                    <tr class="stat even">
+                        <td class="ac">
+                            @(stt++)
+                        </td>
+                        <td>
+                            <a href="@Url.Action("UserDetails", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})">@item.UserName @item.Name</a>
+                        </td>
+                        <td>
+                            @item.Email
+                        </td>
+                        <td>
+                            @item.PhoneNumber
+                        </td>
+                        @if (isAdmin)
+                        {
+                            <td>
+                                @{
+                                    var roles = item.CustomRoles.Any() ? string.Join("<br />", item.CustomRoles) : "Phân quyền";
+                                }
+                                <a href="@Url.Action("AssignRoles", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})">@Html.Raw(roles)</a>
+                            </td>
+                        }
+                        <td>
+                            @if (isAdmin)
+                            {
+                                <a href="@Url.Action("LockUser", new { id = item.Id, isLocked = !item.IsLocked })" onclick="return confirm('Bạn có chắc chắn muốn @(item.IsLocked ? "mở khóa" : "khóa người dùng")?')" class="text-info">
+                                    @if (item.IsLocked == true)
+                                    {
+                                        <span class="text-danger">Đã khóa</span>
+                                    }
+                                    else
+                                    {
+                                        <span>Hoạt động</span>
+                                    }
+                                </a>
+                            }
+                            else
+                            {
+                                if (item.IsLocked == true)
+                                {
+                                    <span class="text-danger">Đã khóa</span>
+                                }
+                                else
+                                {
+                                    <span>Hoạt động</span>
+                                }
+                            }
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+</div>

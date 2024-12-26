@@ -1,0 +1,13 @@
+﻿@using RauSach.Core.Models;
+@using RauSach.Web.Helpers;
+@model List<Garden>
+
+@if(Model?.Any() == true)
+{
+<ul>
+        @foreach(var item in Model)
+        {
+            <li><a href="@FriendlyUrl.GardenDetail(item.FriendlyUrl)" title="@item.Name">@item.Name</a></li>
+        }
+</ul>
+}

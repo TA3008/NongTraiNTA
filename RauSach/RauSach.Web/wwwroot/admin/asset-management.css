@@ -1,0 +1,43 @@
+﻿#frmSearch input[type="date"] {
+    height: 39.6px;
+}
+
+#frmSearch label {
+    margin-bottom: 0;
+}
+
+#frmSearch .search-item {
+    margin-bottom: 10px;
+}
+
+.select2-results__option[aria-selected="true"] {
+    display: none;
+}
+
+#searchBox .card-header a {
+    display: inline-block;
+    width: 100%;
+    color: inherit;
+}
+
+#collapseExample {
+    border-top: 1px dotted;
+}
+
+.collapse-icon {
+    border-top: 1px dotted;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.dropdown-menu.show {
+    z-index: 10000;
+}
+
+@media (min-width: 1200px) {
+    .modal-xl {
+        max-width: 1140px;
+    }
+}

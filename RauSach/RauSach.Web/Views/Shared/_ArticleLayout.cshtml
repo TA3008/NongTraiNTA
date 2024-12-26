@@ -1,0 +1,47 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Styles{
+    @RenderSection("Styles", required: false)
+}
+
+@RenderSection("Banner", required: true)
+
+<section class="singleBlog">
+    <div class="container largeContainer">
+        <div class="row">
+            <div class="col-xl-9 col-lg-8 padRight">
+                @RenderBody()
+            </div>
+            <div class="col-xl-3 col-lg-4">
+                <div class="sidebar mt-0">
+                    <aside class="widget">
+                        <div class="aboutme">
+                            <img src="~/images/logo1.png" alt="">
+                            <h5>NTA Farm</h5>
+                            <p>
+                                NTA FARM được thành lập với sứ mệnh tiếp sức cung cấp
+                                các thực phẩm xanh, an toàn đến với mọi khách hàng, trải
+                                nghiệm thực tế mô hình sản xuất công nghệ cao
+                            </p>
+                            <div class="abmesocial">
+                                <a href="javascript:void(0);"><i class="twi-facebook-f"></i></a>
+                                <a href="javascript:void(0);"><i class="twi-twitter"></i></a>
+                                <a href="javascript:void(0);"><i class="twi-google-plus-g"></i></a>
+                                <a href="javascript:void(0);"><i class="twi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </aside>
+                    <div class="widget">
+                        <h3 class="widget_title">Các loại vườn</h3>
+                        @await Component.InvokeAsync("GardenListMenu")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts{
+    @RenderSection("Scripts", required: false)
+}

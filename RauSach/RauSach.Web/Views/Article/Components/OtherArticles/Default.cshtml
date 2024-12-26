@@ -1,0 +1,22 @@
+﻿@using RauSach.Web.Helpers
+@model List<RauSach.Core.Models.Article>
+
+<div class="relatedPostArea">
+    <h2>Tin khác</h2>
+    <div class="relatedPostSlider owl-carousel">
+        @if (Model != null && Model.Any())
+        {
+            foreach (var item in Model)
+            {
+                <div class="blogItem01">
+                    <div class="blogThumb">
+                        @HtmlHelperExtension.Img(item.Img, alt: item.Name, "max-height-230px")
+                    </div>
+                    <div class="blogContent">
+                        <h3><a href="@FriendlyUrl.ArticleDetail(item.FriendlyUrl)">@item.Name</a></h3>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>

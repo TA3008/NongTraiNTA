@@ -1,0 +1,201 @@
+﻿.logo-image {
+    max-width: 100%;
+    max-height: 60px;
+}
+
+input[type="button"], input[type="submit"], button[type="submit"], button[type="button"] {
+    cursor: pointer;
+}
+
+.table {
+    -moz-box-shadow: 0 3px 0 rgba(12,12,12,0.03);
+    -webkit-box-shadow: 0 3px 0 rgba(12,12,12,0.03);
+    box-shadow: 0 3px 0 rgba(12,12,12,0.03);
+    background-color: #fcfcfc;
+}
+
+.panel-title {
+    color: #868ba1;
+}
+
+.card-header {
+    background-color: transparent;
+}
+
+    .card-header .card-title {
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #343a40;
+        margin-bottom: 0;
+    }
+
+.form-control::placeholder, .custom-file .custom-file-control {
+    color: #d7d7d7;
+}
+
+.custom-file {
+    width: 100%;
+    height: auto;
+}
+
+.custom-file-input {
+    display: none;
+}
+
+.custom-file-control {
+    height: auto;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+    .custom-file-control::before {
+        top: calc(50% - 20px);
+    }
+
+#file-manager ul {
+    border-left: 1px dotted;
+    list-style: none;
+    padding-left: 17px;
+}
+
+    #file-manager ul li i {
+        width: 13px;
+    }
+
+        #file-manager ul li i.fa-times {
+            display: none;
+        }
+
+    #file-manager ul li p a {
+        display: inline-block;
+    }
+
+#file-manager li:hover > span > i.fa-times {
+    display: inline-block;
+}
+
+#file-manager ul li a:hover {
+    text-decoration: underline;
+}
+
+#file-manager > ul {
+    border-left: none;
+    padding-left: 10px;
+}
+
+#file-manager p {
+    margin-bottom: 0px;
+    padding-left: 18px;
+}
+
+#file-manager > p {
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+#file-manager .pointer {
+    cursor: pointer;
+}
+
+#file-manager form {
+    display: inline-block;
+}
+
+    #file-manager form input {
+        border: none;
+    }
+
+.btgreen {
+    background: #62a403;
+    border: none;
+    color: white !important;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.form-check-input {
+    margin-left: 0;
+}
+
+body {
+    color: #575b68;
+}
+
+.form-check {
+    margin-bottom: 0;
+}
+
+.form-check-label {
+    padding-left: 0;
+}
+
+.form-control {
+    padding: 0.37rem 0.35rem;
+    font-weight: bold;
+}
+h5 {
+    font-size: 1.15rem;
+}
+strong, h5 {
+    color: #292a2c;
+}
+
+.dac-diem-section {
+    margin-left: 18px;
+}
+
+.form-check label {
+    margin-bottom: 0;
+}
+
+input[type=number] {
+    width: 100px;
+}
+.table th, .table td {
+    padding: 4px;
+}
+
+.img64x64 {
+    width: 64px;
+    height: 64px;
+}
+
+.red {
+    color: red;
+}
+
+.h-150 {
+    height: 150px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/*-----------------------
+ ckeditor
+-------------------------*/
+:root {
+    --ck-z-default: 100;
+    --ck-z-modal: calc( var(--ck-z-default) + 999 );
+}
+
+.ck-content .table {
+    width: auto;
+}
+
+.ck-editor__editable_inline {
+    min-height: 400px;
+}
+
+/*-----------------------*/

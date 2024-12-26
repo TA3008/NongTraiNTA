@@ -1,0 +1,39 @@
+﻿@model IEnumerable<RauSach.Core.FrameworkModels.UserGroup>
+@using Microsoft.AspNetCore.Http.Extensions
+@{
+    ViewBag.Title = "Danh sách tài khoản";
+}
+
+<div class="card mt-2 mb-2 shadow-base">
+    <div class="card-body pb-0">
+        <table class="table mg-b-0" cellspacing="0">
+            <tr>
+                <th>STT</th>
+                <th>
+                    Tên nhóm
+                </th>
+                <th></th>
+            </tr>
+
+            @{
+                var stt = 1;
+                foreach (var item in Model)
+                {
+                    <tr class="stat even">
+                        <td class="ac">
+                            @(stt++)
+                        </td>
+                        <td>
+                            <a href="@Url.Action("EditGroup", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})">@item.Name</a>
+                        </td>
+                        <td>
+                            <a href="@Url.Action("Employees", new { groupId = item.Id, returnUrl = Context.Request.GetEncodedUrl()})">User list</a>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+</div>

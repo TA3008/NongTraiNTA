@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@(ViewBag.Title ?? "") Nông Trại Nông Trại An</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta content="NTA FARM là đơn vị uy tín đầu ngành, tiên phong trong lĩnh vực NÔNG TRẠI CÔNG NGHỆ CAO cho doanh nghiệp, cá nhân muốn sử dụng các dịch vụ, sản phẩm rau củ xanh, sạch, an toàn" name="description" />
+    <meta content="Nông trại Nông Trại An, nông trại NTA, hữu cơ, rau rạch, thuê vườn, NTA FARM" name="keywords" />
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="Search Engines" content="www.google.com, www.google.co.uk, www.google.it, www.google.es, www.google.com.au, www.altaVista.com, www.aol.com, www.infoseek.com, www.excite.com, www.hotbot.com, www.lycos.com, www.magellan.com, www.cnet.com, www.voila.com, www.google.fr, www.yahoo.fr, www.yahoo.com, www.alltheweb.com, www.msn.com, www.netscape.com, www.nomade.com">
+    <meta property="og:url" content="https://nongtraintc.vn/" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Nông trại Nông Trại An" />
+    <meta property="og:description" content="NTA FARM là đơn vị uy tín đầu ngành, tiên phong trong lĩnh vực NÔNG TRẠI CÔNG NGHỆ CAO cho doanh nghiệp, cá nhân muốn sử dụng các dịch vụ, sản phẩm rau củ xanh, sạch, an toàn" />
+    <meta property="og:image" content="https://nongtraintc.vn/assets/images/slider/3.webp" />
+
+    @if (Context.Request.Host.Value.Contains("localhost"))
+    {
+        <!-- Start Include All CSS -->
+        <link rel="stylesheet" href="~/assets/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/assets/css/animate.css" />
+        <link rel="stylesheet" href="~/assets/css/themewar-font.css" />
+        <link rel="stylesheet" href="~/assets/css/organio-icon.css" />
+        <link rel="stylesheet" href="~/assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="~/assets/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="~/assets/css/nice-select.css">
+        <link rel="stylesheet" href="~/assets/css/slick.css">
+        <link rel="stylesheet" href="~/assets/css/lightcase.css">
+
+        <!-- Revolution Slider Setting CSS -->
+        <link rel="stylesheet" type="text/css" href="~/assets/css/settings.css">
+
+        <link rel="stylesheet" href="~/assets/css/preset.css" />
+        <link rel="stylesheet" href="~/assets/css/ignore_for_wp.css" />
+        <link rel="stylesheet" href="~/assets/css/theme.css" />
+        <link rel="stylesheet" href="~/assets/css/responsive.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    }
+    else
+    {
+        <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.0/css/nice-select.min.css" integrity="sha512-p2AEjyMNh1U4cFY8AsKvZmiKf055pn1YRqkFc7O6hcMXP5zHdzjmiH9EEl/5/ROR3tqo/Cs7mguiNnp+6eCxBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="~/build/style.min.css" asp-append-version="true" />
+    }
+
+    <!-- End Include All CSS -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css"></noscript>
+    <!-- Favicon Icon -->
+    <link rel="icon" type="image/png" href="~/images/favicon.ico">
+    <!-- Favicon Icon -->
+    @RenderSection("Styles", required: false)
+
+</head>
+<body class="bodybg">
+    <!-- Preloading -->
+    @RenderSection("Preloading", required: false)
+    <!-- Preloading -->
+    <!-- Header Topbar -->
+    <section class="topbar01">
+        <div class="container largeContainer">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="topbarBG">
+                        <div class="tpdesc">
+                            <p>Welcome to Nông Trại Xanh NTA Farm!</p>
+                            <p>
+                                <a target="_blank" href="https://www.google.com/maps/place/11%C2%B034'37.8%22N+107%C2%B052'34.5%22E/@@11.5771737,107.8740619,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x7bbeacfd463d886f!8m2!3d11.5771685!4d107.8762506">
+                                    <i class="twi-map-marker-alt1"></i>218 Lạc Long Quân, Tây Hồ, Hà Nội
+                                </a>
+                            </p>
+                        </div>
+                        <div class="tosocial">
+                            <a href="#" title="Xem chúng tôi trên Tiktok"><img src="/images/tiktok.png" alt="tiktok" style="width: 20px;height: 20px;margin-top: -4px;" /></a>
+                            <a href="#" title="Xem chúng tôi trên Facebook"><i class="twi-facebook-f"></i></a>
+                            <a href="#" title="Xem chúng tôi trên Youtube"><i class="twi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Header Topbar -->
+
+    <partial name="_Menu"></partial>
+
+    @RenderBody()
+
+    <partial name="_Footer"></partial>
+
+    <!-- Bact To Top -->
+    <a href="javascript:void(0);" id="backtotop"><i class="twi-arrow-to-top1"></i></a>
+    <!-- Bact To Top -->
+    @if (Context.Request.Host.Value.Contains("localhost"))
+    {
+        <!-- Start Include All JS -->
+        <script src="~/assets/js/jquery/jquery.js"></script>
+        <script src="~/assets/js/jquery/jquery-ui.js"></script>
+        <script src="~/assets/js/nobundle-gulp/bootstrap.min.js"></script>
+        <script src="~/assets/js/jquery/jquery.plugin.min.js"></script>
+        <script src="~/assets/js/jquery/jquery.countdown.min.js"></script>
+        <script src="~/assets/js/jquery/jquery.appear.js"></script>
+        <script src="~/assets/js/owl.carousel.min.js"></script>
+        <script src="~/assets/js/owl.carousel.filter.js"></script>
+        <script src="~/assets/js/shuffle.min.js"></script>
+        <script src="~/assets/js/masonry.js"></script>
+        <script src="~/assets/js/nobundle-gulp/nice-select.js"></script>
+        <script src="~/assets/js/slick.js"></script>
+        <script src="~/assets/js/lightcase.js"></script>
+        <script src="~/assets/js/gmaps.js"></script>
+        <!-- Slider Revolution Main Files -->
+        <script src="~/assets/js/themepunch/jquery.themepunch.tools.min.js"></script>
+        <script src="~/assets/js/themepunch/jquery.themepunch.revolution.min.js"></script>
+        <!-- Slider Revolution Extension -->
+        <script src="~/assets/js/extensions/revolution.extension.actions.min.js"></script>
+        <script src="~/assets/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script src="~/assets/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script src="~/assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="~/assets/js/extensions/revolution.extension.migration.min.js"></script>
+        <script src="~/assets/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="~/assets/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script src="~/assets/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="~/assets/js/extensions/revolution.extension.video.min.js"></script>
+        <!-- End Include All JS -->
+        <script src="~/assets/js/theme/theme.js"></script>
+    } else
+    {
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha512-DUC8yqWf7ez3JD1jszxCWSVB0DMP78eOyBpMa5aJki1bIRARykviOuImIczkxlj1KhVSyS16w2FSQetkD4UU2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0-rc.2/jquery-ui.min.js" integrity="sha512-FIfW5mriui9qIpcBUX41PE2yDTml2hMCIXYlVji8TIN630NqWgPGQr6GuFYsy23T9Oac0szkgLctyMKpQ3oBYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.usebootstrap.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.0/js/jquery.nice-select.min.js" integrity="sha512-Q27qmhQTPA7DBhZVnJnSovHMSbhSBaUMsY3nzQeCHaxbAE7AM4HD7+tdWeA6JtgZBXlHd6jYVa3QKlPDf33MsA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="~/build/bundle.js" asp-append-version="true"></script>
+    }
+    <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.js"></script>
+    <script src="~/scripts/AjaxHelper.js"></script>
+    <script src="~/scripts/SerializeObject.js"></script>
+    <script src="~/scripts/wholeSite.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js" integrity="sha512-lbwH47l/tPXJYG9AcFNoJaTMhGvYWhVM9YI43CT+uteTRRaiLCui8snIgyAN8XWgNjNhCqlAUdzZptso6OCoFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function () {
+            toastr.options.positionClass = "toast-top-center";
+            toastr.options.showMethod = 'slideDown';
+        });
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

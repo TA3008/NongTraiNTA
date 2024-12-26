@@ -1,0 +1,36 @@
+﻿@using RauSach.Core.Models
+@model List<GeneralItem>
+@using Microsoft.AspNetCore.Http.Extensions
+@{
+    ViewData["Title"] = "Danh sách Nông dân";
+}
+@section Button {
+    <a href="@Url.Action("EditFarmer", new { returnUrl = Context.Request.GetEncodedUrl()})" class="btn btn-success btn-sm pull-right">Thêm mới</a>
+}
+    <div class="card mt-2 mb-2 shadow-base">
+        <div class="card-body pb-0">
+            @foreach (var item in Model)
+        {
+            <div class="row">
+                <div class="col-md">
+                    <div class="list-group">
+                        <div class="list-group-item pd-y-15 pd-x-20 d-xs-flex align-items-center justify-content-start mb-2">
+                            <a href="@Url.Action("EditFarmer", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})">
+                                <img src="@(item.Thumbnail == null ? "/admin/images/user.png" : item.Thumbnail)" class="wd-48 rounded-circle" alt="">
+                            </a>
+                            <div class="mg-xs-l-15 mg-t-10 mg-xs-t-0 mg-r-auto">
+                                <p class="mg-b-0 tx-inverse tx-medium"><a href="@Url.Action("EditFarmer", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})">@item.Title</a></p>
+                                <span class="d-block tx-13">@item.Phone, @item.Address</span>
+                            </div>
+                            <div class="d-flex align-items-center mg-t-10 mg-xs-t-0">
+                                <a href="@Url.Action("Delete", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})" onclick="return confirm('Bạn có chắc muốn xóa?')" class="btn btn-outline-danger btn-icon mg-l-5">
+                                    <div class="tx-20"><i class="icon ion-android-remove"></i></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

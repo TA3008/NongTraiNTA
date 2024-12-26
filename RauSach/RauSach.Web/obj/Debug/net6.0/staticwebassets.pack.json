@@ -1,0 +1,3213 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RauSach.Web.bundle.scp.css",
+      "PackagePath": "staticwebassets\\RauSach.Web.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\DK.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\DK.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\ReportChart.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\ReportChart.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\ResizeSensor.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\ResizeSensor.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\_references.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\_references.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\asset-management.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\asset-management.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\back-to-top.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\back-to-top.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\bootstrap.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\bracket.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\bracket.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\category.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\category.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\common.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\common.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery-1.10.2.intellisense.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery-1.10.2.intellisense.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery-3.1.1-vsdoc.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery-3.1.1-vsdoc.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery-3.1.1.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery-3.1.1.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery-3.1.1.min.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery-3.1.1.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery-3.1.1.min.map",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery-3.1.1.min.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery-3.1.1.slim.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery-3.1.1.slim.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery-3.1.1.slim.min.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery-3.1.1.slim.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery-3.1.1.slim.min.map",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery-3.1.1.slim.min.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery-ui-1.8.24.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery-ui-1.8.24.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery-ui-1.8.24.min.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery-ui-1.8.24.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery-ui.unobtrusive.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery-ui.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery.maskMoney.min.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery.maskMoney.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery.unobtrusive-ajax.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery.unobtrusive-ajax.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery.unobtrusive-ajax.min.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery.unobtrusive-ajax.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery.validate-vsdoc.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery.validate-vsdoc.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\modernizr-2.6.2.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\modernizr-2.6.2.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\modernizr-2.8.3.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\modernizr-2.8.3.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\respond.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\respond.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\respond.matchmedia.addListener.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\respond.matchmedia.addListener.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\respond.matchmedia.addListener.min.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\respond.matchmedia.addListener.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\respond.min.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\respond.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\Scripts\\site.js",
+      "PackagePath": "staticwebassets\\admin\\Scripts\\site.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\asset-management.css",
+      "PackagePath": "staticwebassets\\admin\\asset-management.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\bootstrap-override.css",
+      "PackagePath": "staticwebassets\\admin\\bootstrap-override.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\admin\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\bracket.css",
+      "PackagePath": "staticwebassets\\admin\\bracket.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\favicon.ico",
+      "PackagePath": "staticwebassets\\admin\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\font.roboto.css",
+      "PackagePath": "staticwebassets\\admin\\font.roboto.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\images\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\admin\\images\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\images\\ajax-loader2.gif",
+      "PackagePath": "staticwebassets\\admin\\images\\ajax-loader2.gif"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\images\\homefake.webp",
+      "PackagePath": "staticwebassets\\admin\\images\\homefake.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\images\\login-bg.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\login-bg.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\images\\up.png",
+      "PackagePath": "staticwebassets\\admin\\images\\up.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\images\\user.png",
+      "PackagePath": "staticwebassets\\admin\\images\\user.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\Ionicons\\css\\ionicons.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\Ionicons\\css\\ionicons.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\Ionicons\\fonts\\ionicons.ttf",
+      "PackagePath": "staticwebassets\\admin\\lib\\Ionicons\\fonts\\ionicons.ttf"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\Ionicons\\fonts\\ionicons.woff",
+      "PackagePath": "staticwebassets\\admin\\lib\\Ionicons\\fonts\\ionicons.woff"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap-tagsinput\\bootstrap-tagsinput.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap-tagsinput\\bootstrap-tagsinput.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap-tagsinput\\bootstrap-tagsinput.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap-tagsinput\\bootstrap-tagsinput.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\bootstrap.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\admin\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\css\\firasans.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\css\\firasans.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnLK3eQhf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnLK3eQhf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnLK3eRRf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnLK3eRRf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnLK3eRhf6.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnLK3eRhf6.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnLK3eSBf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnLK3eSBf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnLK3eSRf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnLK3eSRf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnLK3eShf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnLK3eShf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnLK3eSxf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnLK3eSxf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnPKreQhf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnPKreQhf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnPKreRRf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnPKreRRf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnPKreRhf6.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnPKreRhf6.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnPKreSBf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnPKreSBf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnPKreSRf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnPKreSRf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnPKreShf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnPKreShf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnPKreSxf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnPKreSxf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnSKzeQhf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnSKzeQhf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnSKzeRRf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnSKzeRRf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnSKzeRhf6.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnSKzeRhf6.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnSKzeSBf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnSKzeSBf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnSKzeSRf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnSKzeSRf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnSKzeShf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnSKzeShf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnSKzeSxf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnSKzeSxf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnWKneQhf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnWKneQhf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnWKneRRf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnWKneRRf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnWKneRhf6.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnWKneRhf6.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnWKneSBf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnWKneSBf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnWKneSRf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnWKneSRf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnWKneShf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnWKneShf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnWKneSxf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnWKneSxf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnZKveQhf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnZKveQhf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnZKveRRf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnZKveRRf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnZKveRhf6.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnZKveRhf6.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnZKveSBf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnZKveSBf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnZKveSRf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnZKveSRf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnZKveShf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnZKveShf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnZKveSxf6TF0.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9B4kDNxMZdWfMOD5VnZKveSxf6TF0.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9C4kDNxMZdWfMOD5Vn9LjEYTLHdQ.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9C4kDNxMZdWfMOD5Vn9LjEYTLHdQ.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9C4kDNxMZdWfMOD5Vn9LjFYTLHdQ.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9C4kDNxMZdWfMOD5Vn9LjFYTLHdQ.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9C4kDNxMZdWfMOD5Vn9LjGYTLHdQ.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9C4kDNxMZdWfMOD5Vn9LjGYTLHdQ.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9C4kDNxMZdWfMOD5Vn9LjHYTLHdQ.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9C4kDNxMZdWfMOD5Vn9LjHYTLHdQ.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9C4kDNxMZdWfMOD5Vn9LjJYTI.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9C4kDNxMZdWfMOD5Vn9LjJYTI.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9C4kDNxMZdWfMOD5Vn9LjKYTLHdQ.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9C4kDNxMZdWfMOD5Vn9LjKYTLHdQ.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9C4kDNxMZdWfMOD5Vn9LjNYTLHdQ.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9C4kDNxMZdWfMOD5Vn9LjNYTLHdQ.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9E4kDNxMZdWfMOD5Vvk4jLeTY.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9E4kDNxMZdWfMOD5Vvk4jLeTY.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9E4kDNxMZdWfMOD5Vvl4jL.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9E4kDNxMZdWfMOD5Vvl4jL.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9E4kDNxMZdWfMOD5VvlIjLeTY.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9E4kDNxMZdWfMOD5VvlIjLeTY.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9E4kDNxMZdWfMOD5Vvm4jLeTY.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9E4kDNxMZdWfMOD5Vvm4jLeTY.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9E4kDNxMZdWfMOD5VvmIjLeTY.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9E4kDNxMZdWfMOD5VvmIjLeTY.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9E4kDNxMZdWfMOD5VvmYjLeTY.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9E4kDNxMZdWfMOD5VvmYjLeTY.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9E4kDNxMZdWfMOD5VvmojLeTY.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\firasans\\fonts\\va9E4kDNxMZdWfMOD5VvmojLeTY.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\hind\\css\\hind.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\hind\\css\\hind.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfJpbER2SjQpf.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfJpbER2SjQpf.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfJpbERKSjQpf.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfJpbERKSjQpf.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfJpbERySjQ.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfJpbERySjQ.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfLZcER2SjQpf.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfLZcER2SjQpf.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfLZcERKSjQpf.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfLZcERKSjQpf.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfLZcERySjQ.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfLZcERySjQ.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfMJaER2SjQpf.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfMJaER2SjQpf.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfMJaERKSjQpf.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfMJaERKSjQpf.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfMJaERySjQ.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfMJaERySjQ.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfNJdER2SjQpf.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfNJdER2SjQpf.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfNJdERKSjQpf.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfNJdERKSjQpf.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfNJdERySjQ.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU19_a8oxmIfNJdERySjQ.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU69_a8oxmIdGd4BCOz.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU69_a8oxmIdGd4BCOz.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU69_a8oxmIdGh4BCOz.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU69_a8oxmIdGh4BCOz.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU69_a8oxmIdGl4BA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\hind\\fonts\\5aU69_a8oxmIdGl4BA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\lato\\css\\lato.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\lato\\css\\lato.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\lato\\fonts\\S6u9w4BMUTPHh50XSwaPGR_p.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\lato\\fonts\\S6u9w4BMUTPHh50XSwaPGR_p.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\lato\\fonts\\S6u9w4BMUTPHh50XSwiPGQ.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\lato\\fonts\\S6u9w4BMUTPHh50XSwiPGQ.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\lato\\fonts\\S6u9w4BMUTPHh6UVSwaPGR_p.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\lato\\fonts\\S6u9w4BMUTPHh6UVSwaPGR_p.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\lato\\fonts\\S6u9w4BMUTPHh6UVSwiPGQ.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\lato\\fonts\\S6u9w4BMUTPHh6UVSwiPGQ.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\lato\\fonts\\S6u9w4BMUTPHh7USSwaPGR_p.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\lato\\fonts\\S6u9w4BMUTPHh7USSwaPGR_p.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\lato\\fonts\\S6u9w4BMUTPHh7USSwiPGQ.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\lato\\fonts\\S6u9w4BMUTPHh7USSwiPGQ.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\lato\\fonts\\S6uyw4BMUTPHjx4wXg.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\lato\\fonts\\S6uyw4BMUTPHjx4wXg.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\lato\\fonts\\S6uyw4BMUTPHjxAwXjeu.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\lato\\fonts\\S6uyw4BMUTPHjxAwXjeu.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\librebarcode39extendedtext\\css\\librebarcode39extendedtext.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\librebarcode39extendedtext\\css\\librebarcode39extendedtext.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\librebarcode39extendedtext\\fonts\\eLG1P_rwIgOiDA7yrs9LoKaYRVLQ1YldrrOnnL7xPO4jNP6Me7gj.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\librebarcode39extendedtext\\fonts\\eLG1P_rwIgOiDA7yrs9LoKaYRVLQ1YldrrOnnL7xPO4jNP6Me7gj.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\css\\montserrat.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\css\\montserrat.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_ZpC3g3D_u50.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_ZpC3g3D_u50.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_ZpC3gTD_u50.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_ZpC3gTD_u50.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_ZpC3gbD_u50.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_ZpC3gbD_u50.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_ZpC3gfD_u50.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_ZpC3gfD_u50.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_ZpC3gnD_g.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_ZpC3gnD_g.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_bZF3g3D_u50.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_bZF3g3D_u50.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_bZF3gTD_u50.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_bZF3gTD_u50.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_bZF3gbD_u50.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_bZF3gbD_u50.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_bZF3gfD_u50.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_bZF3gfD_u50.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_bZF3gnD_g.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_bZF3gnD_g.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_cJD3g3D_u50.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_cJD3g3D_u50.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_cJD3gTD_u50.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_cJD3gTD_u50.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_cJD3gbD_u50.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_cJD3gbD_u50.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_cJD3gfD_u50.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_cJD3gfD_u50.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_cJD3gnD_g.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_cJD3gnD_g.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_dJE3g3D_u50.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_dJE3g3D_u50.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_dJE3gTD_u50.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_dJE3gTD_u50.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_dJE3gbD_u50.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_dJE3gbD_u50.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_dJE3gfD_u50.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_dJE3gfD_u50.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTUSjIg1_i6t8kCHKm459W1hyzbi.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTUSjIg1_i6t8kCHKm459WZhyzbi.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTUSjIg1_i6t8kCHKm459Wlhyw.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\montserrat\\fonts\\JTUSjIg1_i6t8kCHKm459Wlhyw.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\poppin\\css\\poppins.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\poppin\\css\\poppins.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLCz7Z11lFc-K.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLCz7Z1JlFc-K.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLCz7Z1xlFQ.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLDz8Z11lFc-K.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLEj6Z11lFc-K.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLEj6Z1JlFc-K.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLGT9Z11lFc-K.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLGT9Z1JlFc-K.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiByp8kv8JHgFVrLGT9Z1xlFQ.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiEyp8kv8JHgFVrJJbecmNE.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiEyp8kv8JHgFVrJJbecmNE.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiEyp8kv8JHgFVrJJfecg.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiEyp8kv8JHgFVrJJfecg.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiEyp8kv8JHgFVrJJnecmNE.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\poppin\\fonts\\pxiEyp8kv8JHgFVrJJnecmNE.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\css\\roboto.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\css\\roboto.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmEU9fBBc4.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmEU9fBBc4.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmSU5fBBc4.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmSU5fBBc4.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmWUlfBBc4.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmWUlfBBc4.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOmCnqEu92Fr1Mu4WxKOzY.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOmCnqEu92Fr1Mu4WxKOzY.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOmCnqEu92Fr1Mu4mxK.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOmCnqEu92Fr1Mu4mxK.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOmCnqEu92Fr1Mu5mxKOzY.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOmCnqEu92Fr1Mu5mxKOzY.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOmCnqEu92Fr1Mu72xKOzY.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOmCnqEu92Fr1Mu72xKOzY.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOmCnqEu92Fr1Mu7GxKOzY.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOmCnqEu92Fr1Mu7GxKOzY.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOmCnqEu92Fr1Mu7WxKOzY.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOmCnqEu92Fr1Mu7WxKOzY.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOmCnqEu92Fr1Mu7mxKOzY.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\bracket-offline\\roboto\\fonts\\KFOmCnqEu92Fr1Mu7mxKOzY.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\chartist\\chartist.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\chartist\\chartist.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\chartist\\chartist.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\chartist\\chartist.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\chartjs\\chart.esm.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\chartjs\\chart.esm.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\chartjs\\chart.esm.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\chartjs\\chart.esm.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\chartjs\\chart.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\chartjs\\chart.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\chartjs\\chart.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\chartjs\\chart.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\chartjs\\helpers.esm.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\chartjs\\helpers.esm.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\chartjs\\helpers.esm.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\chartjs\\helpers.esm.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\d3\\d3.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\d3\\d3.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\font-awesome\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\font-awesome\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\font-awesome\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\admin\\lib\\font-awesome\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\admin\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\font-awesome\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\gritter\\css\\jquery.gritter.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\gritter\\css\\jquery.gritter.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\gritter\\images\\error.png",
+      "PackagePath": "staticwebassets\\admin\\lib\\gritter\\images\\error.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\gritter\\images\\gritter.png",
+      "PackagePath": "staticwebassets\\admin\\lib\\gritter\\images\\gritter.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\gritter\\images\\ie-spacer.gif",
+      "PackagePath": "staticwebassets\\admin\\lib\\gritter\\images\\ie-spacer.gif"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\gritter\\images\\success.png",
+      "PackagePath": "staticwebassets\\admin\\lib\\gritter\\images\\success.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\gritter\\js\\jquery.gritter.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\gritter\\js\\jquery.gritter.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\highlightjs\\github.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\highlightjs\\github.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\highlightjs\\highlight.pack.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\highlightjs\\highlight.pack.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery-switchbutton\\jquery.switchButton.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery-switchbutton\\jquery.switchButton.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery-switchbutton\\jquery.switchButton.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery-switchbutton\\jquery.switchButton.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery-toggles\\toggles-full.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery-toggles\\toggles-full.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery-toggles\\toggles.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery-toggles\\toggles.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery-ui\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery-ui\\jquery-ui.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery.maskedinput\\jquery.maskedinput.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery.maskedinput\\jquery.maskedinput.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery.sparkline.bower\\jquery.sparkline.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery.sparkline.bower\\jquery.sparkline.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jt.timepicker\\jquery.timepicker.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\jt.timepicker\\jquery.timepicker.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\jt.timepicker\\jquery.timepicker.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\jt.timepicker\\jquery.timepicker.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\moment\\moment.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\moment\\moment.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\opensans\\fonts\\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4gaVI.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\opensans\\fonts\\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4gaVI.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\opensans\\fonts\\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4iaVIGxA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\opensans\\fonts\\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4iaVIGxA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\opensans\\fonts\\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4jaVIGxA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\opensans\\fonts\\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4jaVIGxA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\opensans\\fonts\\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4kaVIGxA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\opensans\\fonts\\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4kaVIGxA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\opensans\\fonts\\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4saVIGxA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\opensans\\fonts\\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4saVIGxA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\opensans\\fonts\\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4taVIGxA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\opensans\\fonts\\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4taVIGxA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\opensans\\fonts\\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVIGxA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\opensans\\fonts\\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVIGxA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\opensans\\fonts\\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4vaVIGxA.woff2",
+      "PackagePath": "staticwebassets\\admin\\lib\\opensans\\fonts\\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4vaVIGxA.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\opensans\\opensans.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\opensans\\opensans.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\peity\\jquery.peity.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\peity\\jquery.peity.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\perfect-scrollbar\\css\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\perfect-scrollbar\\css\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\perfect-scrollbar\\js\\perfect-scrollbar.jquery.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\perfect-scrollbar\\js\\perfect-scrollbar.jquery.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\popper.js\\popper.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\popper.js\\popper.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\rickshaw\\rickshaw.min.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\rickshaw\\rickshaw.min.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\rickshaw\\rickshaw.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\rickshaw\\rickshaw.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\select2\\css\\select2-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\select2\\css\\select2-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\select2\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\select2\\css\\select2.min.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\select2\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\select2\\js\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\spectrum\\spectrum.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\spectrum\\spectrum.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\spectrum\\spectrum.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\spectrum\\spectrum.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\summernote\\font\\summernote.woff",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\font\\summernote.woff"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\summernote\\summernote-bs4.css",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\summernote-bs4.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\lib\\summernote\\summernote-bs4.min.js",
+      "PackagePath": "staticwebassets\\admin\\lib\\summernote\\summernote-bs4.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\login.css",
+      "PackagePath": "staticwebassets\\admin\\login.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\site.css",
+      "PackagePath": "staticwebassets\\admin\\site.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\style.default.css",
+      "PackagePath": "staticwebassets\\admin\\style.default.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\admin\\validation.css",
+      "PackagePath": "staticwebassets\\admin\\validation.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\css\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\assets\\css\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\css\\animate.css",
+      "PackagePath": "staticwebassets\\assets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\css\\ignore_for_wp.css",
+      "PackagePath": "staticwebassets\\assets\\css\\ignore_for_wp.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\css\\lightcase.css",
+      "PackagePath": "staticwebassets\\assets\\css\\lightcase.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\assets\\css\\nice-select.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\css\\organio-icon.css",
+      "PackagePath": "staticwebassets\\assets\\css\\organio-icon.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\css\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\css\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\css\\preset.css",
+      "PackagePath": "staticwebassets\\assets\\css\\preset.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\assets\\css\\responsive.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\css\\settings.css",
+      "PackagePath": "staticwebassets\\assets\\css\\settings.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\css\\slick.css",
+      "PackagePath": "staticwebassets\\assets\\css\\slick.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\css\\theme.css",
+      "PackagePath": "staticwebassets\\assets\\css\\theme.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\css\\themewar-font.css",
+      "PackagePath": "staticwebassets\\assets\\css\\themewar-font.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\fonts\\SterlingHeightsFont.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\SterlingHeightsFont.woff"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\fonts\\SterlingHeightsFont.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\SterlingHeightsFont.woff2"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\fonts\\icomoon.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icomoon.eot"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\fonts\\icomoon.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icomoon.svg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\fonts\\icomoon.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icomoon.ttf"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\fonts\\icomoon.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\icomoon.woff"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\fonts\\lightcase.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\lightcase.eot"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\fonts\\lightcase.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\lightcase.svg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\fonts\\lightcase.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\lightcase.ttf"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\fonts\\lightcase.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\lightcase.woff"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\fonts\\revicons\\revicons.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\revicons\\revicons.eot"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\fonts\\revicons\\revicons.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\revicons\\revicons.svg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\fonts\\revicons\\revicons.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\revicons\\revicons.ttf"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\fonts\\revicons\\revicons.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\revicons\\revicons.woff"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\fonts\\themewar.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themewar.eot"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\fonts\\themewar.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themewar.svg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\fonts\\themewar.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themewar.ttf"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\fonts\\themewar.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themewar.woff"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\about\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\about\\1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\about\\c1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\about\\c1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\about\\c2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\about\\c2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\about\\c3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\about\\c3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\about\\c4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\about\\c4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\ajax.gif",
+      "PackagePath": "staticwebassets\\assets\\images\\ajax.gif"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\1.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\1.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\10.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\10.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\10.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\11.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\11.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\11.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\12.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\12.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\12.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\12.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\13.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\13.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\13.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\13.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\13.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\13.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\14.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\14.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\15.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\15.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\16.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\16.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\1_1.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\1_1.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\3.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\4.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\5.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\5.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\6.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\6.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\6.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\6.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\7.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\7.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\7.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\7.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\7.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\8.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\8.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\8.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\9.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\9.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\9.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\angle.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\angle.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\b2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\b2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\b3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\b3.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\banner.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\banner.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\c1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\c1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\c2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\c2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\leaf.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\leaf.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\mailbg.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\mailbg.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\s1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\s1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\s2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\s2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\s3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\s3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\s4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\s4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\bg\\s5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\bg\\s5.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\10.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\10.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\11.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\11.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\12.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\12.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\13.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\13.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\14.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\14.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\15.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\15.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\3.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\4.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\5.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\6.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\7.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\8.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\9.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\author.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\author.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\c1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\c1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\l1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\l1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\l2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\l2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\l3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\l3.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\post.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\post.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\s1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\s1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\s1.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\s1.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\s2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\s2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\s2.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\s2.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\t1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\t1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\t2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\t2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\blog\\t3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\blog\\t3.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\cart\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cart\\1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\cart\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cart\\2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\cart\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\cart\\3.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\categories\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\categories\\2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\categories\\3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\categories\\4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\categories\\5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\5.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\categories\\6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\6.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\categories\\7.png",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\7.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\categories\\8.png",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\8.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\categories\\9.png",
+      "PackagePath": "staticwebassets\\assets\\images\\categories\\9.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\client-logo\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\client-logo\\1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\client-logo\\10.png",
+      "PackagePath": "staticwebassets\\assets\\images\\client-logo\\10.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\client-logo\\11.png",
+      "PackagePath": "staticwebassets\\assets\\images\\client-logo\\11.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\client-logo\\12.png",
+      "PackagePath": "staticwebassets\\assets\\images\\client-logo\\12.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\client-logo\\13.png",
+      "PackagePath": "staticwebassets\\assets\\images\\client-logo\\13.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\client-logo\\14.png",
+      "PackagePath": "staticwebassets\\assets\\images\\client-logo\\14.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\client-logo\\2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\client-logo\\2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\client-logo\\3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\client-logo\\3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\client-logo\\4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\client-logo\\4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\client-logo\\5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\client-logo\\5.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\client-logo\\6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\client-logo\\6.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\client-logo\\7.png",
+      "PackagePath": "staticwebassets\\assets\\images\\client-logo\\7.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\client-logo\\8.png",
+      "PackagePath": "staticwebassets\\assets\\images\\client-logo\\8.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\client-logo\\9.png",
+      "PackagePath": "staticwebassets\\assets\\images\\client-logo\\9.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\close.png",
+      "PackagePath": "staticwebassets\\assets\\images\\close.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\coming-soon.png",
+      "PackagePath": "staticwebassets\\assets\\images\\coming-soon.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\images\\favicon.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\flag.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\flag.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\h1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\h1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\h2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\h2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\h3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\h3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\h4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\h4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\h5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\h5.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\1.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\1.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\5.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\a1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\a1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\a2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\a2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\a3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\a3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\a4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\a4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\a5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\a5.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\c1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\c1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\c2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\c2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\c3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\c3.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\c4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\c4.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\i1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\i1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\i2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\i2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\i3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\i3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\i4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\i4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\i5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\i5.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\l1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\l1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\l2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\l2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\l3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\l3.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\m1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\m1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\t1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\t1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\t2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\t2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home1\\t3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home1\\t3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home2\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home2\\1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home2\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home2\\2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home2\\2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home2\\2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home2\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home2\\3.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home2\\3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home2\\3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home2\\c1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home2\\c1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home2\\c2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home2\\c2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home2\\c3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home2\\c3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home2\\c4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home2\\c4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home2\\l1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home2\\l1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home2\\l2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home2\\l2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home2\\l3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home2\\l3.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home2\\l4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home2\\l4.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home2\\video.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home2\\video.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home2\\video2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home2\\video2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home3\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home3\\1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home3\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home3\\1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home3\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home3\\2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home3\\2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home3\\2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home3\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home3\\3.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home3\\3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home3\\3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home3\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home3\\4.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home3\\4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home3\\4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home3\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home3\\5.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home3\\5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home3\\5.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home3\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home3\\6.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home3\\6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home3\\6.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home3\\choose.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home3\\choose.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home3\\mail.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home3\\mail.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home3\\v1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home3\\v1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home3\\v2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home3\\v2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\10.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\10.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\11.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\11.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\12.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\12.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\13.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\13.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\5.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\6.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\7.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\7.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\8.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\8.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\9.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\9.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\bodybg.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\bodybg.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\t1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\t1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\t2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\t2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\t3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\t3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\t4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\t4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home4\\t5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home4\\t5.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home5\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home5\\1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home5\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home5\\2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home5\\2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home5\\2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home5\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home5\\3.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home5\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\home5\\4.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home5\\bevarage.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home5\\bevarage.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home5\\bottom.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home5\\bottom.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home5\\bread.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home5\\bread.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home5\\frozen.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home5\\frozen.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home5\\fruits.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home5\\fruits.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home5\\grains.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home5\\grains.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\home5\\vegetable.png",
+      "PackagePath": "staticwebassets\\assets\\images\\home5\\vegetable.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\instagram\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram\\1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\instagram\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram\\2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\instagram\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram\\3.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\instagram\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram\\4.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\instagram\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram\\5.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\instagram\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\instagram\\6.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\loader2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\loader2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\logo2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\logo3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\marker.png",
+      "PackagePath": "staticwebassets\\assets\\images\\marker.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\payment.png",
+      "PackagePath": "staticwebassets\\assets\\images\\payment.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\payment2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\payment2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\10.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\10.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\11.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\11.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\12.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\12.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\13.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\13.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\14.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\14.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\15.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\15.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\16.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\16.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\17.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\17.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\18.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\18.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\19.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\19.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\20.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\20.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\21.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\21.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\22 - Copy.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\22 - Copy.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\22.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\22.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\23.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\23.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\24.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\24.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\25.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\25.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\26.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\26.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\27.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\27.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\28.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\28.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\29.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\29.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\3.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\30.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\30.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\31.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\31.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\32.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\32.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\33.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\33.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\34.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\34.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\35.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\35.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\36.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\36.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\37.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\37.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\38.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\38.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\39.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\39.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\4.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\40.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\40.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\41.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\41.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\5.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\5.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\6.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\6.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\7.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\7.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\7.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\8.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\8.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\8.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\9.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\9.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\9.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\f1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\f1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\f2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\f2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\f3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\f3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\f4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\f4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\g1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\g1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\g10.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\g10.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\g11.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\g11.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\g12.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\g12.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\g2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\g2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\g3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\g3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\g4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\g4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\g5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\g5.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\g6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\g6.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\g7.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\g7.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\g8.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\g8.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\g9.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\g9.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\l1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\l1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\l10.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\l10.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\l2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\l2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\l3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\l3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\l4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\l4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\l5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\l5.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\l6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\l6.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\l7.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\l7.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\l8.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\l8.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\l9.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\l9.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\t1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\t1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\t2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\t2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\t3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\t3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\t4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\t4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\ts1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\ts1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\ts2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\ts2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\ts3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\ts3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\ts4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\ts4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\w1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\w1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\w2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\w2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\w3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\w3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\product\\w4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\product\\w4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\select.png",
+      "PackagePath": "staticwebassets\\assets\\images\\select.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\shop\\s1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\shop\\s1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\shop\\s2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\shop\\s2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\shop\\s3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\shop\\s3.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\shop\\s4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\shop\\s4.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-product\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\single-product\\1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-product\\2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\single-product\\2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-product\\3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\single-product\\3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-product\\4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\single-product\\4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-product\\5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\single-product\\5.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-product\\6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\single-product\\6.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-product\\p1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\single-product\\p1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-product\\p2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\single-product\\p2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-product\\p3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\single-product\\p3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-product\\p4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\single-product\\p4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-product\\p6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\single-product\\p6.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-product\\s1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\single-product\\s1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-product\\s2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\single-product\\s2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-product\\s3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\single-product\\s3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-product\\s4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\single-product\\s4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-product\\s6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\single-product\\s6.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-service\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\single-service\\1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-service\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\single-service\\2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\single-service\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\single-service\\3.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\slider\\1.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\1.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\slider\\11.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\11.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\slider\\1_1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\1_1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\slider\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\slider\\2_1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\2_1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\slider\\3.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\3.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\slider\\4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\slider\\b1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\b1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\slider\\b2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\b2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\slider\\bottom.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\bottom.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\slider\\flower.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\flower.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\slider\\layer.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\layer.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\slider\\title_bg.png",
+      "PackagePath": "staticwebassets\\assets\\images\\slider\\title_bg.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\team\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\1.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\team\\1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\team\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\2.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\team\\2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\team\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\3.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\team\\3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\3.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\team\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\4.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\team\\4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\4.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\team\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\5.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\team\\5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\5.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\team\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\6.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\team\\6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\6.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\team\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\7.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\team\\7.png",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\7.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\team\\8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\8.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\images\\team\\8.png",
+      "PackagePath": "staticwebassets\\assets\\images\\team\\8.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\index.php",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\index.php"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\revolution.extension.actions.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\revolution.extension.actions.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\revolution.extension.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\revolution.extension.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\revolution.extension.kenburn.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\revolution.extension.kenburn.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\revolution.extension.layeranimation.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\revolution.extension.layeranimation.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\revolution.extension.migration.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\revolution.extension.migration.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\revolution.extension.navigation.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\revolution.extension.navigation.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\revolution.extension.parallax.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\revolution.extension.parallax.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\revolution.extension.slideanims.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\revolution.extension.slideanims.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\revolution.extension.video.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\revolution.extension.video.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\source\\index.php",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\source\\index.php"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\source\\revolution.extension.actions.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\source\\revolution.extension.actions.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\source\\revolution.extension.carousel.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\source\\revolution.extension.carousel.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\source\\revolution.extension.kenburn.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\source\\revolution.extension.kenburn.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\source\\revolution.extension.layeranimation.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\source\\revolution.extension.layeranimation.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\source\\revolution.extension.migration.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\source\\revolution.extension.migration.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\source\\revolution.extension.navigation.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\source\\revolution.extension.navigation.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\source\\revolution.extension.parallax.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\source\\revolution.extension.parallax.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\source\\revolution.extension.slideanims.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\source\\revolution.extension.slideanims.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\extensions\\source\\revolution.extension.video.js",
+      "PackagePath": "staticwebassets\\assets\\js\\extensions\\source\\revolution.extension.video.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\jquery\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery\\jquery-ui.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\jquery\\jquery.appear.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery\\jquery.appear.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\jquery\\jquery.countdown.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery\\jquery.countdown.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\jquery\\jquery.countdown.min.map",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery\\jquery.countdown.min.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\jquery\\jquery.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery\\jquery.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\jquery\\jquery.plugin.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery\\jquery.plugin.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\jquery\\jquery.plugin.min.map",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery\\jquery.plugin.min.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\lightcase.js",
+      "PackagePath": "staticwebassets\\assets\\js\\lightcase.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\masonry.js",
+      "PackagePath": "staticwebassets\\assets\\js\\masonry.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\nobundle-gulp\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\nobundle-gulp\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\nobundle-gulp\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\js\\nobundle-gulp\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\nobundle-gulp\\gmaps.js",
+      "PackagePath": "staticwebassets\\assets\\js\\nobundle-gulp\\gmaps.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\nobundle-gulp\\nice-select.js",
+      "PackagePath": "staticwebassets\\assets\\js\\nobundle-gulp\\nice-select.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\owl.carousel.filter.js",
+      "PackagePath": "staticwebassets\\assets\\js\\owl.carousel.filter.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\shuffle.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\shuffle.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\shuffle.min.js.map",
+      "PackagePath": "staticwebassets\\assets\\js\\shuffle.min.js.map"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\slick.js",
+      "PackagePath": "staticwebassets\\assets\\js\\slick.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\theme\\theme.js",
+      "PackagePath": "staticwebassets\\assets\\js\\theme\\theme.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\themepunch\\jquery.themepunch.revolution.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\themepunch\\jquery.themepunch.revolution.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\js\\themepunch\\jquery.themepunch.tools.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\themepunch\\jquery.themepunch.tools.min.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\loader.gif",
+      "PackagePath": "staticwebassets\\assets\\loader.gif"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\assets\\mail\\mail.php",
+      "PackagePath": "staticwebassets\\assets\\mail\\mail.php"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\cart.png",
+      "PackagePath": "staticwebassets\\images\\cart.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\chan_nuoi.webp",
+      "PackagePath": "staticwebassets\\images\\chan_nuoi.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\chan_nuoi_1.webp",
+      "PackagePath": "staticwebassets\\images\\chan_nuoi_1.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\chung_nhan.webp",
+      "PackagePath": "staticwebassets\\images\\chung_nhan.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\doi_ngu.webp",
+      "PackagePath": "staticwebassets\\images\\doi_ngu.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\exit.png",
+      "PackagePath": "staticwebassets\\images\\exit.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\eye.png",
+      "PackagePath": "staticwebassets\\images\\eye.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\favicon.ico",
+      "PackagePath": "staticwebassets\\images\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\garden.png",
+      "PackagePath": "staticwebassets\\images\\garden.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\giai_phap.webp",
+      "PackagePath": "staticwebassets\\images\\giai_phap.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\loading.png",
+      "PackagePath": "staticwebassets\\images\\loading.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\logo1.png",
+      "PackagePath": "staticwebassets\\images\\logo1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\logo2.png",
+      "PackagePath": "staticwebassets\\images\\logo2.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\logo_large1.png",
+      "PackagePath": "staticwebassets\\images\\logo_large1.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\orders\\2024-10-32f8bccc-edf9-4989-9692-fc685822a614-20241018081939.webp",
+      "PackagePath": "staticwebassets\\images\\orders\\2024-10-32f8bccc-edf9-4989-9692-fc685822a614-20241018081939.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\orders\\2024-10-56d065be-3d7b-4e0a-a99b-063d15b84024-20241017212120.png",
+      "PackagePath": "staticwebassets\\images\\orders\\2024-10-56d065be-3d7b-4e0a-a99b-063d15b84024-20241017212120.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\orders\\2024-10-9ff43478-48ad-42cd-93b9-5920a3337e2a-20241018075749.webp",
+      "PackagePath": "staticwebassets\\images\\orders\\2024-10-9ff43478-48ad-42cd-93b9-5920a3337e2a-20241018075749.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\padlock.png",
+      "PackagePath": "staticwebassets\\images\\padlock.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\posts\\test.png",
+      "PackagePath": "staticwebassets\\images\\posts\\test.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\rau.webp",
+      "PackagePath": "staticwebassets\\images\\rau.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\rau_cu.webp",
+      "PackagePath": "staticwebassets\\images\\rau_cu.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\settings.png",
+      "PackagePath": "staticwebassets\\images\\settings.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\thue_vuon.webp",
+      "PackagePath": "staticwebassets\\images\\thue_vuon.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\tiktok.png",
+      "PackagePath": "staticwebassets\\images\\tiktok.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\trong_trot.webp",
+      "PackagePath": "staticwebassets\\images\\trong_trot.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\user.png",
+      "PackagePath": "staticwebassets\\images\\user.png"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\vegetables\\bau.jpg",
+      "PackagePath": "staticwebassets\\images\\vegetables\\bau.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\vegetables\\bi-ngoi.jpg",
+      "PackagePath": "staticwebassets\\images\\vegetables\\bi-ngoi.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\vegetables\\cai-thao.jpg",
+      "PackagePath": "staticwebassets\\images\\vegetables\\cai-thao.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\vegetables\\cai-xanh.jpg",
+      "PackagePath": "staticwebassets\\images\\vegetables\\cai-xanh.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\vegetables\\cai-xoong.jpg",
+      "PackagePath": "staticwebassets\\images\\vegetables\\cai-xoong.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\vegetables\\can-tay.jpg",
+      "PackagePath": "staticwebassets\\images\\vegetables\\can-tay.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\vegetables\\hanh-la.jpeg",
+      "PackagePath": "staticwebassets\\images\\vegetables\\hanh-la.jpeg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\vegetables\\hung-que.jpg",
+      "PackagePath": "staticwebassets\\images\\vegetables\\hung-que.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\vegetables\\khoai-tay.jpg",
+      "PackagePath": "staticwebassets\\images\\vegetables\\khoai-tay.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\vegetables\\mang-tay.jpg",
+      "PackagePath": "staticwebassets\\images\\vegetables\\mang-tay.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\vegetables\\muop.jpg",
+      "PackagePath": "staticwebassets\\images\\vegetables\\muop.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\vegetables\\ngo-gai.jpg",
+      "PackagePath": "staticwebassets\\images\\vegetables\\ngo-gai.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\vegetables\\ngo-ri.jpg",
+      "PackagePath": "staticwebassets\\images\\vegetables\\ngo-ri.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\vegetables\\rau-dang.jpg",
+      "PackagePath": "staticwebassets\\images\\vegetables\\rau-dang.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\vegetables\\rau-den.jpg",
+      "PackagePath": "staticwebassets\\images\\vegetables\\rau-den.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\vegetables\\rau-ram.jpg",
+      "PackagePath": "staticwebassets\\images\\vegetables\\rau-ram.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\vegetables\\su-su.jpg",
+      "PackagePath": "staticwebassets\\images\\vegetables\\su-su.jpg"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\images\\xuat_khau.webp",
+      "PackagePath": "staticwebassets\\images\\xuat_khau.webp"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\mail-templates\\AccountantOrderPending.html",
+      "PackagePath": "staticwebassets\\mail-templates\\AccountantOrderPending.html"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\mail-templates\\CustomerCanDelivery.html",
+      "PackagePath": "staticwebassets\\mail-templates\\CustomerCanDelivery.html"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\mail-templates\\CustomerDeliveryAction.html",
+      "PackagePath": "staticwebassets\\mail-templates\\CustomerDeliveryAction.html"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\mail-templates\\CustomerOrderActivated.html",
+      "PackagePath": "staticwebassets\\mail-templates\\CustomerOrderActivated.html"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\mail-templates\\CustomerOrderApproved.html",
+      "PackagePath": "staticwebassets\\mail-templates\\CustomerOrderApproved.html"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\mail-templates\\CustomerOrderCanceled.html",
+      "PackagePath": "staticwebassets\\mail-templates\\CustomerOrderCanceled.html"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\mail-templates\\CustomerOrderPendding.html",
+      "PackagePath": "staticwebassets\\mail-templates\\CustomerOrderPendding.html"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\mail-templates\\GardenOrderApproved.html",
+      "PackagePath": "staticwebassets\\mail-templates\\GardenOrderApproved.html"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\mail-templates\\GardenPlantingUpToDate.html",
+      "PackagePath": "staticwebassets\\mail-templates\\GardenPlantingUpToDate.html"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\scripts\\AjaxHelper.js",
+      "PackagePath": "staticwebassets\\scripts\\AjaxHelper.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\scripts\\SerializeObject.js",
+      "PackagePath": "staticwebassets\\scripts\\SerializeObject.js"
+    },
+    {
+      "Id": "C:\\Code\\nongtraintc-main\\RauSach\\RauSach.Web\\wwwroot\\scripts\\wholeSite.js",
+      "PackagePath": "staticwebassets\\scripts\\wholeSite.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.RauSach.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.RauSach.Web.props",
+      "PackagePath": "build\\RauSach.Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.RauSach.Web.props",
+      "PackagePath": "buildMultiTargeting\\RauSach.Web.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.RauSach.Web.props",
+      "PackagePath": "buildTransitive\\RauSach.Web.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

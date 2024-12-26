@@ -1,0 +1,93 @@
+﻿@using RauSach.Core.Models
+@model Voucher
+@using Microsoft.AspNetCore.Http.Extensions
+@{
+    ViewData["Title"] = "Thiết lập Voucher";
+}
+
+@section styles {
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" integrity="sha512-aEe/ZxePawj0+G2R+AaIxgrQuKT68I28qh+wgLrcAJOz3rxCP+TwrK5SPN+E5I+1IQjNtcfvb96HDagwrKRdBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+}
+
+<div class="card mt-2 mb-2 shadow-base">
+    <div class="card-body pb-0">
+        <form method="post" enctype="multipart/form-data" asp-controller="Voucher" asp-action="Edit" asp-route-returnUrl="@Context.Request.Query["returnUrl"]">
+            @Html.HiddenFor(m => m.Id)
+            @Html.HiddenFor(m => m.Created)
+            @Html.HiddenFor(m => m.CreatedBy)
+            @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.Code)
+                        @Html.TextBoxFor(m => m.Code, new { Class = "form-control form-control-smy", required = "required" })
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.Quantity)
+                        <input name="@(nameof(Model.Quantity))" type="number" min="0" value="@Model.Quantity" class="form-control form-control-smy" />
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.DiscountRate)
+                        <input name="@(nameof(Model.DiscountRate))" type="number" min="0" value="@Model.DiscountRate" class="form-control form-control-smy" />
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.DiscountAmount)
+                        <input name="@(nameof(Model.DiscountAmount))" type="number" min="0" value="@Model.DiscountAmount" class="form-control form-control-smy" />
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.StartDate)
+                        <input name="StartDateShow" required type="text" value="@Model.StartDate.ToString("dd/MM/yyyy")" class="form-control datepicker form-control-smy" />
+                        <input name="@(nameof(Voucher.StartDate))" required type="hidden" value="@Model.StartDate.ToString("yyyy-MM-dd")" class="form-control form-control-smy" style="display:none" />
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        @Html.LabelFor(m => m.Expired)
+                        <input name="ExpiredShow" required type="text" value="@Model.Expired.ToString("dd/MM/yyyy")" class="form-control datepicker form-control-smy" />
+                        <input name="@(nameof(Voucher.Expired))" required type="hidden" value="@Model.Expired.ToString("yyyy-MM-dd")" class="form-control form-control-smy" style="display:none" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 mb-3">
+                    @Html.LabelFor(m => m.Details)
+                    @Html.TextAreaFor(x => x.Details, new {@class = "form-control form-control-smy"})
+                </div>
+            </div>
+            <hr />
+            <div class="mb-2">
+                <button class="btn btn-success" type="submit">Lưu lại</button>
+                <a href="@Context.Request.Query["returnUrl"]" class="btn btn-outline-secondary">Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>
+@section scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tiny.cloud/1/mbx1d96tuje4gp42frlv3fq1gpxrftgpiavfttwwubl2fn70/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js" integrity="sha512-GDey37RZAxFkpFeJorEUwNoIbkTwsyC736KNSYucu1WJWFK9qTdzYub8ATxktr6Dwke7nbFaioypzbDOQykoRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <script>
+        common.initTinyMce('#Details');
+        $(document).ready(function(){
+            $('input[name=StartDateShow]').datetimepicker({
+                format: 'DD/MM/YYYY',
+                locale: 'vi'
+            });
+            $('input[name=ExpiredShow]').datetimepicker({
+                format: 'DD/MM/YYYY',
+                locale: 'vi'
+            });
+
+            $("input[name=StartDateShow]").on("dp.change", function (e) {
+                var d = e.date._d.getFullYear() + "-" + (e.date._d.getMonth() + 1) + "-" + (e.date._d.getDate());
+                $('input[name=StartDate]').val(d);
+            });
+            $("input[name=ExpiredShow]").on("dp.change", function (e) {
+                var d = e.date._d.getFullYear() + "-" + (e.date._d.getMonth() + 1) + "-" + (e.date._d.getDate());
+                $('input[name=Expired]').val(d);
+            });
+
+            $("#ui-datepicker-div").remove();
+        });
+    </script>
+}

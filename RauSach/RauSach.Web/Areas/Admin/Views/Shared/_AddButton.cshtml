@@ -1,0 +1,8 @@
+﻿@model dynamic
+@{
+    Layout = null;
+}
+@if ((bool)Model.HasRole)
+{
+    <a class="btn btn-success btn-sm" href="@Model.Url"><i class="fa fa-plus-circle"></i> @Model.Text</a>
+}

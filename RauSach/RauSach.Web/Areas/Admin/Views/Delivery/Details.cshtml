@@ -1,0 +1,78 @@
+﻿@using RauSach.Core.Models
+@model Delivery
+@using Microsoft.AspNetCore.Http.Extensions
+@using Rausach.Common.Extensions
+@using RauSach.Core.ValueObjects
+@{
+    ViewData["Title"] = "Chi tiết giao hàng";
+    var state = Model.Status.DeliveryState;
+}
+
+<div class="card mt-2 mb-2 shadow-base">
+    <div class="card-body pb-0">
+        <form method="post" enctype="multipart/form-data" asp-controller="Delivery" asp-action="UpdateDelivery" asp-route-returnUrl="@Context.Request.GetEncodedUrl()">
+            @Html.HiddenFor(m => m.Id)
+            <div class="row">
+                <div class="col-md-6 mg-t-20 mg-md-t-0-force">
+                    <ul class="list-group list-group-striped">
+                        <li class="list-group-item rounded-top-0">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i> <span class="text-muted">Trạng thái: </span> <strong class="tx-inverse tx-medium text-warning">@Model.Status.DeliveryState.GetEnumDescription()</strong> <span class="text-muted"> vào lúc: @Model.Status.UpdatedTime.ToString("dd/MM/yyyy hh:mm")</span></p>
+                        </li>
+                        <li class="list-group-item rounded-top-0">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i> <span class="text-muted">Thuộc đơn hàng: </span> <strong class="tx-inverse tx-medium">@Model.Order.Code</strong></p>
+                        </li>
+                        <li class="list-group-item rounded-top-0">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i> <span class="text-muted">Tên khách hàng: </span> <strong class="tx-inverse tx-medium">@Model.CustomerName</strong></p>
+                        </li>
+                        <li class="list-group-item rounded-top-0">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i> <span class="text-muted">SĐT: </span> <strong class="tx-inverse tx-medium"><a href="tel:@Model.CustomerPhone"><i class="fa fa-phone"></i> @Model.CustomerPhone</a></strong></p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Địa chỉ: </span> <strong class="tx-inverse tx-medium">@Model.CustomerAddress</strong> </p>
+                        </li>
+                        <li class="list-group-item">
+                            <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Tổng trọng lượng: </span> <strong class="tx-inverse tx-medium">@Model.Weight.ToString("N0") g</strong> </p>
+                        </li>
+                        @foreach (var item in Model.Vegetables)
+                        {
+                            <li class="list-group-item">
+                                <p class="mg-b-0"><i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">@item.Name: </span> <strong class="tx-inverse tx-medium">@item.Weight.ToString("N0") g</strong></p>
+                            </li>
+                        }
+                        <li class="list-group-item">
+                            <p class="mg-b-0">
+                                <i class="fa fa-check tx-success mg-r-8"></i><span class="text-muted">Ghi chú: </span>
+                                @Html.TextBoxFor(m => m.Note, new { Class = "form-control form-control-smy" })
+                        </li>
+                    </ul>
+                </div><!-- col-4 -->
+            </div>
+            <hr />
+            <input type="hidden" name="actionType" id="actionType" value="true" />
+            <div class="mb-2">
+                @if (state == DeliveryState.Pendding)
+                {
+                    <button class="btn btn-success" type="submit" onclick="return confirmDelivery('started');">Bắt đầu vận chuyển</button>
+                }
+                @if (state == DeliveryState.Delivering || state == DeliveryState.Failed)
+                {
+                    <button class="btn btn-success" type="submit" onclick="return confirmDelivery('succeeded');">Vận chuyển thành công</button>
+                }
+                @if (state == DeliveryState.Delivering)
+                {
+                    <button class="btn btn-danger" type="submit" onclick="return confirmDelivery('failed');">Vận chuyển thất bại</button>
+                }
+
+                <a href="@Context.Request.Query["returnUrl"]" class="btn btn-outline-secondary">Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>
+@section scripts {
+    <script>
+        function confirmDelivery(actionType) {
+            $('#actionType').val(actionType);
+            return confirm('Bạn có chắc?');
+        }
+    </script>
+}

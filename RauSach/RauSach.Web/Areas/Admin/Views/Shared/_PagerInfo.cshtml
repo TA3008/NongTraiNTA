@@ -1,0 +1,11 @@
+﻿@*@model  DK.Web.Models.PagerModel
+@using PagedList
+@using PagedList.Mvc
+@{
+    Layout = null;
+}
+<div class="dataTables_info" id="datatable-buttons_info" role="status" aria-live="polite">Hiển thị từ @((Model.list.PageNumber - 1) * Model.list.PageSize + (Model.list.TotalItemCount > 0 ? 1 : 0)) đến @((Model.list.PageSize * Model.list.PageNumber) < Model.list.TotalItemCount ? (Model.list.PageSize * Model.list.PageNumber) : Model.list.TotalItemCount) trên tổng số @Model.list.TotalItemCount bản ghi</div>
+
+<div class="dataTables_paginate paging_simple_numbers" id="datatable-buttons_paginate">
+    @Html.PagedListPager(Model.list, Model.generatePageUrl)
+</div>*@

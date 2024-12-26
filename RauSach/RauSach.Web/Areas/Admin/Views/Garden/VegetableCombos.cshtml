@@ -1,0 +1,27 @@
+﻿@using RauSach.Core.Models
+@model List<VegetableCombo>
+@using Microsoft.AspNetCore.Http.Extensions
+@{
+    ViewData["Title"] = "Danh sách combo rau";
+    var gardens = ViewBag.Gardens as List<Garden>;
+    var dark = false;
+}
+@section Button {
+    <a href="@Url.Action("UpdateVegetableCombo", new { returnUrl = Context.Request.GetEncodedUrl()})" class="btn btn-success btn-sm pull-right">Thêm mới</a>
+}
+    <div class="card mt-2 mb-2 shadow-base">
+        <div class="card-body pb-0">
+            @for (int i = 0; i < Model.Count; i += 3)
+        {
+            <div class="row">
+                @for (int j = i; j < i + 3 && j < Model.Count; j++)
+                {
+                    var item = Model[j];
+                    var garden = gardens.FirstOrDefault(m => m.Id == item.GardenId);
+
+                    <partial name="_VegetableComboItem" model="(item, garden, dark)" />
+                }
+            </div>
+        }
+    </div>
+</div>

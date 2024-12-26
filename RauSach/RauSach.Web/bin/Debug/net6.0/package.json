@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-terser": "^2.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp4-run-sequence": "^1.0.1",
+    "merge-stream": "^2.0.0"
+  }
+}

@@ -1,0 +1,26 @@
+﻿@using RauSach.Application.Models
+@using RauSach.Core.Models
+@model DeliveryFilter
+@{
+    var statuses = Delivery.GetPossibleStatuses().Select(m => new SelectListItem
+            {
+                Value = m.value.ToString(),
+                Text = m.text
+            }).ToList();
+}
+@using (Html.BeginForm(null, null, FormMethod.Get, new { role = "form", id = "frmSearch" }))
+{
+    <div class="row mb-2">
+        <div class="col-md-3 col-xs-6 search-item">
+            <label for="Code">Người nhận</label>
+            @Html.TextBoxFor(x => x.query, new { Class = "form-control form-control-sm" })
+        </div>
+        <div class="col-md-3 col-xs-6 search-item">
+            <label for="Code">Trạng thái</label>
+            @Html.DropDownListFor(x => x.State, new SelectList(statuses, "Value", "Text"), "Tất cả", new { Class = "form-control form-control-sm" })
+        </div>
+    </div>
+    <div class="col mb-2 search-item" style="padding-left:0">
+        <button id="btnSearch" class="btn btn-sm bd bg-success tx-white pointer" type="submit"><i class="fa fa-search"></i> Tìm kiếm</button>
+    </div>
+}

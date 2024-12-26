@@ -1,0 +1,90 @@
+﻿@using RauSach.Core.Models;
+@using EnumsNET;
+@model List<Order>
+
+<!-- Begin:: Banner Section -->
+<section class="page_banner shop_banner" style="background-image: url(/assets/images/bg/b3.jpg); margin-top: 120px;">
+    <div class="container largeContainer">
+        <div class="row">
+            <div class="col-lg-12 text-left">
+                <p class="breadcrumbs">
+                    <a href="/"><i class="twi-home"></i>Trang chủ</a><i class="twi-angle-right"></i>Đơn hàng của tôi
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="cartPage">
+    <div class="container largeContainer containerTable">
+        <div class="row">
+            <div class="col-lg-12 colTable">
+                @if (Model?.Any() == true)
+                {
+                    <div class="woocommerce pd-0">
+                        <table class="shop_table">
+                            <thead>
+                                <tr>
+                                    <th class="product-remove">&nbsp;</th>
+                                    <th class="product-remove">Mã đơn hàng</th>
+                                    <th class="product-name">Vườn</th>
+                                    <th class="product-name">Combo</th>
+                                    <th class="product-quantity">Ngày tạo</th>
+                                    <th class="product-price">Thanh toán</th>
+                                    <th class="product-subtotal">Trạng thái</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @for (int i = 0; i < Model.Count; i++)
+                                {
+                                    <tr class="cart_item">
+                                        <td class="product-remove">
+                                            @(i + 1)
+                                        </td>
+                                        <td class="garden">
+                                            <p class="mobile">Mã đơn hàng: </p>
+                                            <p>@Model[i].Code</p>
+                                        </td>
+                                        <td class="garden">
+                                            <p class="mobile">Vườn: </p>
+                                            <p>@Model[i].Garden.Name</p><br/>
+                                            <p>Diện tích: @Model[i].Garden.Area (m2)</p>
+                                        </td>
+                                        <td class="garden">
+                                            <p class="mobile">Combo: </p>
+                                            <p>@Model[i].Combo.Name</p><br/>
+                                            @foreach (var veg in Model[i].Combo.Vegetables)
+                                            {
+                                                <p>@veg.Name - Diện tích trồng: @veg.Area (m2)</p><br/>
+                                            }
+                                        </td>
+                                        <td class="garden">
+                                            <p class="mobile">Ngày tạo: </p>
+                                            <p>@Model[i].Created.ToString("dd/MM/yyyy")</p>
+                                        </td>
+                                        <td class="garden">
+                                            <p class="mobile">Giá: </p>
+                                            <p>@Model[i].Price.ToString("N0")</p>
+                                            <p>vnd</p>
+                                        </td>
+                                        <td class="garden product-subtotal">
+                                            <p class="mobile">Trạng thái: </p>
+                                            <p class="woocommerce-Price-amount amount">@Model[i].Status.AsString(EnumFormat.Description)</p>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <p>Không có đơn hàng nào!</p>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+

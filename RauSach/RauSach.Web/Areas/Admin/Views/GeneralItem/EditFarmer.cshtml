@@ -1,0 +1,64 @@
+﻿@using RauSach.Core.Models
+@using RauSach.Web.Models
+@model GeneralItem
+@using Microsoft.AspNetCore.Http.Extensions
+@{
+    ViewData["Title"] = "Cập nhật thông tin Nông dân";
+}
+
+<div class="card mt-2 mb-2 shadow-base">
+    <div class="card-body pb-0">
+        <form method="post" enctype="multipart/form-data" asp-controller="GeneralItem" asp-action="EditFarmer" asp-route-returnUrl="@Context.Request.Query["returnUrl"]">
+            @Html.HiddenFor(m => m.Id)
+            @Html.HiddenFor(m => m.Created)
+            @Html.HiddenFor(m => m.CreatedBy)
+            @Html.HiddenFor(m => m.ImageUrl)
+            @Html.HiddenFor(m => m.Thumbnail)
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="col-sm-12 mb-3">
+                        <span>Tên nông dân</span>
+                        @Html.TextBoxFor(m => m.Title, new { Class = "form-control form-control-smy", required = "required" })
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        <span>Số điện thoại</span>
+                        @Html.TextBoxFor(m => m.Phone, new { Class = "form-control form-control-smy" })
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        <span>Địa chỉ</span>
+                        @Html.TextBoxFor(m => m.Address, new { Class = "form-control form-control-smy" })
+                    </div>
+                    <div class="col-sm-12 mb-3">
+                        <span>Các vườn đang làm</span>
+                        @if (ViewData["GeneralItemGarden"] != null)
+                        {
+                            var items = (List<GeneralItemGardenViewModel>)ViewData["GeneralItemGarden"];
+                            foreach(var i in items)
+                            {
+                                <p>@i.GardenName: 
+                                    @foreach(var code in i.GardenCodes)
+                                    {
+                                        <a href="/admin/order/EditByGardenCode?gardenCode=@code">@code</a>
+                                    }
+                                </p>
+                            }
+                        }
+                        else
+                        {
+                            <p>chưa làm vườn nào.</p>
+                        }
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <partial name="_EditImage" model="@Model.ImageUrl" />
+                </div>
+            </div>
+            <hr />
+            <div class="mb-2">
+                <button class="btn btn-success" type="submit">Lưu lại</button>
+                <a href="@Context.Request.Query["returnUrl"]" class="btn btn-outline-secondary">Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>

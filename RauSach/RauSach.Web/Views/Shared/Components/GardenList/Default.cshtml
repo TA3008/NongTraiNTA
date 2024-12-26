@@ -1,0 +1,52 @@
+﻿@using RauSach.Core.Models
+@using RauSach.Web.Helpers
+@model List<Garden>
+
+@if (Model?.Any() == true)
+{
+    <section class="productSection01">
+        <div class="container largeContainer">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="subTitle">Sản phẩm Organic</div>
+                    <h2 class="secTitle">Vườn của chúng tôi</h2>
+                </div>
+            </div>
+            <div class="row shaff_grid hasRoundedCorner">
+                @foreach (var item in Model)
+                {
+                    <div class="col-xl-4 col-lg-4 col-md-6 shaff_item odd">
+                        <div class="productItem01 proGarden">
+                            <div class="proThumb">
+                                @HtmlHelperExtension.Img(item.Thumbnail, item.Name)
+                            </div>
+                            <div class="product_content">
+                                <div class="ratings">
+                                    <i class="twi-star"></i>
+                                    <i class="twi-star"></i>
+                                    <i class="twi-star"></i>
+                                    <i class="twi-star"></i>
+                                    <i class="twi-star"></i>
+                                </div>
+                                <div class="pitem">NTA Farm</div>
+                                <div class="pitem">Diện tích vườn: @item.MinArea - @item.MaxArea (m2)</div>
+                                <h3><a href="@FriendlyUrl.Shop()" title="Chọn vườn" class="aGarden">@item.Name</a></h3>
+                                <div class="pi01Price">
+                                    <span class="price">
+                                        @if (item.FakePrice > 0)
+                                        {
+                                            <del>@item.FakePrice.ToString("#,##0")</del>
+                                        }
+                                        <ins>@item.Price.ToString("#,##0")</ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <span class="wishlist" aria-label="Ưa thích"><i class="twi-heart1"></i></span>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </section>
+
+}

@@ -1,0 +1,89 @@
+﻿@using RauSach.Core.Models;
+@using RauSach.Web.Helpers;
+@using EnumsNET;
+@model List<Order>
+
+<!-- Begin:: Banner Section -->
+<section class="page_banner shop_banner" style="background-image: url(/assets/images/bg/b3.jpg); margin-top: 120px;">
+    <div class="container largeContainer">
+        <div class="row">
+            <div class="col-lg-12 text-left">
+                <p class="breadcrumbs">
+                    <a href="/"><i class="twi-home"></i>Trang chủ</a><i class="twi-angle-right"></i>Vườn của tôi
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="cartPage">
+    <div class="container largeContainer containerTable">
+        <div class="row">
+            <div class="col-lg-12 colTable">
+                @if (Model?.Any() == true)
+                {
+                    <div class="woocommerce pd-0">
+                        <table class="shop_table">
+                            <thead>
+                                <tr>
+                                    <th class="product-remove">&nbsp;</th>
+                                    <th class="product-photo">Vườn</th>
+                                    <th class="product-name">Combo</th>
+                                    <th class="product-quantity">Ngày tạo</th>
+                                    <th class="product-subtotal">Chi tiết</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @for (int i = 0; i < Model.Count; i++)
+                                {
+                                    <tr class="cart_item">
+                                        <td class="product-remove">
+                                            @(i + 1)
+                                        </td>
+                                        <td class="garden">
+                                            <p class="mobile">Vườn: </p>
+                                            <p>@Model[i].Garden.Name</p><br />
+                                            <p>Diện tích: @Model[i].Garden.Area m2</p>
+                                        </td>
+                                        <td class="garden">
+                                            <p class="mobile">Combo: </p>
+                                            <p>@Model[i].Combo.Name</p><br />
+                                        </td>
+                                        <td class="">
+                                            <p class="mobile">Ngày tạo: </p>
+                                            @Model[i].Created.ToString("dd/MM/yyyy")
+                                        </td>
+                                        <td class="product-subtotal">
+                                            <p class="mobile">Chi tiết: </p>
+                                            <span class="woocommerce-Price-amount amount">
+                                                @if (Model[i].Status == RauSach.Core.ValueObjects.OrderStatus.Active)
+                                                {
+                                                    <a href="@FriendlyUrl.MyGardenDetail(Model[i].Code)" alt="@Model[i].Garden.Name">Xem vườn</a>
+                                                }
+                                                else if (Model[i].Status == RauSach.Core.ValueObjects.OrderStatus.Paid)
+                                                {
+                                                    <label>Đã duyệt</label>
+                                                }
+                                                else if (Model[i].Status == RauSach.Core.ValueObjects.OrderStatus.Pendding)
+                                                {
+                                                    <label>Đang chờ duyệt</label>
+                                                }
+                                            </span>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <p>Không có vườn nào đang hoạt động!</p>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+

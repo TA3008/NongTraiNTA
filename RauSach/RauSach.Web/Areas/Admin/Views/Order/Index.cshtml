@@ -1,0 +1,65 @@
+﻿@using RauSach.Core.Models
+@model List<Order>
+@using Microsoft.AspNetCore.Http.Extensions
+@using Rausach.Common.Extensions
+@{
+    ViewData["Title"] = "Danh sách đơn hàng";
+    var searchModel = ViewBag.SearchModel as RauSach.Application.Models.OrderFilter;
+}
+<div class="card mt-2 mb-2 shadow-base" id="searchBox">
+    <div class="card-body pb-0">
+        <partial name="_SearchOrders" model="@searchModel" />
+    </div>
+</div>
+<div class="card mt-2 mb-2 shadow-base pd-b-10">
+    <div class="card-body pb-0">
+        <table class="table mg-b-0" cellspacing="0">
+            <tr>
+                <th>STT</th>
+                <th>
+                    Ngày tạo
+                </th>
+                <th>
+                    Trạng thái
+                </th>
+                <th>
+                    Tên KH
+                </th>
+                <th>
+                    Loại vườn
+                </th>
+                <th>
+                    Giá (đ)
+                </th>
+            </tr>
+
+            @{
+                var stt = 1;
+                foreach (var item in Model.OrderByDescending(m => m.Created))
+                {
+                    <tr class="stat even">
+                        <td class="ac">
+                            @(stt++)
+                        </td>
+                        <td>
+                            <a href="@Url.Action("Edit", new { item.Id, returnUrl = Context.Request.GetEncodedUrl()})">@item.Code @item.Created.ToString("dd/MM/yyyy")</a>
+                        </td>
+                        <td>
+                            @item.Status.GetEnumDescription()
+                        </td>
+                        <td>
+                            @item.CustomerName
+                        </td>
+                        <td>
+                            @item.Garden.Name @item.GardenCode @item.Garden.Area
+                        </td>
+                        <td>
+                            @item.Price.ToString("N0")
+                        </td>
+                        
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+</div>
